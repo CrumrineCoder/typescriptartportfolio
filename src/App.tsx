@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+ const test = require('./assets/tammy.png')
+
+function CarcasoPortfolioBox(imageName: string) {
+  return (
+    <img src ={imageName} alt="Test" />
+  );
+}
+
 function App() {
+  // <CarcasoPortfolioBox imageName="test.jpg"></CarcasoPortfolioBox>
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <img src={test} />
     </div>
   );
 }
