@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
+import ArtBox from "./components/artBox"
 
- const test = require('./assets/tammy.png')
+const test = require('./assets/tammy.png')
 
  interface CarcasoPortfolioBoxProps {
     imageName: string;
@@ -14,6 +15,7 @@ function CarcasoPortfolioBox({imageName}: CarcasoPortfolioBoxProps) {
   return (
     <div>
       test
+      <ArtBox></ArtBox>
       <h1>{imageName}</h1>
       <img src ={(imageName)} alt="Test" />
     </div>
