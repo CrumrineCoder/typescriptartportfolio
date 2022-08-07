@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import ArtBox from "./components/artBox";
 
 const TammyConfused = require("./assets/tammy.png");
