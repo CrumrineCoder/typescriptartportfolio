@@ -3,8 +3,17 @@
 }
 
 .discord {
-  img{
-    width: 100px; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-height: 300px; 
+  img {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
   }
 }
 
