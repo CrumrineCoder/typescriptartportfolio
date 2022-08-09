@@ -5,15 +5,26 @@
 .discord {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  max-height: 300px; 
+  justify-content: space-between;
   img {
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+    margin: 20px 30px 0 0;
+    width: 200px;
+    object-fit: contain;
+    align-self: flex-start;
+  }
+  div{
+    flex: 1 1 auto;
+    justify-content: left;
+    align-items: left;
+    float: left; 
+    align-items: flex-start;
+    * {
+      justify-content: left;
+      align-items: left;
+      align-self: left;
+      align-content: left; 
+      align-items: flex-start
+    }
   }
 }
 
