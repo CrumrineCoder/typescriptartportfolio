@@ -12,7 +12,7 @@ function ArtBox({ imageName, artTitle, artDescription, style }: imageProps) {
     <div className={style}>
       <img className={"Image"} src={imageName} alt="Test" />
       <div className="Text">
-        <h1>{artTitle} </h1>
+        <p>{artTitle} </p>
         <p>{artDescription}</p>
       </div>
     </div>
