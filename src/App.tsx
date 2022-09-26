@@ -13,6 +13,7 @@ function App() {
         artTitle={"Testing"}
         artDescription={"Here's the description!"}
         style={"discord"}
+        date={"11/20/2020"}
       ></ArtBox>
     </div>
   );
