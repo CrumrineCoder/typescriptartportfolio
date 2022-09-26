@@ -14,18 +14,26 @@
     width: 200px;
     object-fit: contain;
     align-self: flex-stalrt;
-    border-radius: 50px;
+    border-radius: 100px;
     margin: 10px;
   }
-  .portfolioProfilePictureTitle {
-    font-weight: bold;
-    font-size: 20px;
-  }
+  
   .portfolioProfilePictureTextboxHeader {
-
+    margin-top: 30px; 
     span{
       vertical-align:middle;
     }
+    .portfolioProfilePictureTitle {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .portfolioProfilePictureDate{
+      color: rgb(163, 166, 172);
+      padding-left: 5px; 
+    }
+  }
+  .portfolioProfilePictureDescription{
+    color: rgb(223, 223, 223)
   }
 }
 
