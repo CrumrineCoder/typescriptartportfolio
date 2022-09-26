@@ -1,3 +1,6 @@
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
 interface imageProps {
   imageName: string;
   artTitle: string;
@@ -17,11 +20,13 @@ function ArtBox({
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
   return (
     <div className={"artBox " + style}>
-      <img
-        className={"portfolioProfilePictureImage"}
-        src={imageName}
-        alt="Test"
-      />
+      <Zoom>
+        <img
+          className={"portfolioProfilePictureImage"}
+          src={imageName}
+          alt="Test"
+        />
+      </Zoom>
       <div className="portfolioProfilePictureTextbox">
         <div className="portfolioProfilePictureTextboxHeader">
           <span className="portfolioProfilePictureTitle">{artTitle} </span>
