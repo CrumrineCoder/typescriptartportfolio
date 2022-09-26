@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 .App {
 
 }
 
 .discord {
+  font-family: 'PT Sans', sans-serif;
   margin: 0;
   display: flex;
   flex-direction: row;
+  background: rgb(54, 57, 63);
+  color: white; 
   img {
 
     width: 200px;
