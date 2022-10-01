@@ -1,9 +1,22 @@
 import "../App.scss";
 import ArtBox from "../components/artBox";
 
-const TammyConfused = require("../assets/tammy.png");
-const AsheSaris = require("../assets/ashesaris.jpeg");
-
+const TammyConfused = require("../assets/profilepics/tammy.png");
+const AsheSaris = require("../assets/profilepics/ashesaris.jpeg");
+const AyaFae = require("../assets/profilepics/aya.jpeg");
+const Sophia = require("../assets/profilepics/catgirl.jpeg");
+const Catgirl = require("../assets/profilepics/catgirlcommission.jpeg");
+const chiprofilepic = require("../assets/profilepics/chiprofilepic.jpeg");
+const julian2 = require("../assets/profilepics/julianprofilepic2.jpeg");
+const julian = require("../assets/profilepics/julianprofilepicture.jpeg");
+const lala1 = require("../assets/profilepics/lalapackpenguin.jpeg");
+const lala2 = require("../assets/profilepics/lalapackrin.jpeg");
+const lala3 = require("../assets/profilepics/lalapacksama.jpeg");
+const lala4 = require("../assets/profilepics/lalapacksquat.jpeg");
+const neeko = require("../assets/profilepics/neeko.jpeg");
+const tami = require("../assets/profilepics/tami.png");
+const tammy = require("../assets/profilepics/tammy.png");
+const willow = require("../assets/profilepics/willowheadpat.jpeg");
 
 function ProfilePictures() {
   // <CarcasoPortfolioBox imageName="test.jpg"></CarcasoPortfolioBox>
