@@ -4,7 +4,7 @@ function NavBar() {
   // <CarcasoPortfolioBox imageName="test.jpg"></CarcasoPortfolioBox>
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
   return (
-    <div className="HomePage">
+    <div className="NavBar">
         <Link to="/">Home</Link>
        <Link to="/profilepictures">Profile Pictures</Link>
     </div>

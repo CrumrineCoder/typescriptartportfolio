@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 .App {
+  background-color: rgb(220, 223, 178);
+  height: 100vh; 
+  color: rgb(20, 19, 1)
+}
+
+.NavBar{
+  padding: 20px; 
+  background-color:  rgb(139, 73, 11);
+  color: white; 
+  a{
+    color: white; 
+    padding: 0 20px 0px 0px; 
+  }
 }
 
 .artBox{
