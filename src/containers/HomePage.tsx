@@ -7,7 +7,12 @@ function HomePage() {
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
   return (
     <div className="HomePage">
-       <Link to="/profilepictures"><img src={TammyConfused} className="homePageLinkImage"/></Link>
+      <div className="homePageRedirectContainer">
+        <img src={TammyConfused} className="homePageLinkImage" />
+        <Link to="/profilepictures">
+          <p>Profile Pictures</p>
+        </Link>
+      </div>
     </div>
   );
 }
