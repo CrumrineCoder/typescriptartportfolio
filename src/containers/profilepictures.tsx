@@ -1,6 +1,10 @@
 import "../App.scss";
 import ArtBox from "../components/artBox";
 
+import React, {useState} from 'react';
+
+import ProfilePicSelector from "../components/profilepicselector";
+
 const TammyConfused = require("../assets/profilepics/tammy.png");
 const AsheSaris = require("../assets/profilepics/ashesaris.jpeg");
 const AyaFae = require("../assets/profilepics/aya.jpeg");
@@ -21,10 +25,12 @@ const willow = require("../assets/profilepics/willowheadpat.jpeg");
 function ProfilePictures() {
   // <CarcasoPortfolioBox imageName="test.jpg"></CarcasoPortfolioBox>
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
+  const [currentImage, setCurrentImage] = useState(TammyConfused);
+
   return (
     <div className="ProfilePictures">
       <ArtBox
-        imageName={TammyConfused}
+        imageName={currentImage}
         artTitle={"Testing"}
         artDescription={
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit."
@@ -32,6 +38,20 @@ function ProfilePictures() {
         style={"discord"}
         date={"11/20/2020"}
       ></ArtBox>
+      
+      <ProfilePicSelector
+        imageName={TammyConfused}
+        changeImage={setCurrentImage}
+      ></ProfilePicSelector>
+    </div>
+  );
+}
+
+export default ProfilePictures;
+
+/*
+
+
       <ArtBox
         imageName={AsheSaris}
         artTitle={"Testing"}
@@ -158,8 +178,4 @@ function ProfilePictures() {
         style={"discord"}
         date={"11/20/2020"}
       ></ArtBox>
-    </div>
-  );
-}
-
-export default ProfilePictures;
+*/
