@@ -29,6 +29,7 @@ function ProfilePictures() {
 
   return (
     <div className="ProfilePictures">
+          {currentImage}
       <ArtBox
         imageName={currentImage}
         artTitle={"Testing"}
@@ -40,7 +41,7 @@ function ProfilePictures() {
       ></ArtBox>
       
       <ProfilePicSelector
-        imageName={TammyConfused}
+        imageName={AsheSaris}
         changeImage={setCurrentImage}
       ></ProfilePicSelector>
     </div>
