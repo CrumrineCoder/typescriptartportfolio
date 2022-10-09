@@ -4,6 +4,7 @@ import ArtBox from "../components/artBox";
 import React, { useState } from "react";
 
 import ProfilePicSelector from "../components/profilepicselector";
+import { profile } from "console";
 
 const TammyConfused = require("../assets/profilepics/tammy.png");
 const AsheSaris = require("../assets/profilepics/ashesaris.jpeg");
@@ -158,33 +159,42 @@ function ProfilePictures() {
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
   const [currentImage, setCurrentImage] = useState(TammyConfused);
 
+  const imageList = profilePicsMasterData.map((items, i) =>  <li key={i}>Test</li>);
+  /*
+    const imageList = profilePicsMasterData.map(function(item, i){
+    console.log('test');
+    return <li key={i}>Test</li>
+  })
+  */
+  console.log(imageList);
+
   return (
     <div className="ProfilePictures">
-      <ArtBox
-        imageName={currentImage}
-        artTitle={"Testing"}
-        artDescription={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit."
-        }
-        style={"discord"}
-        date={"11/20/2020"}
-      ></ArtBox>
       <>
-        {profilePicsMasterData.map((items) => {
-          <>
-            <h1>hi</h1>
-            <ProfilePicSelector
-              imageName={items.imageName}
-              changeImage={setCurrentImage}
-            ></ProfilePicSelector>
-          </>;
-        })}
+        <ArtBox
+          imageName={currentImage}
+          artTitle={"Testing"}
+          artDescription={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit."
+          }
+          style={"discord"}
+          date={"11/20/2020"}
+        ></ArtBox>
       </>
+      test
+      <>{imageList}</>
     </div>
   );
 }
 
 export default ProfilePictures;
+
+/*
+   <ProfilePicSelector
+              imageName={items.imageName}
+              changeImage={setCurrentImage}
+            ></ProfilePicSelector>
+            */
 
 /*
 
