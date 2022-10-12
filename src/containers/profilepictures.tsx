@@ -186,7 +186,7 @@ function ProfilePictures() {
           date={"11/20/2020"}
         ></ArtBox>
       </>
-      <>{imageList}</>
+      <div className="ProfilePicSelectors">{imageList}</div>
     </div>
   );
 }
