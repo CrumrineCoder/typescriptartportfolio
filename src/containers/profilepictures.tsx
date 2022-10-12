@@ -159,7 +159,12 @@ function ProfilePictures() {
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
   const [currentImage, setCurrentImage] = useState(TammyConfused);
 
-  const imageList = profilePicsMasterData.map((items, i) =>  <li key={i}>Test</li>);
+  const imageList = profilePicsMasterData.map((items, i) => (
+    <ProfilePicSelector
+      imageName={items.imageName}
+      changeImage={setCurrentImage}
+    ></ProfilePicSelector>
+  ));
   /*
     const imageList = profilePicsMasterData.map(function(item, i){
     console.log('test');
@@ -181,7 +186,6 @@ function ProfilePictures() {
           date={"11/20/2020"}
         ></ArtBox>
       </>
-      test
       <>{imageList}</>
     </div>
   );
@@ -190,10 +194,7 @@ function ProfilePictures() {
 export default ProfilePictures;
 
 /*
-   <ProfilePicSelector
-              imageName={items.imageName}
-              changeImage={setCurrentImage}
-            ></ProfilePicSelector>
+ 
             */
 
 /*
