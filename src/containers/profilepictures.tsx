@@ -154,6 +154,7 @@ function ProfilePictures() {
     <ProfilePicSelector
       imageName={items.imageName}
       changeImage={setCurrentImage}
+      currentImage={currentImage}
     ></ProfilePicSelector>
   ));
   /*
@@ -166,7 +167,20 @@ function ProfilePictures() {
 
   return (
     <div className="ProfilePictures">
-      <div className="ProfilePicturesLeftSide"></div>
+      <div className="ProfilePicturesLeftSide">
+        <div className="ProfilePicturesLeftSideHeader">
+          Hi I'm Taming, but you knew that already
+        </div>
+        <div className="ProfilePicturesLeftSideSubHeader">
+          I make Profile Pictures to help friends show others how they want to be seen. Each was made carefully to the friend's taste and personality.
+        </div>
+        <div className="ProfilePicturesLeftSideCommissionInfo">
+          I'm expanding to do commissions in my free time. I'm most interested in drawing cute and/or spooky things, and nothing overtly NSFW. 
+        </div>
+        <div className="ProfilePicturesLeftSideCTA">
+           Contact Me
+        </div>
+      </div>
       <div className="ProfilePicturesRightSide">
         <div className="ProfilePicturesRightWhiteBackground">
           <ArtBox
