@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 .App {
-  background-color: rgb(220, 223, 178);
-  height: 100vh;
+  background-color: #800020;
+  height: 100%;
   color: rgb(20, 19, 1);
+  padding: 20px; 
 }
 
 .NavBar {
@@ -29,16 +30,24 @@
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-    width: 50%; 
+    width: 50vw; 
   }
   .ProfilePicturesRightSide {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-    width: 50%; 
+    width: 50vw; 
+    position: relative; 
+
+    .ProfilePicturesRightWhiteBackground{
+      background-color: white;
+      padding: 20px; 
+      margin-top: 50px; 
+      width: 45vw;
+      border-radius: 10px;  
     .artBox {
       padding: 20px 0px;
-      width: 70vw;
+      width: 45vw;
       align-items: center;
     }
 
@@ -48,6 +57,8 @@
       flex-direction: row;
       background: rgb(54, 57, 63);
       color: white;
+      border-radius: 20px; 
+      margin-bottom: 20px; 
       .portfolioProfilePictureImage {
         width: 200px;
         object-fit: contain;
@@ -72,17 +83,19 @@
       }
       .portfolioProfilePictureDescription {
         color: rgb(223, 223, 223);
+        padding: 0px 20px 0px 0px; 
       }
     }
 
     .ProfilePicSelectors {
       display: flex;
       flex-wrap: wrap;
-      width: 50vw;
+      width: 45vw;
 
       .profilePicSelector {
         flex: 1 0 calc(25% - 10px);
-        margin: 5px;
+       /* margin: 5px; */
+       margin: 2px; 
         cursor: pointer;
         /*   height: 20vh;  */
 
@@ -96,4 +109,5 @@
       }
     }
   }
+}
 }

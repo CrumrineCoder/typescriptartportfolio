@@ -7,13 +7,19 @@ import NavBar from "./containers/NavBar";
 function App() {
   return (
     <div className="App">
-      <NavBar></NavBar>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/profilepictures" element={<ProfilePictures />} />
+        <Route path="/" element={<ProfilePictures />} />
       </Routes>
     </div>
   );
 }
 
 export default App;
+
+/*
+ <NavBar></NavBar>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/profilepictures" element={<ProfilePictures />} />
+      </Routes>
+      */
