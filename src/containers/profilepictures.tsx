@@ -178,7 +178,7 @@ function ProfilePictures() {
           I'm expanding to do commissions in my free time. I'm most interested in drawing cute and/or spooky things, and nothing overtly NSFW. 
         </div>
         <div className="ProfilePicturesLeftSideCTA">
-           Contact Me
+           Let's Chat
         </div>
       </div>
       <div className="ProfilePicturesRightSide">
