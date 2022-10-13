@@ -25,7 +25,17 @@
 .ProfilePictures {
   display: flex;
 
+  .ProfilePicturesLeftSide {
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    width: 50%; 
+  }
   .ProfilePicturesRightSide {
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    width: 50%; 
     .artBox {
       padding: 20px 0px;
       width: 70vw;

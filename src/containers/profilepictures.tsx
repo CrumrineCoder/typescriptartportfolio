@@ -166,6 +166,7 @@ function ProfilePictures() {
 
   return (
     <div className="ProfilePictures">
+      <div className="ProfilePicturesLeftSide"></div>
       <div className="ProfilePicturesRightSide">
         <ArtBox
           imageName={currentImage}
