@@ -175,7 +175,13 @@ function ProfilePictures() {
           I make Profile Pictures to help friends show others how they want to be seen. Each was made carefully to the friend's taste and personality.
         </div>
         <div className="ProfilePicturesLeftSideCommissionInfo">
-          I'm expanding to do commissions in my free time. I'm most interested in drawing cute and/or spooky things, and nothing overtly NSFW. 
+          I'm expanding to do personal commissions in my free time. I'm most interested in drawing cute and/or spooky things, and nothing overtly NSFW. 
+        </div>
+        <div className="ProfilePicturesLeftSideCommissionStatusHeader">
+           Commission Status:
+        </div>
+        <div className="ProfilePicturesLeftSideCommissionStatusIndicator">
+          Open
         </div>
         <div className="ProfilePicturesLeftSideCTA">
            Commission Info

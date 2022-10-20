@@ -57,6 +57,24 @@
       max-width: 400px;
     }
 
+    .ProfilePicturesLeftSideCommissionStatusHeader {
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: "PT Sans", sans-serif;
+      padding-top: 60px;
+      text-align: center;
+    }
+
+    .ProfilePicturesLeftSideCommissionStatusIndicator {
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+      font-family: "PT Sans", sans-serif;
+
+      text-align: center; 
+    }
+
     .ProfilePicturesLeftSideCTA {
       background-color: rgb(237, 234, 234);
       color: rgb(19, 18, 18);
@@ -68,7 +86,7 @@
       font-size: 36px;
       font-weight: bold;
       font-family: "PT Sans", sans-serif;
-      margin: 150px auto 0px;
+      margin: 50px auto 0px;
       line-height: 1.2em;
     }
 
