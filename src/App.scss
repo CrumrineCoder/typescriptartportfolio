@@ -107,8 +107,8 @@ body:before {
       border-radius: 15px;
 
       text-align: center;
-      max-width: 200px;
-      font-size: 36px;
+      max-width: 300px;
+      font-size: 52px;
       font-weight: bold;
       font-family: "PT Sans", sans-serif;
       margin: 50px auto 0px;
@@ -127,6 +127,9 @@ body:before {
       user-select: none;
       -webkit-user-select: none;
       touch-action: manipulation;
+
+
+      margin: auto auto;
     }
 
     .ProfilePicturesLeftSideCTA:before {
@@ -185,7 +188,7 @@ body:before {
       display: flex;
       justify-content: center;
       padding: 5px;
-      margin-top: auto;
+   /*   margin-top: auto; */
       svg {
         fill: white;
         width: 50px;
