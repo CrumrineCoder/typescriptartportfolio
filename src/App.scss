@@ -25,7 +25,8 @@ body:before {
 
 .App {
   height: 100%;
-  color: rgb(20, 19, 1);
+  color: white;
+  font-family: "PT Sans", sans-serif;
   padding: 20px;
  /* background-image: linear-gradient(45deg, #800020 27%, #410413 93%); */
 }
@@ -289,5 +290,17 @@ body:before {
         }
       }
     }
+  }
+}
+
+
+.CommissionInfo{
+  .CommissionInfoHeader{
+    text-align: center;
+    letter-spacing: 0.1rem;
+    width: calc(100% + 0.1rem);
+    font-size: 1.875em;
+    line-height: 1.375;
+    font-weight: 200;
   }
 }

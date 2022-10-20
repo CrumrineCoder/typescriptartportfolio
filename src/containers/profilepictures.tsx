@@ -9,6 +9,7 @@ import { profile } from "console";
 
 import { ReactComponent as Twitter } from "../assets/twitter.svg";
 import { ReactComponent as Gmail } from "../assets/envelope-solid.svg";
+import CommissionInfo from "./CommissionInfo";
 
 const TammyConfused = require("../assets/profilepics/tammy.png");
 const AsheSaris = require("../assets/profilepics/ashesaris.jpeg");
@@ -199,6 +200,7 @@ function ProfilePictures() {
             <Twitter className="ProfilePicturesLeftSideFooterTwitter" />
             <Gmail className="ProfilePicturesLeftSideFooterGmail"/>
         </div>
+       
       </div>
       <div className="ProfilePicturesRightSide">
         <div className="ProfilePicturesRightWhiteBackground">
