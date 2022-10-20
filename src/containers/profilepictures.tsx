@@ -7,7 +7,8 @@ import ProfilePicSelector from "../components/profilepicselector";
 
 import { profile } from "console";
 
-import {ReactComponent as Twitter} from "../assets/square-twitter.svg";
+import { ReactComponent as Twitter } from "../assets/twitter.svg";
+import { ReactComponent as Gmail } from "../assets/envelope-solid.svg";
 
 const TammyConfused = require("../assets/profilepics/tammy.png");
 const AsheSaris = require("../assets/profilepics/ashesaris.jpeg");
@@ -167,7 +168,12 @@ function ProfilePictures() {
   })
   */
   console.log(imageList);
+  /*
+             <div className="ProfilePicturesLeftSideCommissionInfo">
+          I'm expanding to do personal commissions in my free time. I'm most interested in drawing cute and/or spooky things, and nothing overtly NSFW. 
+        </div>
 
+        */
   return (
     <div className="ProfilePictures">
       <div className="ProfilePicturesLeftSide">
@@ -175,21 +181,23 @@ function ProfilePictures() {
           Hi I'm Taming, but you knew that already
         </div>
         <div className="ProfilePicturesLeftSideSubHeader">
-          I make Profile Pictures to help friends show others how they want to be seen. Each was made carefully to the friend's taste and personality.
+          I make Profile Pictures to help friends show others how they want to
+          be seen. Each was made carefully to the friend's taste and
+          personality.
         </div>
-        <div className="ProfilePicturesLeftSideCommissionInfo">
-          I'm expanding to do personal commissions in my free time. I'm most interested in drawing cute and/or spooky things, and nothing overtly NSFW. 
-        </div>
+
         <div className="ProfilePicturesLeftSideCommissionStatusHeader">
-           Commission Status:
+          Commission Status:
         </div>
         <div className="ProfilePicturesLeftSideCommissionStatusIndicator">
           Open
-          <Twitter width="1rem" />
-               
+          
         </div>
-        <div className="ProfilePicturesLeftSideCTA">
-           Order Yours
+        <div className="ProfilePicturesLeftSideCTA">Order Yours</div>
+
+        <div className="ProfilePicturesLeftSideFooter">
+            <Twitter className="ProfilePicturesLeftSideFooterTwitter" />
+            <Gmail className="ProfilePicturesLeftSideFooterGmail"/>
         </div>
       </div>
       <div className="ProfilePicturesRightSide">
