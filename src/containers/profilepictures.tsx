@@ -4,7 +4,10 @@ import ArtBox from "../components/artBox";
 import React, { useState } from "react";
 
 import ProfilePicSelector from "../components/profilepicselector";
+
 import { profile } from "console";
+
+import {ReactComponent as Twitter} from "../assets/square-twitter.svg";
 
 const TammyConfused = require("../assets/profilepics/tammy.png");
 const AsheSaris = require("../assets/profilepics/ashesaris.jpeg");
@@ -182,9 +185,11 @@ function ProfilePictures() {
         </div>
         <div className="ProfilePicturesLeftSideCommissionStatusIndicator">
           Open
+          <Twitter width="1rem" />
+               
         </div>
         <div className="ProfilePicturesLeftSideCTA">
-           Commission Info
+           Order Yours
         </div>
       </div>
       <div className="ProfilePicturesRightSide">
