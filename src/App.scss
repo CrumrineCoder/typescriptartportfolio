@@ -312,6 +312,25 @@ body:before {
     max-width: 40vw; 
     margin: 0 auto; 
   }
+
+  .CommissionInfoApplicationSubHeader{
+    text-transform: uppercase;
+    font-weight: bold; 
+    font-size: 1.4em; 
+  }
+
+  .CommissionInfoApplicationBodyItalics{
+    font-style: italic; 
+    padding: 30px 0px 10px;
+    font-size: 1.2em; 
+  }
+
+  ol{
+    .CommissionInfoApplicationBody{
+      margin-top: 10px; 
+      font-size: 1.1em; 
+    }
+  }
   .CommissionInfoPricingContainer {
     display: flex;
   }
