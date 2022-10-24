@@ -257,7 +257,7 @@ function CommissionInfo() {
         </ul>
         <p className="CommissionInfoApplicationBody">
           I’m willing to try other styles or complex things that I want to learn
-          like complex designs, backgrounds, armour, and tattoos. Just ask!
+          like: designs, backgrounds, armour, and tattoos. Just ask!
         </p>
       </div>
 
@@ -267,13 +267,26 @@ function CommissionInfo() {
           <img src={TammyConfused} className="CommissionInfoPricingImage"></img>
         </div>
         <div className="CommissionInfoPricingRightContainer">
-          <p className="CommissionInfoPricingHeader">PROFILE PICTURES | $ 60</p>
+          <p className="CommissionInfoPricingHeader">PROFILE PICTURES</p>
+          <p className="CommissionInfoPricingBodyPriceNumbers">
+            Sketch: $20 USD
+          </p>
+          <p className="CommissionInfoPricingBodyPriceNumbers">
+            Colored and rendered: $60 USD
+          </p>
           <p className="CommissionInfoPricingBody">
-            Custom Made Profile Picture for you or OC. Pricing options will be
-            expanded in the near future.
+            Custom Made Profile Picture for you or OC. These will have simple or
+            no background.
           </p>
         </div>
       </div>
+      <p className="CommissionInfoApplicationBody">
+        Pricing options to be expanded in the near future to include complex
+        backgrounds, paintings, Carcaso & Space Station 13 themes, etc.
+      </p>
+      <p className="CommissionInfoApplicationBody">
+        Thank you for your interest!
+      </p>
     </div>
   );
 }
