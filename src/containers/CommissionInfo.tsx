@@ -1,18 +1,8 @@
+const TammyConfused = require("../assets/profilepics/tammy.png");
+
 function CommissionInfo() {
   return (
     <div className="CommissionInfo">
-      <div className="CommissionInfoHeader">COMMISSION PRICING</div>
-      <div className="CommissionInfoPricingContainer">
-        <div className="CommissionInfoPricingLeftImage"></div>
-        <div className="CommissionInfoPricingRightContainer">
-          <p className="CommissionInfoPricingHeader">PROFILE PICTURES | $ 60</p>
-          <p className="CommissionInfoPricingBody">
-            Custom Made Profile Picture for you or OC. Pricing options will be
-            expanded in the near future.
-          </p>
-        </div>
-      </div>
-
       <div className="CommissionInfoHeader">HOW TO APPLY</div>
       <div className="CommissionInfoApplicationContainer">
         <p className="CommissionInfoApplicationBody">
@@ -157,6 +147,21 @@ function CommissionInfo() {
         </p>
         <div className="CommissionInfoApplicationHeader"></div>
       </div>
+
+      <div className="CommissionInfoHeader">COMMISSION PRICING</div>
+      <div className="CommissionInfoPricingContainer">
+        <div className="CommissionInfoPricingLeftImageContainer">
+          <img src={TammyConfused} className="CommissionInfoPricingImage"></img>
+        </div>
+        <div className="CommissionInfoPricingRightContainer">
+          <p className="CommissionInfoPricingHeader">PROFILE PICTURES | $ 60</p>
+          <p className="CommissionInfoPricingBody">
+            Custom Made Profile Picture for you or OC. Pricing options will be
+            expanded in the near future.
+          </p>
+        </div>
+      </div>
+
       <div className="CommissionInfoHeader">Terms of Service</div>
       <div className="CommissionInfoTOSContainer">
         <p className="CommissionInfoTOSBody">
