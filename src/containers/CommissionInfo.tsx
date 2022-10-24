@@ -223,27 +223,42 @@ function CommissionInfo() {
           <p className="CommissionInfoApplicationListSubHeader">
             I am comfortable drawing:
           </p>
-          <li className="CommissionInfoApplicationBody">Male or Female Humans including your OC & fanart</li>
-          <li className="CommissionInfoApplicationBody">Light/simple Mecha/Armour</li>
-          <li className="CommissionInfoApplicationBody">Mild demonstration of violence (blood, scrapes)</li>
+          <li className="CommissionInfoApplicationBody">
+            Male or Female Humans including your OC & fanart
+          </li>
+          <li className="CommissionInfoApplicationBody">
+            Light/simple Mecha/Armour
+          </li>
+          <li className="CommissionInfoApplicationBody">
+            Mild demonstration of violence (blood, scrapes)
+          </li>
           <li className="CommissionInfoApplicationBody">Suggestive NSFW </li>
           <li className="CommissionInfoApplicationBody">Fantasy & Sci-Fi</li>
-          <li className="CommissionInfoApplicationBody">Detailed props and backgrounds</li>
+          <li className="CommissionInfoApplicationBody">
+            Detailed props and backgrounds
+          </li>
         </ul>
         <ul className="CommissionInfoApplicationListContainer DontsContainer">
           <p className="CommissionInfoApplicationListSubHeader">
             I will not draw:
           </p>
-          <li className="CommissionInfoApplicationBody">Furry/Anthro
-</li>
-          <li className="CommissionInfoApplicationBody">Porn/Fetishes/Explicit NSFW
-</li>
-          <li className="CommissionInfoApplicationBody">Realism & complex Mecha / High Tech</li>
+          <li className="CommissionInfoApplicationBody">Furry/Anthro</li>
+          <li className="CommissionInfoApplicationBody">
+            Porn/Fetishes/Explicit NSFW
+          </li>
+          <li className="CommissionInfoApplicationBody">
+            Realism & complex Mecha / High Tech
+          </li>
           <li className="CommissionInfoApplicationBody">Extreme Gore </li>
-          <li className="CommissionInfoApplicationBody">Related in any way to hate or just weird shit you wouldn’t tell your mother about. 
-</li>
-   
+          <li className="CommissionInfoApplicationBody">
+            Related in any way to hate or just weird shit you wouldn’t tell your
+            mother about.
+          </li>
         </ul>
+        <p className="CommissionInfoApplicationBody">
+          I’m willing to try other styles or complex things that I want to learn
+          like complex designs, backgrounds, armour, and tattoos. Just ask!
+        </p>
       </div>
 
       <div className="CommissionInfoHeader">COMMISSION PRICING</div>
