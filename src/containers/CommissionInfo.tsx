@@ -142,30 +142,108 @@ function CommissionInfo() {
             done to determine general composition of the artwork.
           </li>
           <li className="CommissionInfoApplicationBody">
-            Once the thumbnail is approved, a detailed sketch will be created in order to
-            seek conceptual approval for the final piece. Revisions cannot be
-            made after final approval so please revise your commission carefully
-            and let me know if I make any mistakes during the process. I will
-            only accept up to 3 revisions once this sketch is made
+            Once the thumbnail is approved, a detailed sketch will be created in
+            order to seek conceptual approval for the final piece. Revisions
+            cannot be made after final approval so please revise your commission
+            carefully and let me know if I make any mistakes during the process.
+            I will only accept up to 3 revisions once this sketch is made
             (unless it was an error on my part!).
           </li>
           <li className="CommissionInfoApplicationBody">
             I will send you an Invoice through PayPal mail once the sketch is
             approved. I will cancel the Invoice if I don’t hear back within 48
-            hours unless otherwise given notice. After this, I will provide at least 2 - 3
-            WIP to let you see each step (sketch, lines, colours) and you can
-            request for minor changes. 
+            hours unless otherwise given notice. After this, I will provide at
+            least 2 - 3 WIP to let you see each step (sketch, lines, colours)
+            and you can request for minor changes.
           </li>
           <li className="CommissionInfoApplicationBody">
             After the illustration is done, I will send you the thumbnail for
             the final check.
           </li>
           <li className="CommissionInfoApplicationBody">
-            If approved, I will send a high-res version of the art through email when
-            finished.
+            If approved, I will send a high-res version of the art through email
+            when finished.
           </li>
         </ol>
-        <div className="CommissionInfoApplicationHeader"></div>
+        <p className="CommissionInfoApplicationDisclaimer">
+          By commissioning me, you agree with my terms of service (please read
+          carefully below.)
+        </p>
+        <div className="CommissionInfoApplicationSubHeader">
+          Terms of Service
+        </div>
+        <ul className="CommissionInfoTOSContainer">
+          <li className="CommissionInfoApplicationBody">
+            The commissioned drawings are for personal use only (should not be
+            used for financial gain in any form). You may not resell it, edit
+            it, remove my signature, use it for merchandise, sell as a NFT or
+            for AI art manipulation, or claim it as your own. For other uses,
+            ask me first and will incur an additional cost.
+          </li>
+          <li className="CommissionInfoApplicationBody">
+            Payment will be done after the Sketch phase in full, which will
+            account for paypal tax (4.4%+0.30). If you wish to cancel your
+            commission and get a refund, contact me as soon as possible. I do
+            not refund once I’ve started the sketch.
+          </li>
+          <li className="CommissionInfoApplicationBody">
+            I DO NOT accept any kind of cryptocurrency as payment. I only accept
+            USD through Paypal Invoice.
+          </li>
+          <li className="CommissionInfoApplicationBody">
+            I retain the rights to all art that I produce
+          </li>
+          <li className="CommissionInfoApplicationBody">
+            I reserve the right to print and sell all my art pieces including
+            personal and commissioned work
+          </li>
+          <li className="CommissionInfoApplicationBody">
+            Artwork will be published on social media as part of my portfolio
+            (unless otherwise agreed beforehand)
+          </li>
+          <li className="CommissionInfoApplicationBody">
+            Whenever you post and share my work you should give me appropriate
+            credit.
+          </li>
+          <li className="CommissionInfoApplicationBody">
+            Prices listed below are base prices.
+          </li>
+          <li className="CommissionInfoApplicationBody">
+            The client will receive the full resolution digital file. No
+            physical item will be delivered.
+          </li>
+          <li className="CommissionInfoApplicationBody">
+            I reserve the right to decline any commission request that I find
+            inappropriate and/or that doesn’t match my terms, skills or time.
+          </li>
+        </ul>
+
+        <p className="CommissionInfoApplicationSubHeader">DOs / DONTs</p>
+        <ul className="CommissionInfoApplicationListContainer DosContainer">
+          <p className="CommissionInfoApplicationListSubHeader">
+            I am comfortable drawing:
+          </p>
+          <li className="CommissionInfoApplicationBody">Male or Female Humans including your OC & fanart</li>
+          <li className="CommissionInfoApplicationBody">Light/simple Mecha/Armour</li>
+          <li className="CommissionInfoApplicationBody">Mild demonstration of violence (blood, scrapes)</li>
+          <li className="CommissionInfoApplicationBody">Suggestive NSFW </li>
+          <li className="CommissionInfoApplicationBody">Fantasy & Sci-Fi</li>
+          <li className="CommissionInfoApplicationBody">Detailed props and backgrounds</li>
+        </ul>
+        <ul className="CommissionInfoApplicationListContainer DontsContainer">
+          <p className="CommissionInfoApplicationListSubHeader">
+            I will not draw:
+          </p>
+          <li className="CommissionInfoApplicationBody">Furry/Anthro
+</li>
+          <li className="CommissionInfoApplicationBody">Porn/Fetishes/Explicit NSFW
+</li>
+          <li className="CommissionInfoApplicationBody">Realism & complex Mecha / High Tech</li>
+          <li className="CommissionInfoApplicationBody">Extreme Gore </li>
+          <li className="CommissionInfoApplicationBody">Related in any way to hate or just weird shit you wouldn’t tell your mother about. 
+</li>
+   
+        </ul>
       </div>
 
       <div className="CommissionInfoHeader">COMMISSION PRICING</div>
@@ -180,53 +258,6 @@ function CommissionInfo() {
             expanded in the near future.
           </p>
         </div>
-      </div>
-
-      <div className="CommissionInfoHeader">Terms of Service</div>
-      <div className="CommissionInfoTOSContainer">
-        <p className="CommissionInfoTOSBody">
-          The commissioned drawings are for personal use only (should not be
-          used for financial gain in any form). For other uses, ask me first and
-          will incur an additional cost.
-        </p>
-        <p className="CommissionInfoTOSBody">
-          Payment will be done after the Sketch phase in full, which will
-          account for paypal tax (4.4%+0.30). If you wish to cancel your
-          commission and get a refund, contact me as soon as possible. I do not
-          refund once I’ve started the sketch.
-        </p>
-        <p className="CommissionInfoTOSBody">
-          I DO NOT accept any kind of cryptocurrency as payment. I only accept
-          USD through Paypal Invoice.
-        </p>
-        <p className="CommissionInfoTOSBody">
-          I retain the rights to all art that I produce
-        </p>
-        <p className="CommissionInfoTOSBody">
-          I reserve the right to print and sell all my art pieces including
-          personal and commissioned work
-        </p>
-        <p className="CommissionInfoTOSBody">
-          Artwork will be published on social media as part of my portfolio
-          (unless otherwise agreed beforehand)
-        </p>
-        <p className="CommissionInfoTOSBody">
-          Artwork is for your personal use only, nothing commercial unless
-          previously agreed. You may not resell it, edit it, remove my
-          signature, use it for merchandise, sell as a NFT or for AI art
-          manipulation, or claim it as your own.
-        </p>
-        <p className="CommissionInfoTOSBody">
-          Whenever you post and share my work you should give me appropriate
-          credit.
-        </p>
-        <p className="CommissionInfoApplicationBody">
-          I reserve the right to decline any commission request that I find
-          inappropriate and/or that doesn’t match my terms, skills or time.
-        </p>
-        <p className="CommissionInfoTOSBody">
-          By paying the PayPal invoice, you agree to these Terms of Service.
-        </p>
       </div>
     </div>
   );
