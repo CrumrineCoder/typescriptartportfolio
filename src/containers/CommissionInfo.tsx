@@ -3,7 +3,8 @@ const TammyConfused = require("../assets/profilepics/tammy.png");
 function CommissionInfo() {
   return (
     <div className="CommissionInfo">
-      <div className="CommissionInfoHeader">HOW TO APPLY</div>
+      <div className="CommissionInfoHeader">Commissions Info</div>
+      <div className="CommissionInfoSubHeader">Please review the pricing and terms below before sending a request to tamingthecarcasoan@gmail. Commission queue can be found here.</div>
       <div className="CommissionInfoApplicationContainer">
         <p className="CommissionInfoApplicationBody">
           Please send me an Email titled "COMMISSION - (Your name and Social
