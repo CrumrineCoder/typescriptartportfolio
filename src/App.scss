@@ -33,11 +33,27 @@ body:before {
 
 .NavBar {
   padding: 20px;
-  background-color: rgb(139, 73, 11);
+  display: flex;
+  justify-content: space-between;
   color: white;
+  
   a {
     color: white;
     padding: 0 20px 0px 0px;
+    &:hover{
+      color: rgb(250, 166, 166); 
+    }
+    text-decoration: none; 
+    font-size: 1.4em; 
+    font-weight: bold; 
+  }
+
+  .leftSideHeader{
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    padding-left: 100px; 
+    
   }
 }
 
@@ -297,8 +313,8 @@ body:before {
   width: 66vw;
   margin: 0 auto;
 
-  .CommissionInfoApplicationBody{
-    font-size: 1.2em; 
+  .CommissionInfoApplicationBody {
+    font-size: 1.2em;
   }
   .CommissionInfoHeader {
     text-align: center;
@@ -375,10 +391,10 @@ body:before {
     }
   }
 
-  .CommissionInfoApplicationListSubHeader{
-    margin-left: -40px; 
-    font-style: italic; 
-    font-size: 1.2em; 
+  .CommissionInfoApplicationListSubHeader {
+    margin-left: -40px;
+    font-style: italic;
+    font-size: 1.2em;
   }
 
   .CommissionInfoApplicationDisclaimer {
@@ -407,15 +423,15 @@ body:before {
   }
   .CommissionInfoPricingRightContainer {
     padding: 2rem;
-    .CommissionInfoPricingHeader{
-      font-size: 1.8em; 
-      font-style: italic; 
-      margin: 0px; 
+    .CommissionInfoPricingHeader {
+      font-size: 1.8em;
+      font-style: italic;
+      margin: 0px;
     }
 
-    .CommissionInfoPricingBody{
-      font-style: italic; 
-      margin-top: 50px; 
+    .CommissionInfoPricingBody {
+      font-style: italic;
+      margin-top: 50px;
     }
   }
 }

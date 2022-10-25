@@ -5,8 +5,12 @@ function NavBar() {
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
   return (
     <div className="NavBar">
-        <Link to="/">Home</Link>
-       <Link to="/profilepictures">Profile Pictures</Link>
+      <Link to="/" className="leftSideHeader">
+        Taming
+      </Link>
+      <div className="rightSideHeader">
+        <Link to="/commissions">Commissions</Link>
+      </div>
     </div>
   );
 }

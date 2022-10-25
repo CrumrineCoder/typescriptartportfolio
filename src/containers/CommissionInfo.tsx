@@ -40,7 +40,7 @@ function CommissionInfo() {
           </p>
 
           <p className="CommissionInfoApplicationBodyItalics">
-            Please include the following details in text:
+            Please include the following details in your commission:
           </p>
           <ul className="CommissionInfoApplicationListContainer">
             <li className="CommissionInfoApplicationListItem">

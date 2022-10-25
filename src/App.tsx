@@ -8,6 +8,7 @@ import CommissionInfo from "./containers/CommissionInfo";
 function App() {
   return (
     <div className="App">
+      <NavBar></NavBar>
       <Routes>
         <Route path="/" element={<ProfilePictures />} />
         <Route path="/commissions" element={<CommissionInfo />} />
