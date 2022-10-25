@@ -269,10 +269,10 @@ function CommissionInfo() {
         <div className="CommissionInfoPricingRightContainer">
           <p className="CommissionInfoPricingHeader">PROFILE PICTURES</p>
           <p className="CommissionInfoPricingBodyPriceNumbers">
-            Sketch: $20 USD
+            Colored Headshot: $60 USD
           </p>
           <p className="CommissionInfoPricingBodyPriceNumbers">
-            Colored and rendered: $60 USD
+            Bust Up: +$10 USD
           </p>
           <p className="CommissionInfoPricingBody">
             Custom Made Profile Picture for you or OC. These will have simple or
