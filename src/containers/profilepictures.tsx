@@ -1,5 +1,6 @@
 import "../App.scss";
 import ArtBox from "../components/artBox";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 import React, { useState } from "react";
 
@@ -169,12 +170,18 @@ function ProfilePictures() {
   })
   */
   console.log(imageList);
+  const navigate = useNavigate();
   /*
              <div className="ProfilePicturesLeftSideCommissionInfo">
           I'm expanding to do personal commissions in my free time. I'm most interested in drawing cute and/or spooky things, and nothing overtly NSFW. 
         </div>
 
         */
+
+        const navigateCommissions = () => {
+          // 👇️ navigate to /
+          navigate('/commissions');
+        };
   return (
     <div className="ProfilePictures">
       <div className="ProfilePicturesLeftSide">
@@ -194,7 +201,9 @@ function ProfilePictures() {
           Open
           
         </div>
-        <div className="ProfilePicturesLeftSideCTA">Order Yours</div>
+        
+
+        <div onClick={navigateCommissions} className="ProfilePicturesLeftSideCTA">Order Yours</div>
 
         <div className="ProfilePicturesLeftSideFooter">
             <Twitter className="ProfilePicturesLeftSideFooterTwitter" />

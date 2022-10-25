@@ -36,24 +36,24 @@ body:before {
   display: flex;
   justify-content: space-between;
   color: white;
-  
+
   a {
     color: white;
     padding: 0 20px 0px 0px;
-    &:hover{
-      color: rgb(250, 166, 166); 
+    &:hover {
+      color: rgb(250, 166, 166);
     }
-    text-decoration: none; 
-    font-size: 1.4em; 
-    font-weight: bold; 
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em; 
   }
 
-  .leftSideHeader{
+  .leftSideHeader {
     font-size: 2em;
-    text-transform: uppercase;
     letter-spacing: 0.3em;
-    padding-left: 100px; 
-    
+    padding-left: 100px;
   }
 }
 
