@@ -3,7 +3,10 @@ const TammyConfused = require("../assets/profilepics/tammy.png");
 function CommissionInfo() {
   return (
     <div className="CommissionInfo">
-      <div className="CommissionInfoHeader">Commissions Info</div>
+      <div className="CommissionInfoStatus">
+        <div className="CommissionInfoStatusPrefix">Commission Status:</div>
+        <div className="CommissionInfoStatusShowmanship blinking">Open</div>
+      </div>
       <div className="CommissionInfoSubHeader">
         Please review the pricing and terms below before sending a request to
         tamingthecarcasoan@gmail. Commission queue can be found here.

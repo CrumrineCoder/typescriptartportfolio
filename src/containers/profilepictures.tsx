@@ -194,20 +194,14 @@ function ProfilePictures() {
           personality.
         </div>
 
-        <div className="ProfilePicturesLeftSideCommissionStatusHeader">
-          Commission Status:
-        </div>
-        <div className="ProfilePicturesLeftSideCommissionStatusIndicator">
-          Open
-          
-        </div>
+        
         
 
         <div onClick={navigateCommissions} className="ProfilePicturesLeftSideCTA">Order Yours</div>
 
         <div className="ProfilePicturesLeftSideFooter">
-            <Twitter className="ProfilePicturesLeftSideFooterTwitter" />
-            <Gmail className="ProfilePicturesLeftSideFooterGmail"/>
+            <Twitter  onClick={()=> window.open("https://twitter.com/TamingOfCarcaso", "_blank")} className="ProfilePicturesLeftSideFooterTwitter" />
+            <Gmail onClick={()=> window.open("mailto:tamingthecarcasoan@gmail.com", "_blank")} className="ProfilePicturesLeftSideFooterGmail"/>
         </div>
        
       </div>
