@@ -31,6 +31,12 @@ body:before {
   /* background-image: linear-gradient(45deg, #800020 27%, #410413 93%); */
 }
 
+.inlineLink{
+  display: inline;
+  text-decoration: underline;
+  cursor: pointer; 
+}
+
 .NavBar {
   padding: 20px;
   display: flex;

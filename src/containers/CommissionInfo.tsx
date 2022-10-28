@@ -5,11 +5,11 @@ function CommissionInfo() {
     <div className="CommissionInfo">
       <div className="CommissionInfoStatus">
         <div className="CommissionInfoStatusPrefix">Commission Status:</div>
-        <div className="CommissionInfoStatusShowmanship blinking">Open</div>
+        <div className="CommissionInfoStatusShowmanship blinking" onClick={()=> window.open("https://docs.google.com/spreadsheets/d/1HSfBZtmOESgWcwhaE5_Bk29YV1lpTPfRlGNTNIi7UHo/edit?usp=sharing", "_blank")}>Open</div>
       </div>
       <div className="CommissionInfoSubHeader">
         Please review the pricing and terms below before sending a request to
-        tamingthecarcasoan@gmail. Commission queue can be found here.
+        tamingthecarcasoan@gmail. Commission queue can be found <div className="inlineLink" onClick={()=> window.open("https://docs.google.com/spreadsheets/d/1HSfBZtmOESgWcwhaE5_Bk29YV1lpTPfRlGNTNIi7UHo/edit?usp=sharing", "_blank")}>here.</div>
       </div>
       <div className="CommissionInfoApplicationContainer">
         <p className="CommissionInfoApplicationSubHeader">
