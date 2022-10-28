@@ -8,15 +8,14 @@ import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
-    <BrowserRouter>
-  
-        <Routes>
-          
-          <Route path="/" element={<ProfilePictures />} />
-          <Route path="/commissions" element={<CommissionInfo />} />
-        </Routes>
-
-    </BrowserRouter>
+    <div className="App">
+      <NavBar></NavBar>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<ProfilePictures />} />
+        <Route path="/commissions" element={<CommissionInfo />} />
+      </Routes>
+    </div>
   );
 }
 
