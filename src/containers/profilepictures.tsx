@@ -1,6 +1,6 @@
 import "../App.scss";
 import ArtBox from "../components/artBox";
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 import React, { useState } from "react";
 
@@ -33,7 +33,7 @@ const profilePicsMasterData = [
     imageName: TammyConfused,
     artTitle: "Testing",
     artDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit.",
+      "I drew this one for myself! Well, for my FF14 OC. Whenever I do a Picrew of myself, I always go for the blood-on-face option. So naturally I added Danganronpa blood in the shape of 'ITS ALSO A PERSONAL STATEMENT ABOUT THE BAND ITSELF' from American Psycho. I also felt like giving myself a Lain hair-tie in the shape of the Yellow Sign from The King in Yellow, mostly because it's neat. I thought about giving her a menacing expression, but the dissonance between a neutral/confused one and the blood is more interesting to me. In an earlier version I had the blood more rummy red, but it looked like tribal tattoos so making it pink solved that.",
     style: "discord",
     date: "11/20/2020",
   },
@@ -156,32 +156,24 @@ function ProfilePictures() {
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
   const [currentImage, setCurrentImage] = useState(TammyConfused);
 
+  const [index, setIndex] = useState(0);
+
   const imageList = profilePicsMasterData.map((items, i) => (
     <ProfilePicSelector
       imageName={items.imageName}
       changeImage={setCurrentImage}
       currentImage={currentImage}
+      index = {i}
+      setIndex={setIndex}
     ></ProfilePicSelector>
   ));
-  /*
-    const imageList = profilePicsMasterData.map(function(item, i){
-    console.log('test');
-    return <li key={i}>Test</li>
-  })
-  */
-  console.log(imageList);
+
   const navigate = useNavigate();
-  /*
-             <div className="ProfilePicturesLeftSideCommissionInfo">
-          I'm expanding to do personal commissions in my free time. I'm most interested in drawing cute and/or spooky things, and nothing overtly NSFW. 
-        </div>
 
-        */
+  const navigateCommissions = () => {
+    navigate("/commissions");
+  };
 
-        const navigateCommissions = () => {
-          // 👇️ navigate to /
-          navigate('/commissions');
-        };
   return (
     <div className="ProfilePictures">
       <div className="ProfilePicturesLeftSide">
@@ -194,16 +186,27 @@ function ProfilePictures() {
           personality.
         </div>
 
-        
-        
-
-        <div onClick={navigateCommissions} className="ProfilePicturesLeftSideCTA">Order Yours</div>
+        <div
+          onClick={navigateCommissions}
+          className="ProfilePicturesLeftSideCTA"
+        >
+          Order Yours
+        </div>
 
         <div className="ProfilePicturesLeftSideFooter">
-            <Twitter  onClick={()=> window.open("https://twitter.com/TamingOfCarcaso", "_blank")} className="ProfilePicturesLeftSideFooterTwitter" />
-            <Gmail onClick={()=> window.open("mailto:tamingthecarcasoan@gmail.com", "_blank")} className="ProfilePicturesLeftSideFooterGmail"/>
+          <Twitter
+            onClick={() =>
+              window.open("https://twitter.com/TamingOfCarcaso", "_blank")
+            }
+            className="ProfilePicturesLeftSideFooterTwitter"
+          />
+          <Gmail
+            onClick={() =>
+              window.open("mailto:tamingthecarcasoan@gmail.com", "_blank")
+            }
+            className="ProfilePicturesLeftSideFooterGmail"
+          />
         </div>
-       
       </div>
       <div className="ProfilePicturesRightSide">
         <div className="ProfilePicturesRightWhiteBackground">
@@ -211,7 +214,7 @@ function ProfilePictures() {
             imageName={currentImage}
             artTitle={"Testing"}
             artDescription={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit."
+             profilePicsMasterData[index].artDescription
             }
             style={"discord"}
             date={"11/20/2020"}
