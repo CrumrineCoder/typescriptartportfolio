@@ -5,11 +5,32 @@ function CommissionInfo() {
     <div className="CommissionInfo">
       <div className="CommissionInfoStatus">
         <div className="CommissionInfoStatusPrefix">Commission Status:</div>
-        <div className="CommissionInfoStatusShowmanship blinking" onClick={()=> window.open("https://docs.google.com/spreadsheets/d/1HSfBZtmOESgWcwhaE5_Bk29YV1lpTPfRlGNTNIi7UHo/edit?usp=sharing", "_blank")}>Open</div>
+        <div
+          className="CommissionInfoStatusShowmanship blinking"
+          onClick={() =>
+            window.open(
+              "https://docs.google.com/spreadsheets/d/1HSfBZtmOESgWcwhaE5_Bk29YV1lpTPfRlGNTNIi7UHo/edit?usp=sharing",
+              "_blank"
+            )
+          }
+        >
+          Open
+        </div>
       </div>
       <div className="CommissionInfoSubHeader">
         Please review the pricing and terms below before sending a request to
-        tamingthecarcasoan@gmail. Commission queue can be found <div className="inlineLink" onClick={()=> window.open("https://docs.google.com/spreadsheets/d/1HSfBZtmOESgWcwhaE5_Bk29YV1lpTPfRlGNTNIi7UHo/edit?usp=sharing", "_blank")}>here.</div>
+        tamingthecarcasoan@gmail. Commission queue can be found{" "}
+        <div
+          className="inlineLink"
+          onClick={() =>
+            window.open(
+              "https://docs.google.com/spreadsheets/d/1HSfBZtmOESgWcwhaE5_Bk29YV1lpTPfRlGNTNIi7UHo/edit?usp=sharing",
+              "_blank"
+            )
+          }
+        >
+          here.
+        </div>
       </div>
       <div className="CommissionInfoApplicationContainer">
         <p className="CommissionInfoApplicationSubHeader">
@@ -95,7 +116,10 @@ function CommissionInfo() {
             </li>
             <li className="CommissionInfoApplicationListItem">
               Note anything that might be difficult to see in references,
-              particularly scars
+              particularly scars. Please try to be as detailed in your request
+              and references as possible. I will not be spending forever editing
+              things in that you didn't include in your initial request or in
+              your reference. Make sure your reference is accurate.
             </li>
             <li className="CommissionInfoApplicationListItem">
               In-game lighting in screenshots can alter the colour of everything
@@ -235,7 +259,9 @@ function CommissionInfo() {
           <li className="CommissionInfoApplicationBody">
             Mild demonstration of violence (blood, scrapes)
           </li>
-          <li className="CommissionInfoApplicationBody">Suggestive NSFW </li>
+          <li className="CommissionInfoApplicationBody">
+            Slight suggestiveness
+          </li>
           <li className="CommissionInfoApplicationBody">Fantasy & Sci-Fi</li>
           <li className="CommissionInfoApplicationBody">
             Detailed props and backgrounds
@@ -288,7 +314,8 @@ function CommissionInfo() {
         backgrounds, paintings, Carcaso & Space Station 13 themes, etc.
       </p>
       <p className="CommissionInfoApplicationBody">
-        Thank you for your interest!
+        Thank you for your interest and taking the time to read my TOS, it's
+        greatly appreciated!
       </p>
     </div>
   );
