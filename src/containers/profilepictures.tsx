@@ -41,15 +41,15 @@ const profilePicsMasterData = [
     imageName: AsheSaris,
     artTitle: "Ashe",
     artDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit.",
+      "This drawing was done for my friend, Ashe! They're a big fan of those 'Fish Fear Me, Women Love me' jokes, so one of the first things I did was design a hat for their character. I was also focused on learning my style with this one with experimenting with a hatch shading style, as well as using different ways of drawing the face like not using a different color to show a tooth. I also had a few variations of this drawing where I styled the hair differently, and I tried different pens for the outline. However, I think in my experimenting with my art style I didn't put as much time into representing Ashe's personality like their ironic over-coolness, or goblin energy. I would probably do it a bit more animated and colorful if I were to do it again with an active pose, or more focused on their interests like Touhou.",
     style: "discord",
     date: "8/18/2021",
   },
   {
     imageName: AyaFae,
-    artTitle: "Testing",
+    artTitle: "Aya",
     artDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit.",
+      "This is a drawing for my friend, Aya! I wanted to show their outwardly cute personality and perchance to wear punk clothing, but if I were to do this again I'd probably do a less flat angle. I was experimenting with using more sketchy lines and having them show through other layers, which I liked here. I would've drawn the horns differently though, and I've learned a lot about shading since this one. I did enjoy designing their outfit though, and I would've probably done bust-up instead of headshot for this one in the future to show more of it. Lastly I probably would've had their expression and pose be closer to adorably confused.",
     style: "discord",
     date: "05/02/2021",
   } /*
