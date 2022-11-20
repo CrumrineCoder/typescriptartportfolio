@@ -63,9 +63,9 @@ const profilePicsMasterData = [
   }, */,
   {
     imageName: Catgirl,
-    artTitle: "Testing",
+    artTitle: "Yuki",
     artDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit.",
+      "This was a commission for a friend's friend! I spent a long time on this one in both planning and drawing, since I've never drawn anything suggestive before. The pose idea itself came pretty quickly, and a friend helped to review the anatomy. I gathered a lot of references for shading the tail, hair and catears, and latex which helped with unrelated parts of my style like the face markings and eyes. Despite this not being my field of expertise, I'm proud of the piece and what I learned. I want to explore more when I can.",
     style: "discord",
     date: "10/19/2021",
   },
