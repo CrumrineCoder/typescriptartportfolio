@@ -81,7 +81,7 @@ const profilePicsMasterData = [
     imageName: julian2,
     artTitle: "Julian - Outrunner",
     artDescription:
-      "This was a quick drawing for my friend, Julian! They're really into the Outrunner aesthetic, so I studied a bit of the aesthetic and threw this together. I really enjoy studying a different style and trying to build mine from it; the two color lighting and hard shading was really fun to work with. I'd like to build on this outrunner style but much cleaner.",
+      "This was a quick drawing for my friend, Julian! They're really into the Outrunner and the rebel aesthetic, so I studied a bit of the aesthetic and threw this together. I like putting on music that a friend likes to get into their head for mood inspiration, so I had a lot of Drive's OST on. I really enjoy studying a different style and trying to build mine from it; the two color lighting and hard shading was really fun to work with. I'd like to build on this outrunner style but much cleaner.",
     style: "discord",
     date: "06/11/2021",
   },
@@ -89,7 +89,7 @@ const profilePicsMasterData = [
     imageName: julian,
     artTitle: "Julian - Sin City",
     artDescription:
-      "This was another drawing for my friend, Julian! We talked for a while and got on the subject of the Sin City aesthetic, and eventually this came out. I really like monotone shading for the ability to highlight pieces of the art; I might apply this to Carcaso (my fantasy setting I do drawing for) with being able to highlight the theme of Gold in it. I also like being able to highlight pure white here, like on his glasses. For this style, I probably should've cleaned up the lines more, and chosen a slightly different head pose and expression.",
+      "This was another drawing for my friend, Julian! We talked for a while and got on the subject of the Sin City aesthetic, and eventually this came out. They always enjoy presenting themselves as wealthy and professional, which is how we landed on this style and pose inspiration. I really like monotone shading for the ability to highlight pieces of the art; I might apply this to Carcaso (my fantasy setting I do drawing for) with being able to highlight the theme of Gold in it. I also like being able to highlight pure white here, like on his glasses. For this style, I probably should've cleaned up the lines more, and chosen a slightly different head pose and expression.",
     style: "discord",
     date: "05/09/2021",
   },
