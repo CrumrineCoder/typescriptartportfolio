@@ -71,7 +71,7 @@ const profilePicsMasterData = [
   },
   {
     imageName: chiprofilepic,
-    artTitle: "Chi",
+    artTitle: "Chihaya",
     artDescription:
       "This was a drawning done for my friend, Chi! They asked for a yakuza aesthetic, so I filled in with a metal bat prop, the suit, and an oni mask to fit with their other aesthetic tastes. If I were to do this again, I might make her more menacing with an advanced pose with the bat, or more smug using different props like dice falling through her fingers. I'm happy with the shading and she looks intimidating enough, it's just I would commit further in direction more than another now that I know more.",
     style: "discord",
@@ -79,17 +79,17 @@ const profilePicsMasterData = [
   },
   {
     imageName: julian2,
-    artTitle: "Testing",
+    artTitle: "Julian - Outrunner",
     artDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit.",
+      "This was a quick drawing for my friend, Julian! They're really into the Outrunner aesthetic, so I studied a bit of the aesthetic and threw this together. I really enjoy studying a different style and trying to build mine from it; the two color lighting and hard shading was really fun to work with. I'd like to build on this outrunner style but much cleaner.",
     style: "discord",
     date: "06/11/2021",
   },
   {
     imageName: julian,
-    artTitle: "Testing",
+    artTitle: "Julian - Sin City",
     artDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit.",
+      "This was another drawing for my friend, Julian! We talked for a while and got on the subject of the Sin City aesthetic, and eventually this came out. I really like monotone shading for the ability to highlight pieces of the art; I might apply this to Carcaso (my fantasy setting I do drawing for) with being able to highlight the theme of Gold in it. I also like being able to highlight pure white here, like on his glasses. For this style, I probably should've cleaned up the lines more, and chosen a slightly different head pose and expression.",
     style: "discord",
     date: "05/09/2021",
   },
