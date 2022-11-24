@@ -89,7 +89,7 @@ const profilePicsMasterData = [
     imageName: julian,
     artTitle: "Julian - Sin City",
     artDescription:
-      "This was another drawing for my friend, Julian! We talked for a while and got on the subject of the Sin City aesthetic, and eventually this came out. They always enjoy presenting themselves as wealthy and professional, which is how we landed on this style and pose inspiration. I really like monotone shading for the ability to highlight pieces of the art; I might apply this to Carcaso (my fantasy setting I do drawing for) with being able to highlight the theme of Gold in it. I also like being able to highlight pure white here, like on his glasses. For this style, I probably should've cleaned up the lines more, and chosen a slightly different head pose and expression.",
+      "This was a commision for my friend, Julian! We talked for a while and got on the subject of the Sin City aesthetic, and eventually this came out. They always enjoy presenting themselves as wealthy and professional, which is how we landed on this style and pose inspiration. I really like monotone shading for the ability to highlight pieces of the art; I might apply this to Carcaso (my fantasy setting I do drawing for) with being able to highlight the theme of Gold in it. I also like being able to highlight pure white here, like on his glasses. For this style, I probably should've cleaned up the lines more, and chosen a slightly different head pose and expression.",
     style: "discord",
     date: "05/09/2021",
   },
@@ -97,7 +97,7 @@ const profilePicsMasterData = [
     imageName: lala1,
     artTitle: "Chimi",
     artDescription:
-      "This drawing was for my friend, Chimi! I did it alongside the Chihaya one and wanted to nail a sense of superiority which I think came across from the smug expression. I'm very happy with how the Japanese feel came across with the umbrella, tree, attire, and color choice. The lines also came out really nice on the face, but in the future I'll do less soft lighting on the skin. The hair outline I'd also do differently with a harsher outline, and the horns I'd also style differently with a more clear texture. I didn't know Chimi as well since this was done through Chihaya, but I think I still got across their personality; their only requested change was for me to make the glasses white instead of black.",
+      "This commission was for my friend, Chimi! I did it alongside the Chihaya one and wanted to nail a sense of superiority which I think came across from the smug expression. I'm very happy with how the Japanese feel came across with the umbrella, tree, attire, and color choice. The lines also came out really nice on the face, but in the future I'll do less soft lighting on the skin. The hair outline I'd also do differently with a harsher outline, and the horns I'd also style differently with a more clear texture. I didn't know Chimi as well since Chihaya commissioned me, but I think I still got across their personality; their only requested change was for me to make the glasses white instead of black. I want to do more profile pictures with backgrounds, even if they're simple like this. I always enjoy adding details when I can.",
     style: "discord",
     date: "05/10/2021",
   } /*
@@ -127,25 +127,25 @@ const profilePicsMasterData = [
   }, */,
   {
     imageName: neeko,
-    artTitle: "Testing",
+    artTitle: "Neko",
     artDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit.",
+      "This was a drawing for my friend Alex's birthday! They had a profile pic they had made themselves which was of a MS paint cat smiling which was pretty simple but charming. I wanted to expand on it for them; I started by making the cat realistic and adding parts from their favorite pokemon to it, Eevee. I also added a ribbon because of their online handle and to help tie together the design of the cat. They make music and often times we hung out till the middle of the night as they have an affinity for staying up late, so I added those elements too. I enjoyed making this abstract drawing and it made them and I pretty happy with how it came out. I want to make more drawings like this that aren't necessarilly just someone making a cute expression at the viewer with a flat perspective.",
     style: "discord",
     date: "02/17/2021",
   },
   {
     imageName: willow,
-    artTitle: "Testing",
+    artTitle: "Willow",
     artDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit.",
+      "This was a commission for my friend Willow! This one came across really well; the colors in her eyes really pop, the hair shading was really fun to do although I think I could've done the ponytail a bit better, and the horn sading looks really nice. I really wanted to get across the innocent cuteness of my friend, and they really liked headpats so it was easy to put together. The only thing is it that the cat sweater isn't very clear, but I'm not sure how I would be able to show it more without changing the entire pose and drawing. I am not sure what I'd do differently about this one now actually. The addition of a second actor to do the headpat helped a lot I think.",
     style: "discord",
     date: "09/03/2021",
   },
   {
     imageName: tami,
-    artTitle: "Testing",
+    artTitle: "Tami",
     artDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit.",
+      "This was a quick sketch of my WoL back when I first started playing. I was messing around with unrealistic proportions for the sake of style, eg. the neck's thickness or lack thereof, and I don't think that's really my thing. Despite stuff I'd change style wise, I think this came out cute still and was a fun attempt at drawing something fast.",
     style: "discord",
     date: "02/04/2021",
   },
