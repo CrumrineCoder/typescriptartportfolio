@@ -95,9 +95,9 @@ const profilePicsMasterData = [
   },
   {
     imageName: lala1,
-    artTitle: "Testing",
+    artTitle: "Chimi",
     artDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper luctus mi, ut ornare leo suscipit non. Suspendisse fermentum tellus eget nulla blandit, sit amet pulvinar urna malesuada. Cras ac purus et tellus mollis sodales eget vel justo. Cras posuere tincidunt luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sagittis mi et dapibus laoreet. Integer placerat lacus fringilla, suscipit dolor nec, porttitor leo. Nam in lobortis nisl. Aliquam erat volutpat. Praesent dapibus porttitor libero et suscipit.",
+      "This drawing was for my friend, Chimi! I did it alongside the Chihaya one and wanted to nail a sense of superiority which I think came across from the smug expression. I'm very happy with how the Japanese feel came across with the umbrella, tree, attire, and color choice. The lines also came out really nice on the face, but in the future I'll do less soft lighting on the skin. The hair outline I'd also do differently with a harsher outline, and the horns I'd also style differently with a more clear texture. I didn't know Chimi as well since this was done through Chihaya, but I think I still got across their personality; their only requested change was for me to make the glasses white instead of black.",
     style: "discord",
     date: "05/10/2021",
   } /*
