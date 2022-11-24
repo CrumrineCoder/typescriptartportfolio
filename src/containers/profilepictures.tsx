@@ -219,7 +219,7 @@ function ProfilePictures() {
             style={profilePicsMasterData[index].style}
             date={profilePicsMasterData[index].date}
           ></ArtBox>
-
+          <p className="ProfilePicturesRightSideText">Click on the Image Above to View Full Screen!</p>
           <div className="ProfilePicSelectors">{imageList}</div>
         </div>
       </div>
