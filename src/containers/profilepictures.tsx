@@ -129,7 +129,7 @@ const profilePicsMasterData = [
     imageName: neeko,
     artTitle: "Neko",
     artDescription:
-      "This was a drawing for my friend Alex's birthday! They had a profile pic they had made themselves which was of a MS paint cat smiling which was pretty simple but charming. I wanted to expand on it for them; I started by making the cat realistic and adding parts from their favorite pokemon to it, Eevee. I also added a ribbon because of their online handle and to help tie together the design of the cat. They make music and often times we hung out till the middle of the night as they have an affinity for staying up late, so I added those elements too. I enjoyed making this abstract drawing and it made them and I pretty happy with how it came out. I want to make more drawings like this that aren't necessarilly just someone making a cute expression at the viewer with a flat perspective.",
+      "This was a drawing for my friend Alex's birthday! They had a profile pic they had made themselves which was a MS paint cat smiling which was pretty simple but charming. I wanted to expand on it for them; I started by making the cat realistic and adding parts from their favorite pokemon to it, Eevee. I also added a ribbon because of their online handle and to help tie together the design of the cat. They make music and often times we hung out till the middle of the night as they have an affinity for staying up late, so I added those elements too. I enjoyed making this abstract drawing and it made them and I pretty happy with how it came out. I want to make more drawings like this that aren't necessarily just someone making a cute expression at the viewer with a flat perspective.",
     style: "discord",
     date: "02/17/2021",
   },
@@ -137,7 +137,7 @@ const profilePicsMasterData = [
     imageName: willow,
     artTitle: "Willow",
     artDescription:
-      "This was a commission for my friend Willow! This one came across really well; the colors in her eyes really pop, the hair shading was really fun to do although I think I could've done the ponytail a bit better, and the horn sading looks really nice. I really wanted to get across the innocent cuteness of my friend, and they really liked headpats so it was easy to put together. The only thing is it that the cat sweater isn't very clear, but I'm not sure how I would be able to show it more without changing the entire pose and drawing. I am not sure what I'd do differently about this one now actually. The addition of a second actor to do the headpat helped a lot I think.",
+      "This was a commission for my friend Willow! This one came across really well; the colors in her eyes really pop, the hair shading was really fun to do although I think I could've done the ponytail a bit better, and the horn shading looks really nice. I really wanted to get across the innocent cuteness of my friend, and they really liked headpats so it was easy to put together. The only problem I have is the cat sweater isn't very clear, but I'm not sure how I would be able to show it more without changing the entire pose and drawing, which I'm a big fan of how it turned out. The addition of a second actor to do the headpat helped a lot I think.",
     style: "discord",
     date: "09/03/2021",
   },
