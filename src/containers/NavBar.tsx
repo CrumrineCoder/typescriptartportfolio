@@ -9,6 +9,7 @@ function NavBar() {
         Taming
       </Link>
       <div className="rightSideHeader">
+        <Link to="/gallery">Gallery</Link>
         <Link to="/commissions">Commissions</Link>
       </div>
     </div>
