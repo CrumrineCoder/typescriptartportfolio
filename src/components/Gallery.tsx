@@ -17,34 +17,63 @@ function Gallery() {
     <div className="Gallery">
       <div className="GalleryImagesContainer">
         <Zoom>
-          <img className="GalleryImage" src={TammyPixelArt}></img>
+          <div className="GalleryItem">
+            <img className="GalleryImage" src={TammyPixelArt} />
+          </div>
         </Zoom>
+
         <Zoom>
-          <img className="GalleryImage" src={Malacruz}></img>
+          <div className="GalleryItem">
+            <img className="GalleryImage" src={Malacruz} />
+          </div>
         </Zoom>
+
         <Zoom>
-          <img className="GalleryImage" src={Chriskua}></img>
+          <div className="GalleryItem">
+            <img className="GalleryImage" src={Chriskua} />
+          </div>
         </Zoom>
+
         <Zoom>
-          <img className="GalleryImage" src={Dandelion}></img>
+          <div className="GalleryItem">
+            <img className="GalleryImage" src={Dandelion} />
+          </div>
         </Zoom>
+
         <Zoom>
-          <img className="GalleryImage" src={Jinxie}></img>
+          <div className="GalleryItem">
+            <img className="GalleryImage" src={Jinxie} />
+          </div>
         </Zoom>
+
         <Zoom>
-          <img className="GalleryImage" src={Kris}></img>
+          <div className="GalleryItem">
+            <img className="GalleryImage" src={Kris} />
+          </div>
         </Zoom>
+
         <Zoom>
-          <img className="GalleryImage" src={Peter}></img>
+          <div className="GalleryItem">
+            <img className="GalleryImage" src={Peter} />
+          </div>
         </Zoom>
+
         <Zoom>
-          <img className="GalleryImage" src={Rat}></img>
+          <div className="GalleryItem">
+            <img className="GalleryImage" src={Rat} />
+          </div>
         </Zoom>
+
         <Zoom>
-          <img className="GalleryImage" src={Asa}></img>
+          <div className="GalleryItem">
+            <img className="GalleryImage" src={Asa} />
+          </div>
         </Zoom>
+
         <Zoom>
-          <img className="GalleryImage" src={Vampire}></img>
+          <div className="GalleryItem">
+            <img className="GalleryImage" src={Vampire} />
+          </div>
         </Zoom>
       </div>
     </div>

@@ -29,6 +29,7 @@ const tami = require("../assets/profilepics/tami.png");
 const willow = require("../assets/profilepics/willowheadpat.jpeg");
 const moth = require("../assets/profilepics/moth.png");
 const Castro = require("../assets/profilepics/Castro.png");
+const Irvan = require("../assets/profilepics/Irvan.png");
 
 const profilePicsMasterData = [
   {
@@ -43,9 +44,17 @@ const profilePicsMasterData = [
     imageName: Castro,
     artTitle: "Castro",
     artDescription:
-      "Castro was a character in one of my D&D campaigns I played in - he did a lot of fleshcrafting on his own body, but was still usually a sweet boy. I wanted to get across that kinda dicthomy by giving him two-faces, but nothing so obvious that it'd be an express motif of his. I thought I displayed a sorta interesting use of magic in just one image here - I would've like to spend more time rendering the blood and experimenting with that, but the first session was soon approaching so I didn't want to spend forever on this one piece.",
+      "Castro was a character in one of my D&D campaigns I played in - he did a lot of fleshcrafting on his own body, but was still usually a sweet boy. I wanted to get across that kinda dicthomy by giving him two-faces, but nothing so obvious that it'd be an express motif of his. I thought I displayed a sorta interesting use of magic in just one image here - I would've like to spend more time rendering the blood and adjusting the arrangement to focus on it. It's always going to be a more boring arrangement when I'm figuring out the design of the character as I draw. Maybe I should adjust my workflow to sketch an outfit before doing these kinda pieces. I felt like the gelatin-like skin texture came out nicely; I don't usually use paint when drawing so this was a fun experiment.",
     style: "discord",
     date: "12/02/2022",
+  },
+  {
+    imageName: Irvan,
+    artTitle: "Irvan",
+    artDescription:
+      "Irvan is my Space Station 13 OC! I always loved goofing off as him in Botany, but I also tried to keep a chill vibe as I lubed up the hallways and watched with delight as people slipped out airlocks. It's one of my favourite games, and I felt like drawing something small for it. I'm starting to develop a style here where if the eyes aren't important, I draw them Mii-like, which I really like. The whites in eyes always sorta distract me so I don't like drawing them when I want the focus to be elsewhere. I really liked the colorization in this one; I'm always happy when I balance them with a wide palette. I'd say this image doesn't really work downscaled since there's no clear sillehoute so it's not a great avatar pic, but it's pleasant when viewed at normal resolution. I probably should've made it landscape in that case, but I still do like the arrangement of everything.",
+    style: "discord",
+    date: "11/08/2022",
   },
   {
     imageName: TammyConfused,

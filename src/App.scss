@@ -240,11 +240,11 @@ body:before {
     position: relative;
     .ProfilePicturesRightSideText {
       color: black;
-      text-align: center; 
+      text-align: center;
       margin: 0px;
-      margin-top: -10px;  
+      margin-top: -10px;
       padding: 0px;
-      padding-bottom: 10px;  
+      padding-bottom: 10px;
     }
     .ProfilePicturesRightWhiteBackground {
       background-color: white;
@@ -308,7 +308,7 @@ body:before {
           .profilePicSelectorImage {
             /* width: 50px; 
   height: 50px; */
-      
+
             width: 100%;
             height: 100%;
             border-radius: 2px;
@@ -325,16 +325,50 @@ body:before {
   }
 }
 
-.Gallery{
-  .GalleryImagesContainer{
-    margin: 50px; 
-    .GalleryImage{
+.Gallery {
+  width: 100%;
+  .GalleryImagesContainer {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 100%;
+    align-items: center; 
+    .GalleryItem {
+      max-height: 50%;
+      margin-bottom: 20px; 
       background-color: rgba(255, 255, 255, 0.307);
-      border: 4px solid white; 
-      border-radius: 10px; 
-      &:hover{
-        background-color: white; 
-        cursor: pointer; 
+      border: 4px solid white;
+      border-radius: 10px;
+      position: relative; 
+      padding: 20px; 
+      box-shadow: 0px 2px 5px rgba(0,0,0,.2);
+      &:hover {
+        background-color: white;
+        cursor: pointer;
+        /*
+        &:after{
+          position: absolute; 
+          content: '';
+          display: block;
+          top: 0;
+          left: 0; 
+          right: 0; 
+          bottom: 0; 
+          background: rgba(255, 255, 255, 0.15); 
+        }*/
+      }
+      .GalleryImage {
+       
+        max-width: 100%; 
+        max-height: 100%;
+        object-fit: contain; 
+        height: auto; 
+        display: block; 
+       
+        
+        
       }
     }
   }
@@ -370,8 +404,6 @@ body:before {
       user-select: none;
       -webkit-user-select: none;
       touch-action: manipulation;
-
-      
     }
 
     .blinking {
@@ -535,8 +567,8 @@ body:before {
     flex-grow: 1;
     .CommissionInfoPricingImage {
       max-width: 30vw;
-      border: 4px solid white; 
-      border-radius: 3px; 
+      border: 4px solid white;
+      border-radius: 3px;
     }
   }
   .CommissionInfoPricingRightContainer {
