@@ -325,6 +325,21 @@ body:before {
   }
 }
 
+.Gallery{
+  .GalleryImagesContainer{
+    margin: 50px; 
+    .GalleryImage{
+      background-color: rgba(255, 255, 255, 0.307);
+      border: 4px solid white; 
+      border-radius: 10px; 
+      &:hover{
+        background-color: white; 
+        cursor: pointer; 
+      }
+    }
+  }
+}
+
 .CommissionInfo {
   width: 66vw;
   margin: 50px auto;
