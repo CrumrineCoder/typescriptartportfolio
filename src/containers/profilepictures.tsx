@@ -27,8 +27,26 @@ const lala4 = require("../assets/profilepics/lalapacksquat.jpeg");
 const neeko = require("../assets/profilepics/neeko.jpeg");
 const tami = require("../assets/profilepics/tami.png");
 const willow = require("../assets/profilepics/willowheadpat.jpeg");
+const moth = require("../assets/profilepics/moth.png");
+const Castro = require("../assets/profilepics/Castro.png");
 
 const profilePicsMasterData = [
+  {
+    imageName: moth,
+    artTitle: "Christmas Moth",
+    artDescription:
+      "Moths have such a great aesthetic; I love their nobleness with their fur collars, wings, and crown-like antennae. I don't often draw stuff for myself, so I wanted to make myself a Christmas profile picture for Discord that went with the custom gif banners they were letting users enable during the event. I really enjoyed working with colours on this one; there's a lot of them but I feel like it all melds together well with the black fur & white skin. I'd like to develop my line thickness styling though, some parts aren't as stylized as I'd like. The design of the Moth I felt came out really nicely from its composition to expression to the outfit.",
+    style: "discord",
+    date: "12/12/2022",
+  },
+  {
+    imageName: Castro,
+    artTitle: "Castro",
+    artDescription:
+      "Castro was a character in one of my D&D campaigns I played in - he did a lot of fleshcrafting on his own body, but was still usually a sweet boy. I wanted to get across that kinda dicthomy by giving him two-faces, but nothing so obvious that it'd be an express motif of his. I thought I displayed a sorta interesting use of magic in just one image here - I would've like to spend more time rendering the blood and experimenting with that, but the first session was soon approaching so I didn't want to spend forever on this one piece.",
+    style: "discord",
+    date: "12/02/2022",
+  },
   {
     imageName: TammyConfused,
     artTitle: "Taming",
@@ -43,7 +61,7 @@ const profilePicsMasterData = [
     artDescription:
       "This drawing was done for my friend, Ashe! They're a big fan of ironic 'Fish Fear Me, Women Love me' jokes, so one of the first things I did was design a trucker hat for their character. I actually ended up buying one myself after making this. I was also focused on learning my style with this one with experimenting with a hatch shading style, as well as using different ways of drawing the face like not using a different color to show a tooth. I also had a few variations of this drawing where I styled the hair differently, and I tried different pens for the outline. However, I think in my experimenting with my art style I didn't put as much time into representing Ashe's personality like their ironic over-coolness, or goblin energy. I would probably do it a bit more animated and colorful if I were to do it again with an active pose, or more focused on their interests like Touhou.",
     style: "discord",
-    date: "8/18/2021",
+    date: "08/18/2021",
   },
   {
     imageName: AyaFae,
@@ -65,7 +83,7 @@ const profilePicsMasterData = [
     imageName: Catgirl,
     artTitle: "Yuki",
     artDescription:
-      "This was a commission for a friend's friend! I spent a long time on this one in both planning and drawing, since I've never drawn anything suggestive before. The pose idea itself came pretty quickly, and a friend helped to review the anatomy. I gathered a lot of references for shading the tail, hair and catears, and latex which helped with unrelated parts of my style like the face markings and eyes. Despite this not being my field of expertise, I'm proud of the piece and what I learned. I want to explore more when I can.",
+      "This was a commission for a friend's friend! I spent a long time on this one in both planning and drawing, since I've never drawn anything suggestive before. The pose idea itself came pretty quickly, and a friend helped to review the anatomy. I gathered a lot of references for shading the tail, latex, hair and cat ears which helped with unrelated parts of my style like the face markings and eyes. Despite this not being my field of expertise, I'm proud of the piece and what I learned. I want to explore more when I can.",
     style: "discord",
     date: "10/19/2021",
   },
@@ -73,7 +91,7 @@ const profilePicsMasterData = [
     imageName: chiprofilepic,
     artTitle: "Chihaya",
     artDescription:
-      "This was a drawning done for my friend, Chi! They asked for a yakuza aesthetic, so I filled in with a metal bat prop, the suit, and an oni mask to fit with their other aesthetic tastes. If I were to do this again, I might make her more menacing with an advanced pose with the bat, or more smug using different props like dice falling through her fingers. I'm happy with the shading and she looks intimidating enough, it's just I would commit further in direction more than another now that I know more.",
+      "This was a drawning done for my friend, Chi! They asked for a yakuza aesthetic, so I filled in with a metal bat prop, the suit, and an oni mask to fit with their other aesthetic tastes. If I were to do this again, I might make her more menacing with an advanced pose with the bat, or more smug using different props like dice falling through her fingers. I'm happy with the shading and she looks intimidating enough, it's just I would commit more next time.",
     style: "discord",
     date: "05/03/2021",
   },
@@ -154,7 +172,7 @@ const profilePicsMasterData = [
 function ProfilePictures() {
   // <CarcasoPortfolioBox imageName="test.jpg"></CarcasoPortfolioBox>
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
-  const [currentImage, setCurrentImage] = useState(TammyConfused);
+  const [currentImage, setCurrentImage] = useState(moth);
 
   const [index, setIndex] = useState(0);
 
@@ -190,7 +208,7 @@ function ProfilePictures() {
           onClick={navigateCommissions}
           className="ProfilePicturesLeftSideCTA"
         >
-          Order Yours
+          Commissions Open
         </div>
 
         <div className="ProfilePicturesLeftSideFooter">

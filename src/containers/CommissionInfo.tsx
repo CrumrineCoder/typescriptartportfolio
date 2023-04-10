@@ -1,4 +1,5 @@
 const TammyConfused = require("../assets/profilepics/tammy.png");
+const moth = require("../assets/profilepics/moth.png");
 
 function CommissionInfo() {
   return (
@@ -64,43 +65,24 @@ function CommissionInfo() {
           </p>
 
           <p className="CommissionInfoApplicationBodyItalics">
-            Please include the following details in your commission:
+            Please include the following written details in your commission:
           </p>
           <ul className="CommissionInfoApplicationListContainer">
             <li className="CommissionInfoApplicationListItem">
               Commission Type
             </li>
             <li className="CommissionInfoApplicationListItem">
-              Character Name
+              A concise summary of personality and desired expression. You don't
+              have to write more than 1-2 sentences, but I work best by
+              understanding what your end goal is and working backwards. It's
+              perfectly okay if you think a neutral expression would be best!
             </li>
-            <li className="CommissionInfoApplicationListItem">
-              Age (or the human equivalent for elves and elder races). Broad
-              estimates are fine eg 20s, 30s
-            </li>
-            <li className="CommissionInfoApplicationListItem">
-              Class if it's relevant to appearance or vibe (if fantasy)
-            </li>
-            <li className="CommissionInfoApplicationListItem">
-              A concise summary of personality and desired expression. For me
-              this is one of the most important things for deciding if and how
-              to portray a character! A sentence or two is all that's needed.
-              It's perfectly ok to ask for a neutral expression.
-            </li>
-            <li className="CommissionInfoApplicationListItem">
-              You can add a little backstory if it helps you frame the mood, but
-              no big paragraphs of text please!
-            </li>
-            <li className="CommissionInfoApplicationListItem">Skin colour</li>
-            <li className="CommissionInfoApplicationListItem">Eye colour</li>
-            <li className="CommissionInfoApplicationListItem">
-              Hair colour and style
-            </li>
-            <li className="CommissionInfoApplicationListItem">Accessories</li>
-            <li className="CommissionInfoApplicationListItem">Scars</li>
-            <li className="CommissionInfoApplicationListItem">Outfit</li>
             <li className="CommissionInfoApplicationListItem">
               Pose (only for bigger pieces and illustrations). This can just be
               a general idea if no specific pose is in mind.
+            </li>
+            <li className="CommissionInfoApplicationListItem">
+              Character Name
             </li>
           </ul>
           <p className="CommissionInfoApplicationBodyItalics">
@@ -109,29 +91,30 @@ function CommissionInfo() {
           <ul className="CommissionInfoApplicationListContainer">
             <li className="CommissionInfoApplicationListItem">
               These might include previous art you've commissioned, Pinterest
-              images, screenshots of characters in-game, WoW dressing room
-              links, or other art that inspired you (but don't ever use someone
-              else's OC design as your own! It's a huge no-no to copy someone's
-              character)
+              images, screenshots of characters in-game, Final Fantasy 14
+              gposes, or other art that inspired you (but don't ever use someone
+              else's OC design as your own without express permission!)
             </li>
             <li className="CommissionInfoApplicationListItem">
               Note anything that might be difficult to see in references,
-              particularly scars. Please try to be as detailed in your request
-              and references as possible. I will not be spending forever editing
-              things in that you didn't include in your initial request or in
-              your reference. Make sure your reference is accurate.
+              particularly scars, accessories, and the outfit you desire. Please
+              try to be as detailed in your request and references as possible.
+              I will not be spending forever editing things in that you didn't
+              include in your initial request or in your reference. Make sure
+              your reference is accurate.
             </li>
             <li className="CommissionInfoApplicationListItem">
               In-game lighting in screenshots can alter the colour of everything
-              drastically between different locations. Give your artist
-              references with neutral lighting, or provide colour swatches for
-              each feature
+              drastically between different locations. Give me references with
+              neutral lighting, or provide colour swatches for each feature
+              (Skin, eye, and hair colour).
             </li>
             <li className="CommissionInfoApplicationListItem">
               Faceclaims are extremely useful. These are photos of real people
               who resemble your character. The final art won't be exactly like
               the reference but gives an invaluable stepping off point in
-              knowing how you visualize your character
+              knowing how you visualize your character. Try to give different
+              angles of the hair you're using if you can.
             </li>
             <li className="CommissionInfoApplicationListItem">
               Don't worry if you have no art yet or can't find the perfect
@@ -146,11 +129,6 @@ function CommissionInfo() {
               and composition
             </li>
             <li className="CommissionInfoApplicationListItem">
-              For accurate colours (eg for eyes or skin) you can use hex colour
-              codes, Pantone swatches, even screenshot a nice colour you found
-              in Google
-            </li>
-            <li className="CommissionInfoApplicationListItem">
               One of the best ways people have sent me refs is via Google drive
               or in Google docs. Put all the images in one character folder to
               make it easy to navigate and there's the option to add notes to
@@ -162,7 +140,8 @@ function CommissionInfo() {
             The concept of the artwork will be discussed, as well as the price
             quote. Upon confirmation of price, I will send you an invoice via
             Paypal. All payment is done 100% upfront. I will NOT send an invoice
-            unless you've agreed with the price.
+            unless you've agreed with the price. I will cancel the Invoice if I
+            don’t hear back within 48 hours unless otherwise given notice.
           </li>
           <li className="CommissionInfoApplicationBody">
             A thumbnail sketch(es) based on the client's description will be
@@ -175,13 +154,6 @@ function CommissionInfo() {
             carefully and let me know if I make any mistakes during the process.
             I will only accept up to 3 revisions once this sketch is made
             (unless it was an error on my part!).
-          </li>
-          <li className="CommissionInfoApplicationBody">
-            I will send you an Invoice through PayPal mail once the sketch is
-            approved. I will cancel the Invoice if I don’t hear back within 48
-            hours unless otherwise given notice. After this, I will provide at
-            least 2 - 3 WIP to let you see each step (sketch, lines, colours)
-            and you can request for minor changes.
           </li>
           <li className="CommissionInfoApplicationBody">
             After the illustration is done, I will send you the thumbnail for
@@ -208,10 +180,10 @@ function CommissionInfo() {
             ask me first and will incur an additional cost.
           </li>
           <li className="CommissionInfoApplicationBody">
-            Payment will be done after the Sketch phase in full, which will
-            account for paypal tax (4.4%+0.30). If you wish to cancel your
-            commission and get a refund, contact me as soon as possible. I do
-            not refund once I’ve started the sketch.
+            Payment will be done in full after confirmation to start work on the
+            commission, which will account for paypal tax (4.4%+0.30). If you
+            wish to cancel your commission and get a refund, contact me as soon
+            as possible. I do not refund once I’ve started the sketch.
           </li>
           <li className="CommissionInfoApplicationBody">
             I DO NOT accept any kind of cryptocurrency as payment. I only accept
@@ -262,7 +234,9 @@ function CommissionInfo() {
           <li className="CommissionInfoApplicationBody">
             Slight suggestiveness
           </li>
-          <li className="CommissionInfoApplicationBody">Fantasy & Sci-Fi</li>
+          <li className="CommissionInfoApplicationBody">
+            Fantasy & Sci-Fi
+          </li>
           <li className="CommissionInfoApplicationBody">
             Detailed props and backgrounds
           </li>
@@ -271,14 +245,18 @@ function CommissionInfo() {
           <p className="CommissionInfoApplicationListSubHeader">
             I will not draw:
           </p>
-          <li className="CommissionInfoApplicationBody">Furry/Anthro</li>
+          <li className="CommissionInfoApplicationBody">
+            Furry/Anthro
+          </li>
           <li className="CommissionInfoApplicationBody">
             Porn/Fetishes/Explicit NSFW
           </li>
           <li className="CommissionInfoApplicationBody">
             Realism & complex Mecha / High Tech
           </li>
-          <li className="CommissionInfoApplicationBody">Extreme Gore </li>
+          <li className="CommissionInfoApplicationBody">
+            Extreme Gore 
+          </li>
           <li className="CommissionInfoApplicationBody">
             Related in any way to hate or just weird shit you wouldn’t tell your
             mother about.
@@ -293,7 +271,7 @@ function CommissionInfo() {
       <div className="CommissionInfoHeader">COMMISSION PRICING</div>
       <div className="CommissionInfoPricingContainer">
         <div className="CommissionInfoPricingLeftImageContainer">
-          <img src={TammyConfused} className="CommissionInfoPricingImage"></img>
+          <img src={moth} className="CommissionInfoPricingImage"></img>
         </div>
         <div className="CommissionInfoPricingRightContainer">
           <p className="CommissionInfoPricingHeader">PROFILE PICTURES</p>
@@ -311,7 +289,7 @@ function CommissionInfo() {
       </div>
       <p className="CommissionInfoApplicationBody">
         Pricing options to be expanded in the near future to include complex
-        backgrounds, paintings, Carcaso & Space Station 13 themes, etc.
+        backgrounds, paintings, Pixel art, sci-fi technology, and different fandoms. 
       </p>
       <p className="CommissionInfoApplicationBody">
         Thank you for your interest and taking the time to read my TOS, it's

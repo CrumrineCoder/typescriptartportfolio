@@ -269,7 +269,7 @@ body:before {
         .portfolioProfilePictureImage {
           width: 200px;
           object-fit: contain;
-          align-self: flex-stalrt;
+          align-self: flex-start;
           border-radius: 50%;
           margin: 20px 10px 10px 10px;
         }
@@ -299,16 +299,16 @@ body:before {
         width: 45vw;
 
         .profilePicSelector {
-          flex: 1 0 calc(25% - 10px);
+          flex: 0 0 calc(25% - 10px);
           /* margin: 5px; */
           margin: 2px;
           cursor: pointer;
           /*   height: 20vh;  */
-
+          justify-content: center;
           .profilePicSelectorImage {
             /* width: 50px; 
   height: 50px; */
-
+      
             width: 100%;
             height: 100%;
             border-radius: 2px;
@@ -356,6 +356,11 @@ body:before {
       -webkit-user-select: none;
       touch-action: manipulation;
 
+      
+    }
+
+    .blinking {
+      animation: blinkingText 1.25s infinite;
       &:before {
         content: "";
         background: linear-gradient(
@@ -395,10 +400,6 @@ body:before {
         top: 0;
         border-radius: 10px;
       }
-    }
-
-    .blinking {
-      animation: blinkingText 1.25s infinite;
     }
     @keyframes blinkingText {
       0% {
@@ -519,6 +520,8 @@ body:before {
     flex-grow: 1;
     .CommissionInfoPricingImage {
       max-width: 30vw;
+      border: 4px solid white; 
+      border-radius: 3px; 
     }
   }
   .CommissionInfoPricingRightContainer {
