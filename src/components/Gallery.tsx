@@ -3,6 +3,9 @@ import Zoom from "react-medium-image-zoom";
 const TammyPixelArt = require("../assets/tammypixelart.png");
 const Malacruz = require("../assets/malacruz.jpeg");
 
+const Nunn = require("../assets/Nunn.png");
+const Banner = require("../assets/twitter banner.png");
+
 const Chriskua = require("../assets/Carcaso/chriskua.jpeg");
 const Dandelion = require("../assets/Carcaso/dandelion.jpeg");
 const Jinxie = require("../assets/Carcaso/jinxie.jpeg");
@@ -18,14 +21,27 @@ function Gallery() {
       <div className="GalleryImagesContainer">
         <Zoom>
           <div className="GalleryItem">
+            <span className="GalleryText">Nunn but Evangelion</span>
+            <img className="GalleryImage" src={Nunn} />
+          </div>
+        </Zoom>
+        <Zoom>
+          <div className="GalleryItem">
+            <span className="GalleryText">Tami with my favourite Yu-Gi-Oh archetypes</span>
+            <img className="GalleryImage" src={Banner} />
+          </div>
+        </Zoom>
+        <Zoom>
+          <div className="GalleryItem">
             <span className="GalleryText">Tami in style of Fire Emblem</span>
             <img className="GalleryImage" src={TammyPixelArt} />
           </div>
         </Zoom>
-
         <Zoom>
           <div className="GalleryItem">
-            <span className="GalleryText">City life in friend's pokemon world</span>
+            <span className="GalleryText">
+              City life in friend's pokemon world
+            </span>
             <img className="GalleryImage" src={Malacruz} />
           </div>
         </Zoom>
