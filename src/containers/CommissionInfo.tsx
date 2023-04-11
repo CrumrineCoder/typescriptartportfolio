@@ -234,9 +234,7 @@ function CommissionInfo() {
           <li className="CommissionInfoApplicationBody">
             Slight suggestiveness
           </li>
-          <li className="CommissionInfoApplicationBody">
-            Fantasy & Sci-Fi
-          </li>
+          <li className="CommissionInfoApplicationBody">Fantasy & Sci-Fi</li>
           <li className="CommissionInfoApplicationBody">
             Detailed props and backgrounds
           </li>
@@ -245,18 +243,14 @@ function CommissionInfo() {
           <p className="CommissionInfoApplicationListSubHeader">
             I will not draw:
           </p>
-          <li className="CommissionInfoApplicationBody">
-            Furry/Anthro
-          </li>
+          <li className="CommissionInfoApplicationBody">Furry/Anthro</li>
           <li className="CommissionInfoApplicationBody">
             Porn/Fetishes/Explicit NSFW
           </li>
           <li className="CommissionInfoApplicationBody">
             Realism & complex Mecha / High Tech
           </li>
-          <li className="CommissionInfoApplicationBody">
-            Extreme Gore 
-          </li>
+          <li className="CommissionInfoApplicationBody">Extreme Gore</li>
           <li className="CommissionInfoApplicationBody">
             Related in any way to hate or just weird shit you wouldn’t tell your
             mother about.
@@ -289,7 +283,8 @@ function CommissionInfo() {
       </div>
       <p className="CommissionInfoApplicationBody">
         Pricing options to be expanded in the near future to include complex
-        backgrounds, paintings, Pixel art, sci-fi technology, and different fandoms. 
+        backgrounds, paintings, Pixel art, sci-fi technology, and different
+        fandoms.
       </p>
       <p className="CommissionInfoApplicationBody">
         Thank you for your interest and taking the time to read my TOS, it's

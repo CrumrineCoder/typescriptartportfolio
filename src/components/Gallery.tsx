@@ -7,8 +7,10 @@ import Nunn from "../assets/Nunn.png";
 import Banner from "../assets/twitter banner.png";
 
 import Bee from "../assets/beelady.png";
+/*
 import wilsonPokemon from "../assets/wilson.png";
 import Travers from "../assets/travers.jpeg";
+*/
 
 import Chriskua from "../assets/Carcaso/chriskua.jpeg";
 import Dandelion from "../assets/Carcaso/dandelion.jpeg";
@@ -28,6 +30,7 @@ import Fighter from "../assets/Carcaso/FighterCarcaso.png";
 import Leo from "../assets/Carcaso/LeoCarcaso.png";
 import Fenmes from "../assets/Carcaso/Fenmes.png";
 import Vitriol from "../assets/Carcaso/Vitriol.png";
+import gonegirl from "../assets/Carcaso/gonegirl.png";
 
 interface GalleryItemProps {
   text: string;
@@ -39,7 +42,7 @@ function GalleryItem(props: GalleryItemProps) {
     <Zoom>
       <div className="GalleryItem">
         <span className="GalleryText">{props.text}</span>
-        <img className="GalleryImage" src={props.imageSrc} />
+        <img className="GalleryImage" src={props.imageSrc} alt={props.imageSrc} />
       </div>
     </Zoom>
   );
@@ -64,19 +67,20 @@ function Gallery() {
     { text: "Bard", imageSrc: Bard },
     { text: "Deus", imageSrc: Deus },
     { text: "Ellysa", imageSrc: Ellysa },
-    { text: "Fighter", imageSrc: Fighter },
+    { text: "Divine Order", imageSrc: Fighter },
     { text: "Leo", imageSrc: Leo },
-    { text: "Fenmes", imageSrc: Fenmes },
-    { text: "Vitriol", imageSrc: Vitriol },
+    { text: "Saint Fenmes", imageSrc: Fenmes },
+    { text: "Gone Girl", imageSrc: gonegirl},
+    { text: "Cleansing", imageSrc: Vitriol },
     { text: "Bee", imageSrc: Bee },
   ];
   return (
     <div className="Gallery">
-        <div className="GalleryImagesContainer">
-      {items.map((item, index) => (
-        <GalleryItem key={index} text={item.text} imageSrc={item.imageSrc} />
-      ))}
-    </div>
+      <div className="GalleryImagesContainer">
+        {items.map((item, index) => (
+          <GalleryItem key={index} text={item.text} imageSrc={item.imageSrc} />
+        ))}
+      </div>
     </div>
   );
 }
