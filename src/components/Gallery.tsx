@@ -8,9 +8,17 @@ import Banner from "../assets/twitter banner.png";
 
 import Bee from "../assets/beelady.png";
 
+import BluesClues from "../assets/Columbo x Blues Clues.gif"
+
 import wilsonPokemon from "../assets/Wilsonrealfuck.png";
 import Travers from "../assets/traversart.png";
 
+import carbuncle from "../assets/carbuncle.png";
+import cherryBomb from "../assets/cherrybomb.png";
+import chocobo from "../assets/chocobo.png";
+import moogle from "../assets/moogle.png";
+import pokeball from "../assets/pokeball.png";
+import trophy from "../assets/trophy.png";
 
 import Chriskua from "../assets/Carcaso/ChrisKuaFinalCarcaso.png";
 import Dandelion from "../assets/Carcaso/NilesCarcasoFinal.png";
@@ -20,6 +28,10 @@ import Peter from "../assets/Carcaso/PeterInCarcaso.png";
 import Rat from "../assets/Carcaso/rat w jacket redone.png";
 import Asa from "../assets/Carcaso/asacarcaso.png";
 import Vampire from "../assets/Carcaso/vampire w turtleneck.png";
+
+import combination from "../assets/Combination june 13 2023.png";
+import twilightWizard from "../assets/twilight wizard.png";
+import Starfinder1 from "../assets/Starfinder Sketch.png";
 
 import RatLamp from "../assets/Carcaso/Ajax of Carcaso.png";
 import Balthasar from "../assets/Carcaso/Balthasar.png";
@@ -42,7 +54,11 @@ function GalleryItem(props: GalleryItemProps) {
     <Zoom>
       <div className="GalleryItem">
         <span className="GalleryText">{props.text}</span>
-        <img className="GalleryImage" src={props.imageSrc} alt={props.imageSrc} />
+        <img
+          className="GalleryImage"
+          src={props.imageSrc}
+          alt={props.imageSrc}
+        />
       </div>
     </Zoom>
   );
@@ -50,7 +66,11 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    { text: "Hatching practice", imageSrc: combination },
+    { text: "Irvan the Shirren Moth", imageSrc: Starfinder1 },
+    { text: "Twilight Wizards", imageSrc: twilightWizard },
     { text: "Nunn but Evangelion", imageSrc: Nunn },
+    { text: "Columbo Meets Blue's Clues", imageSrc: BluesClues },
     { text: "Tami with my favourite Yu-Gi-Oh archetypes", imageSrc: Banner },
     { text: "Tami in style of Fire Emblem", imageSrc: TammyPixelArt },
     { text: "City life in friend's pokemon world", imageSrc: Malacruz },
@@ -70,8 +90,16 @@ function Gallery() {
     { text: "Divine Order", imageSrc: Fighter },
     { text: "Leo", imageSrc: Leo },
     { text: "Saint Fenmes", imageSrc: Fenmes },
-    { text: "Gone Girl", imageSrc: gonegirl},
+    { text: "Gone Girl", imageSrc: gonegirl },
     { text: "Cleansing", imageSrc: Vitriol },
+    { text: "Lala Carbuncle Badge", imageSrc: carbuncle },
+    { text: "Lala Cherry Bomb Badge", imageSrc: cherryBomb },
+    { text: "Lala Chocobo Badge", imageSrc: chocobo },
+    { text: "Lala Moogle Badge", imageSrc: moogle },
+    { text: "Lala Pokeball", imageSrc: pokeball },
+    { text: "Lala Trophy", imageSrc: trophy },
+    { text: "Travers' WoL", imageSrc: Travers },
+    { text: "Wilson in Pokemon", imageSrc: wilsonPokemon },
     { text: "Bee", imageSrc: Bee },
   ];
   return (

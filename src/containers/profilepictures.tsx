@@ -170,6 +170,14 @@ const profilePicsMasterData = [
     date: "09/03/2021",
   },
   {
+    imageName: TamiOmori,
+    artTitle: "Tami",
+    artDescription:
+      "This was a quick sketch of my WoL for a gpose I wanted to do for them. I did this in under 40 minutes and was based on the Omori portraits. I found this to be suprisingly competent and got me to start trying to learn about other styles through studies.",
+    style: "discord",
+    date: "08/11/2022",
+  },
+  {
     imageName: tami,
     artTitle: "Tami",
     artDescription:
@@ -177,6 +185,8 @@ const profilePicsMasterData = [
     style: "discord",
     date: "02/04/2021",
   },
+
+  
 ];
 
 function ProfilePictures() {
