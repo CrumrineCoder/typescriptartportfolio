@@ -181,7 +181,7 @@ function CommissionInfo() {
           </li>
           <li className="CommissionInfoApplicationBody">
             Payment will be done in full after confirmation to start work on the
-            commission, which will account for paypal tax (4.4%+0.30). If you
+            commission. If you
             wish to cancel your commission and get a refund, contact me as soon
             as possible. I do not refund once I’ve started the sketch.
           </li>

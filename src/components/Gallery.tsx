@@ -1,25 +1,25 @@
 import Zoom from "react-medium-image-zoom";
 
 import TammyPixelArt from "../assets/tammypixelart.png";
-import Malacruz from "../assets/malacruz.jpeg";
+import Malacruz from "../assets/TayroRegion.png";
 
 import Nunn from "../assets/Nunn.png";
 import Banner from "../assets/twitter banner.png";
 
 import Bee from "../assets/beelady.png";
-/*
-import wilsonPokemon from "../assets/wilson.png";
-import Travers from "../assets/travers.jpeg";
-*/
 
-import Chriskua from "../assets/Carcaso/chriskua.jpeg";
-import Dandelion from "../assets/Carcaso/dandelion.jpeg";
-import Jinxie from "../assets/Carcaso/jinxie.jpeg";
-import Kris from "../assets/Carcaso/kris.jpeg";
-import Peter from "../assets/Carcaso/peter.jpeg";
-import Rat from "../assets/Carcaso/ratjacket.jpeg";
-import Asa from "../assets/Carcaso/spidermaidasa.jpeg";
-import Vampire from "../assets/Carcaso/vampireturtleneck.jpeg";
+import wilsonPokemon from "../assets/Wilsonrealfuck.png";
+import Travers from "../assets/traversart.png";
+
+
+import Chriskua from "../assets/Carcaso/ChrisKuaFinalCarcaso.png";
+import Dandelion from "../assets/Carcaso/NilesCarcasoFinal.png";
+import Jinxie from "../assets/Carcaso/Jinxxie2.png";
+import Kris from "../assets/Carcaso/ChrisJamesCarcaso.png";
+import Peter from "../assets/Carcaso/PeterInCarcaso.png";
+import Rat from "../assets/Carcaso/rat w jacket redone.png";
+import Asa from "../assets/Carcaso/asacarcaso.png";
+import Vampire from "../assets/Carcaso/vampire w turtleneck.png";
 
 import RatLamp from "../assets/Carcaso/Ajax of Carcaso.png";
 import Balthasar from "../assets/Carcaso/Balthasar.png";

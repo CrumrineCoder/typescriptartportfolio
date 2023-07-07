@@ -13,23 +13,24 @@ import { ReactComponent as Gmail } from "../assets/envelope-solid.svg";
 import CommissionInfo from "./CommissionInfo";
 
 const TammyConfused = require("../assets/profilepics/tammy.png");
-const AsheSaris = require("../assets/profilepics/ashesaris.jpeg");
-const AyaFae = require("../assets/profilepics/aya.jpeg");
+const AsheSaris = require("../assets/profilepics/ashesaris.png");
+const AyaFae = require("../assets/profilepics/AyaPfp.png");
 const Sophia = require("../assets/profilepics/catgirl.jpeg");
-const Catgirl = require("../assets/profilepics/catgirlcommission.jpeg");
-const chiprofilepic = require("../assets/profilepics/chiprofilepic.jpeg");
-const julian2 = require("../assets/profilepics/julianprofilepic2.jpeg");
-const julian = require("../assets/profilepics/julianprofilepicture.jpeg");
-const lala1 = require("../assets/profilepics/lalapackpenguin.jpeg");
+const Catgirl = require("../assets/profilepics/yuki.png");
+const chiprofilepic = require("../assets/profilepics/chiartlala.png");
+const julian2 = require("../assets/profilepics/julian2ref.png");
+const julian = require("../assets/profilepics/julianart.png");
+const lala1 = require("../assets/profilepics/ChichiArt.png");
 const lala2 = require("../assets/profilepics/lalapackrin.jpeg");
 const lala3 = require("../assets/profilepics/lalapacksama.jpeg");
 const lala4 = require("../assets/profilepics/lalapacksquat.jpeg");
-const neeko = require("../assets/profilepics/neeko.jpeg");
+const neeko = require("../assets/profilepics/alex.png");
 const tami = require("../assets/profilepics/tami.png");
-const willow = require("../assets/profilepics/willowheadpat.jpeg");
+const willow = require("../assets/profilepics/willowpfp.png");
 const moth = require("../assets/profilepics/moth.png");
 const Castro = require("../assets/profilepics/Castro.png");
 const Irvan = require("../assets/profilepics/Irvan.png");
+const TamiOmori = require("../assets/profilepics/TamiOmori.png");
 
 const profilePicsMasterData = [
   {
