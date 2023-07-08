@@ -20,6 +20,8 @@ import moogle from "../assets/moogle.png";
 import pokeball from "../assets/pokeball.png";
 import trophy from "../assets/trophy.png";
 
+import beeGirl from "../assets/beegirlpngtuber.gif"
+
 import Chriskua from "../assets/Carcaso/ChrisKuaFinalCarcaso.png";
 import Dandelion from "../assets/Carcaso/NilesCarcasoFinal.png";
 import Jinxie from "../assets/Carcaso/Jinxxie2.png";
@@ -66,6 +68,7 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    { text: "Sayuu's PNGtuber", imageSrc: beeGirl},
     { text: "Hatching practice", imageSrc: combination },
     { text: "Irvan the Shirren Moth", imageSrc: Starfinder1 },
     { text: "Twilight Wizards", imageSrc: twilightWizard },
