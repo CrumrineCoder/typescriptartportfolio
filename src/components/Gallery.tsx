@@ -3,6 +3,9 @@ import Zoom from "react-medium-image-zoom";
 import TammyPixelArt from "../assets/tammypixelart.png";
 import Malacruz from "../assets/TayroRegion.png";
 
+import SamJones from "../assets/sam jones.png";
+import Elroscian from "../assets/Elroscian.png";
+
 import Nunn from "../assets/Nunn.png";
 import Banner from "../assets/twitter banner.png";
 
@@ -68,6 +71,8 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    { text: "Carcasoan Vitiligo", imageSrc: Elroscian},
+    { text: "Sam Jones", imageSrc: SamJones},
     { text: "Sayuu's PNGtuber", imageSrc: beeGirl},
     { text: "Hatching practice", imageSrc: combination },
     { text: "Irvan the Shirren Moth", imageSrc: Starfinder1 },
