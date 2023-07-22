@@ -40,10 +40,10 @@ function CommissionInfo() {
         </div>
       </div>
       <div className="CommissionInfoApplicationContainer">
-        <button className="CommissionInfoApplicationSubHeader">
+        
+        {!commProcessOpen ? <button className="CommissionInfoApplicationSubHeader CommissionInfoAppButton" onClick={() =>setCommProcessOpen(true)}>
           See Commission Process
-        </button>
-        {commProcessOpen && 
+        </button> :
         <ol className="CommissionInfoApplicationListContainer">
           <li className="CommissionInfoApplicationBody">
             After reading and agreeing to the Terms of Service, please send me
@@ -172,14 +172,15 @@ function CommissionInfo() {
           </li>
         </ol>
               }
-        <p className="CommissionInfoApplicationDisclaimer">
-          By commissioning me, you agree with my terms of service (please read
-          carefully below.)
-        </p>
+       
         <div className="CommissionInfoApplicationSubHeader">
           Terms of Service
         </div>
         <ul className="CommissionInfoTOSContainer">
+        <p className="CommissionInfoApplicationDisclaimer">
+          By commissioning me, you agree with my terms of service (please read
+          carefully below.)
+        </p>
           <li className="CommissionInfoApplicationBody">
             The commissioned drawings are for personal use only (should not be
             used for financial gain in any form). You may not resell it, edit

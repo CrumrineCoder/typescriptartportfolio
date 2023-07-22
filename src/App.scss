@@ -44,7 +44,7 @@ body:before {
   justify-content: space-between;
   color: white;
   @media (max-width: $breakpoint-small) {
-    padding: 0px; 
+    padding: 0px;
   }
   a {
     color: white;
@@ -58,8 +58,8 @@ body:before {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     @media (max-width: $breakpoint-small) {
-      font-size: .8em; 
-      padding: 0px 5px 0px 0px; 
+      font-size: 0.8em;
+      padding: 0px 5px 0px 0px;
     }
   }
 
@@ -68,8 +68,8 @@ body:before {
     letter-spacing: 0.3em;
     padding-left: 100px;
     @media (max-width: $breakpoint-small) {
-      padding: 0px; 
-      font-size: 1.2em; 
+      padding: 0px;
+      font-size: 1.2em;
     }
   }
 }
@@ -270,7 +270,7 @@ body:before {
       padding: 0px;
       padding-bottom: 10px;
       @media (max-width: $breakpoint-small) {
-        margin-top: 10px; 
+        margin-top: 10px;
       }
     }
     .ProfilePicturesRightWhiteBackground {
@@ -281,7 +281,7 @@ body:before {
       border-radius: 10px;
       @media (max-width: $breakpoint-small) {
         width: 90%;
-        margin: 0 auto; 
+        margin: 0 auto;
       }
       .artBox {
         padding: 20px 0px;
@@ -301,9 +301,9 @@ body:before {
         border-radius: 20px;
         margin-bottom: 20px;
         @media (max-width: $breakpoint-small) {
-          display: block; 
-          margin: 0 auto; 
-          text-align: center; 
+          display: block;
+          margin: 0 auto;
+          text-align: center;
         }
         .portfolioProfilePictureImage {
           width: 200px;
@@ -312,8 +312,8 @@ body:before {
           border-radius: 50%;
           margin: 20px 10px 10px 10px;
           @media (max-width: $breakpoint-small) {
-            display: block; 
-            margin: 0 auto; 
+            display: block;
+            margin: 0 auto;
           }
         }
 
@@ -334,7 +334,7 @@ body:before {
           color: rgb(223, 223, 223);
           padding: 0px 20px 0px 0px;
           @media (max-width: $breakpoint-small) {
-            padding: 10px; 
+            padding: 10px;
           }
         }
       }
@@ -384,18 +384,18 @@ body:before {
   .GalleryImagesContainer {
     margin: 50px;
     display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 10px;
     @media (max-width: $breakpoint-small) {
-      margin: 30px 0px; 
+      margin: 30px 0px;
     }
 
-    #TamiwithmyfavouriteYu-Gi-Oharchetypes{
-      flex: 1 0 100%; 
+    #TamiwithmyfavouriteYu-Gi-Oharchetypes {
+      flex: 1 0 100%;
     }
 
-    span{
+    span {
       flex: 30%;
     }
     .GalleryItem {
@@ -407,10 +407,10 @@ body:before {
       position: relative;
       padding: 10px 20px 20px 20px;
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-      
+
       &:hover {
         background-color: white;
-        color: black; 
+        color: black;
         /*
         &:after{
           position: absolute; 
@@ -425,14 +425,14 @@ body:before {
         }*/
       }
       .GalleryText {
-       // padding-bottom: 5px;
-     //   padding-left: 5px; 
+        // padding-bottom: 5px;
+        //   padding-left: 5px;
         display: block;
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 1.5em; 
-        text-align: center; 
-        padding-bottom: 10px; 
+        font-size: 1.5em;
+        text-align: center;
+        padding-bottom: 10px;
       }
       .GalleryImage {
         max-width: 100%;
@@ -449,8 +449,8 @@ body:before {
   width: 66vw;
   margin: 50px auto;
   @media (max-width: $breakpoint-small) {
-    margin: 5px auto; 
-    width: 100%; 
+    margin: 5px auto;
+    width: 100%;
   }
   .CommissionInfoStatus {
     display: flex;
@@ -459,9 +459,9 @@ body:before {
     align-items: center;
     text-transform: uppercase;
     @media (max-width: $breakpoint-small) {
-      display: block; 
-      text-align: center; 
-      margin-top: 20px; 
+      display: block;
+      text-align: center;
+      margin-top: 20px;
     }
     .CommissionInfoStatusShowmanship {
       background: black;
@@ -484,7 +484,7 @@ body:before {
       -webkit-user-select: none;
       touch-action: manipulation;
       @media (max-width: $breakpoint-small) {
-        margin-top: 10px; 
+        margin-top: 10px;
       }
     }
 
@@ -569,6 +569,22 @@ body:before {
     font-size: 1.4em;
   }
 
+  .CommissionInfoAppButton {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+
+    &:hover {
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+    }
+  }
+
   .CommissionInfoApplicationBodyItalics {
     font-style: italic;
     padding: 30px 0px 10px;
@@ -628,7 +644,7 @@ body:before {
   }
 
   .CommissionInfoApplicationDisclaimer {
-    padding-bottom: 80px;
+    padding-bottom: 20px;
     font-weight: bold;
     text-align: center;
     width: 50vw;
@@ -638,7 +654,7 @@ body:before {
   .CommissionInfoPricingContainer {
     display: flex;
     @media (max-width: $breakpoint-small) {
-      display: block; 
+      display: block;
     }
   }
   .CommissionInfoPricingLeftImageContainer {
@@ -651,17 +667,17 @@ body:before {
     flex-wrap: wrap;
     flex-grow: 1;
     @media (max-width: $breakpoint-small) {
-      display: block; 
-      width: 100%; 
+      display: block;
+      width: 100%;
     }
     .CommissionInfoPricingImage {
       max-width: 30vw;
       border: 4px solid white;
       border-radius: 3px;
       @media (max-width: $breakpoint-small) {
-        width: 80%; 
-        display: block; 
-        max-width: 80%; 
+        width: 80%;
+        display: block;
+        max-width: 80%;
       }
     }
   }
