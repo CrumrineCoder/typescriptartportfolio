@@ -82,9 +82,10 @@ function Gallery() {
     { text: "Twilight Wizards", imageSrc: twilightWizard },
     { text: "Nunn but Evangelion", imageSrc: Nunn },
     { text: "Columbo Meets Blue's Clues", imageSrc: BluesClues },
-    { text: "Tami with my favourite Yu-Gi-Oh archetypes", imageSrc: Banner },
     { text: "Tami in style of Fire Emblem", imageSrc: TammyPixelArt },
     { text: "City life in friend's pokemon world", imageSrc: Malacruz },
+    { text: "Tami with my favourite Yu-Gi-Oh archetypes", imageSrc: Banner },
+    
     { text: "Kua in Carcaso", imageSrc: Chriskua },
     { text: "Steel Dandelion", imageSrc: Dandelion },
     { text: "Jinxxie in Carcaso", imageSrc: Jinxie },
