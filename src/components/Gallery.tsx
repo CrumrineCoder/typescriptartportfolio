@@ -55,7 +55,9 @@ interface GalleryItemProps {
 }
 
 function GalleryItem(props: GalleryItemProps) {
+  //${props.text}
   return (
+    <span className={`GalleryItemContainer`} id= {(props.text).replace(/\s+/g, "")}>
     <Zoom>
       <div className="GalleryItem">
         <span className="GalleryText">{props.text}</span>
@@ -66,6 +68,7 @@ function GalleryItem(props: GalleryItemProps) {
         />
       </div>
     </Zoom>
+    </span>
   );
 }
 
