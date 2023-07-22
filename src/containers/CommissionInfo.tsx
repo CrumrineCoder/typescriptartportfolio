@@ -1,7 +1,13 @@
+import React, { useState } from "react";
+
 const TammyConfused = require("../assets/profilepics/tammy.png");
 const moth = require("../assets/profilepics/moth.png");
 
 function CommissionInfo() {
+
+  const [commProcessOpen, setCommProcessOpen] = useState(false);
+
+
   return (
     <div className="CommissionInfo">
       <div className="CommissionInfoStatus">
@@ -34,9 +40,10 @@ function CommissionInfo() {
         </div>
       </div>
       <div className="CommissionInfoApplicationContainer">
-        <p className="CommissionInfoApplicationSubHeader">
-          Commission Process:
-        </p>
+        <button className="CommissionInfoApplicationSubHeader">
+          See Commission Process
+        </button>
+        {commProcessOpen && 
         <ol className="CommissionInfoApplicationListContainer">
           <li className="CommissionInfoApplicationBody">
             After reading and agreeing to the Terms of Service, please send me
@@ -164,6 +171,7 @@ function CommissionInfo() {
             when finished.
           </li>
         </ol>
+              }
         <p className="CommissionInfoApplicationDisclaimer">
           By commissioning me, you agree with my terms of service (please read
           carefully below.)
