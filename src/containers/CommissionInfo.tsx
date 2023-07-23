@@ -3,9 +3,11 @@ import React, { useState } from "react";
 const TammyConfused = require("../assets/profilepics/tammy.png");
 const moth = require("../assets/profilepics/moth.png");
 
+type CommissionSection = "process" | "TOS" | "DoDonts";
+
 function CommissionInfo() {
-  const [commProcessOpen, setCommProcessOpen] = useState(false);
-  const [tosOpen, setTosOpen] = useState(false);
+  const [currentCommisionSection, setCurrentCommisionSection] =
+    useState<CommissionSection | null>(null);
 
   return (
     <div className="CommissionInfo">
@@ -38,15 +40,35 @@ function CommissionInfo() {
           here.
         </div>
       </div>
+      <div className="CommissionInfoApplicationSubHeaderButtons">
+        <button
+          className={`CommissionInfoApplicationSubHeader CommissionInfoAppButton ${
+            currentCommisionSection === "process" ? "active" : ""
+          }`}
+          onClick={() => setCurrentCommisionSection("process")}
+        >
+          Commission Process
+        </button>
+        <button
+          className={`CommissionInfoApplicationSubHeader CommissionInfoAppButton ${
+            currentCommisionSection === "TOS" ? "active" : ""
+          }`}
+          onClick={() => setCurrentCommisionSection("TOS")}
+        >
+          Terms of Service
+        </button>
+
+        <button
+          className={`CommissionInfoApplicationSubHeader CommissionInfoAppButton ${
+            currentCommisionSection === "DoDonts" ? "active" : ""
+          }`}
+          onClick={() => setCurrentCommisionSection("DoDonts")}
+        >
+          Dos & Donts
+        </button>
+      </div>
       <div className="CommissionInfoApplicationContainer">
-        {!commProcessOpen ? (
-          <button
-            className="CommissionInfoApplicationSubHeader CommissionInfoAppButton"
-            onClick={() => setCommProcessOpen(true)}
-          >
-            See Commission Process
-          </button>
-        ) : (
+        {currentCommisionSection === "process" && (
           <>
             <p className="CommissionInfoApplicationSubHeader">
               Commission Process:
@@ -188,14 +210,7 @@ function CommissionInfo() {
           </>
         )}
 
-        {!tosOpen ? (
-          <button
-            className="CommissionInfoApplicationSubHeader CommissionInfoAppButton"
-            onClick={() => setTosOpen(true)}
-          >
-            See Terms of Service
-          </button>
-        ) : (
+        {currentCommisionSection === "TOS" && (
           <>
             <div className="CommissionInfoApplicationSubHeader">
               Terms of Service
@@ -252,49 +267,55 @@ function CommissionInfo() {
             </ul>
           </>
         )}
-        <p className="CommissionInfoApplicationSubHeader">DOs / DONTs</p>
-        <ul className="CommissionInfoApplicationListContainer DosContainer">
-          <p className="CommissionInfoApplicationListSubHeader">
-            I am comfortable drawing:
-          </p>
-          <li className="CommissionInfoApplicationBody">
-            Male or Female Humans including your OC & fanart
-          </li>
-          <li className="CommissionInfoApplicationBody">
-            Light/simple Mecha/Armour
-          </li>
-          <li className="CommissionInfoApplicationBody">
-            Mild demonstration of violence (blood, scrapes)
-          </li>
-          <li className="CommissionInfoApplicationBody">
-            Slight suggestiveness
-          </li>
-          <li className="CommissionInfoApplicationBody">Fantasy & Sci-Fi</li>
-          <li className="CommissionInfoApplicationBody">
-            Detailed props and backgrounds
-          </li>
-        </ul>
-        <ul className="CommissionInfoApplicationListContainer DontsContainer">
-          <p className="CommissionInfoApplicationListSubHeader">
-            I will not draw:
-          </p>
-          <li className="CommissionInfoApplicationBody">Furry/Anthro</li>
-          <li className="CommissionInfoApplicationBody">
-            Porn/Fetishes/Explicit NSFW
-          </li>
-          <li className="CommissionInfoApplicationBody">
-            Realism & complex Mecha / High Tech
-          </li>
-          <li className="CommissionInfoApplicationBody">Extreme Gore</li>
-          <li className="CommissionInfoApplicationBody">
-            Related in any way to hate or just weird shit you wouldn’t tell your
-            mother about.
-          </li>
-        </ul>
-        <p className="CommissionInfoApplicationBody">
-          I’m willing to try other styles or complex things that I want to learn
-          like: designs, backgrounds, armour, and tattoos. Just ask!
-        </p>
+        {currentCommisionSection === "DoDonts" && (
+          <>
+            <p className="CommissionInfoApplicationSubHeader">DOs / DONTs</p>
+            <ul className="CommissionInfoApplicationListContainer DosContainer">
+              <p className="CommissionInfoApplicationListSubHeader">
+                I am comfortable drawing:
+              </p>
+              <li className="CommissionInfoApplicationBody">
+                Male or Female Humans including your OC & fanart
+              </li>
+              <li className="CommissionInfoApplicationBody">
+                Light/simple Mecha/Armour
+              </li>
+              <li className="CommissionInfoApplicationBody">
+                Mild demonstration of violence (blood, scrapes)
+              </li>
+              <li className="CommissionInfoApplicationBody">
+                Slight suggestiveness
+              </li>
+              <li className="CommissionInfoApplicationBody">
+                Fantasy & Sci-Fi
+              </li>
+              <li className="CommissionInfoApplicationBody">
+                Detailed props and backgrounds
+              </li>
+            </ul>
+            <ul className="CommissionInfoApplicationListContainer DontsContainer">
+              <p className="CommissionInfoApplicationListSubHeader">
+                I will not draw:
+              </p>
+              <li className="CommissionInfoApplicationBody">Furry/Anthro</li>
+              <li className="CommissionInfoApplicationBody">
+                Porn/Fetishes/Explicit NSFW
+              </li>
+              <li className="CommissionInfoApplicationBody">
+                Realism & complex Mecha / High Tech
+              </li>
+              <li className="CommissionInfoApplicationBody">Extreme Gore</li>
+              <li className="CommissionInfoApplicationBody">
+                Related in any way to hate or just weird shit you wouldn’t tell
+                your mother about.
+              </li>
+            </ul>
+            <p className="CommissionInfoApplicationBody">
+              I’m willing to try other styles or complex things that I want to
+              learn like: designs, backgrounds, armour, and tattoos. Just ask!
+            </p>
+          </>
+        )}
       </div>
 
       <div className="CommissionInfoHeader">COMMISSION PRICING</div>
