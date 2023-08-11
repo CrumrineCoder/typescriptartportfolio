@@ -11,7 +11,7 @@ import Banner from "../assets/twitter banner.png";
 
 import Bee from "../assets/beelady.png";
 
-import BluesClues from "../assets/Columbo x Blues Clues.gif"
+import BluesClues from "../assets/Columbo x Blues Clues.gif";
 
 import wilsonPokemon from "../assets/Wilsonrealfuck.png";
 import Travers from "../assets/traversart.png";
@@ -23,7 +23,7 @@ import moogle from "../assets/moogle.png";
 import pokeball from "../assets/pokeball.png";
 import trophy from "../assets/trophy.png";
 
-import beeGirl from "../assets/beegirlpngtuber.gif"
+import beeGirl from "../assets/beegirlpngtuber.gif";
 
 import Chriskua from "../assets/Carcaso/ChrisKuaFinalCarcaso.png";
 import Dandelion from "../assets/Carcaso/NilesCarcasoFinal.png";
@@ -57,26 +57,31 @@ interface GalleryItemProps {
 function GalleryItem(props: GalleryItemProps) {
   //${props.text}
   return (
-    <span className={`GalleryItemContainer`} id= {(props.text).replace(/\s+/g, "")}>
-    <Zoom>
-      <div className="GalleryItem">
-        <span className="GalleryText">{props.text}</span>
-        <img
-          className="GalleryImage"
-          src={props.imageSrc}
-          alt={props.imageSrc}
-        />
-      </div>
-    </Zoom>
+    <span
+      className={`GalleryItemContainer`}
+      id={props.text.replace(/\s+/g, "")}
+    >
+      <Zoom>
+        <div className="GalleryItem">
+          <span className="GalleryText">{props.text}</span>
+          
+            <img
+              className="GalleryImage"
+              src={props.imageSrc}
+              alt={props.imageSrc}
+            />
+      
+        </div>
+      </Zoom>
     </span>
   );
 }
 
 function Gallery() {
   const items: GalleryItemProps[] = [
-    { text: "Carcasoan Vitiligo", imageSrc: Elroscian},
-    { text: "Sam Jones", imageSrc: SamJones},
-    { text: "Sayuu's PNGtuber", imageSrc: beeGirl},
+    { text: "Carcasoan Vitiligo", imageSrc: Elroscian },
+    { text: "Sam Jones", imageSrc: SamJones },
+    { text: "Sayuu's PNGtuber", imageSrc: beeGirl },
     { text: "Hatching practice", imageSrc: combination },
     { text: "Irvan the Shirren Moth", imageSrc: Starfinder1 },
     { text: "Twilight Wizards", imageSrc: twilightWizard },
@@ -85,7 +90,7 @@ function Gallery() {
     { text: "Tami in style of Fire Emblem", imageSrc: TammyPixelArt },
     { text: "City life in friend's pokemon world", imageSrc: Malacruz },
     { text: "Tami with my favourite Yu-Gi-Oh archetypes", imageSrc: Banner },
-    
+
     { text: "Kua in Carcaso", imageSrc: Chriskua },
     { text: "Steel Dandelion", imageSrc: Dandelion },
     { text: "Jinxxie in Carcaso", imageSrc: Jinxie },

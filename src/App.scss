@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 $breakpoint-small: 1000px;
+$text-color: #fff6cc;
 
 body {
-  background-color: #800020;
+  background-color: #6b6bb3;
+  color: #dda0dd;
 }
 body:before {
   /*
@@ -26,7 +28,7 @@ body:before {
 
 .App {
   height: 100%;
-  color: white;
+  color: $text-color;
   font-family: "PT Sans", sans-serif;
   padding: 20px;
   /* background-image: linear-gradient(45deg, #800020 27%, #410413 93%); */
@@ -42,15 +44,15 @@ body:before {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: $text-color;
   @media (max-width: $breakpoint-small) {
     padding: 0px;
   }
   a {
-    color: white;
+    color: $text-color;
     padding: 0 20px 0px 0px;
     &:hover {
-      color: rgb(250, 166, 166);
+      color: #ffb3f3;
     }
     text-decoration: none;
     font-size: 1.4em;
@@ -100,14 +102,14 @@ body:before {
     }
 
     .ProfilePicturesLeftSideHeader {
-      color: white;
+      color: $text-color;
       font-size: 72px;
       letter-spacing: 0.1em;
       font-weight: bold;
       font-family: "PT Sans", sans-serif;
     }
     .ProfilePicturesLeftSideSubHeader {
-      color: white;
+      color: $text-color;
       font-size: 36px;
       font-weight: bold;
       font-family: "PT Sans", sans-serif;
@@ -116,7 +118,7 @@ body:before {
     }
 
     .ProfilePicturesLeftSideCommissionInfo {
-      color: white;
+      color: $text-color;
       font-size: 24px;
       font-weight: bold;
       font-family: "PT Sans", sans-serif;
@@ -125,7 +127,7 @@ body:before {
     }
 
     .ProfilePicturesLeftSideCommissionStatusHeader {
-      color: white;
+      color: $text-color;
       font-size: 40px;
       font-weight: bold;
       font-family: "PT Sans", sans-serif;
@@ -134,7 +136,7 @@ body:before {
     }
 
     .ProfilePicturesLeftSideCommissionStatusIndicator {
-      color: white;
+      color: $text-color;
       font-size: 48px;
       font-weight: bold;
       font-family: "PT Sans", sans-serif;
@@ -213,7 +215,7 @@ body:before {
       &:hover {
         color: #e5e7ef;
         &::after {
-          background-color: black;
+          background-color: #1f1f3f;
         }
       }
     }
@@ -381,6 +383,7 @@ body:before {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  color: white;
   .GalleryImagesContainer {
     margin: 50px;
     display: flex;
@@ -408,22 +411,6 @@ body:before {
       padding: 10px 20px 20px 20px;
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 
-      &:hover {
-        background-color: white;
-        color: black;
-        /*
-        &:after{
-          position: absolute; 
-          content: '';
-          display: block;
-          top: 0;
-          left: 0; 
-          right: 0; 
-          bottom: 0; 
-          background: rgba(255, 255, 255, 0.15); 
-       
-        }*/
-      }
       .GalleryText {
         // padding-bottom: 5px;
         //   padding-left: 5px;
@@ -440,7 +427,66 @@ body:before {
         object-fit: contain;
         height: auto;
         display: block;
+        width: 100%; 
+        &:before {
+          content: "";
+          position: absolute;
+          top: 5px; /* Adjust the value to control the distance of the border from the inner content */
+          right: 5px;
+          bottom: 5px;
+          left: 5px;
+          border: 2px solid transparent; /* Transparent border to start */
+          transition: border-color 0.3s ease; /* Smooth transition */
+        }
+        &:hover{
+          filter: brightness(50%) sepia(100%) hue-rotate(290deg); 
+        }
       }
+      .GalleryImageOverlay {
+        position: relative;
+        display: inline-block;
+        background: cyan;
+        display: inline-block;
+        & > img {
+          vertical-align: middle;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: #000;
+          opacity: 0;
+          transition: 0.5s ease;
+          &hover {
+            opacity: 0.23;
+          }
+        }
+        
+      }
+
+      &:hover {
+        /* background-color: white;
+        color: black;
+        FFB3F3
+        */
+
+        /*
+        &:after{
+          position: absolute; 
+          content: '';
+          display: block;
+          top: 0;
+          left: 0; 
+          right: 0; 
+          bottom: 0; 
+          background: rgba(255, 255, 255, 0.15); 
+       
+        }*/
+      }
+     
     }
   }
 }
@@ -485,6 +531,13 @@ body:before {
       touch-action: manipulation;
       @media (max-width: $breakpoint-small) {
         margin-top: 10px;
+      }
+
+      &:hover {
+        color: #e5e7ef;
+        &::after {
+          background-color: #1f1f3f;
+        }
       }
     }
 
@@ -581,18 +634,18 @@ body:before {
       padding: 10px 20px;
       font-size: 16px;
       cursor: pointer;
-      transition: background-color 0.3s, border-color 0.3s;
+      transition: color 0.3s, border-color 0.3s;
 
       &:hover {
-        background-color: white;
-        color: black;
-        border: 2px solid black;
+        /* background-color: white; */
+        color: #ffb3f3;
+        border: 2px solid #ffb3f3;
       }
     }
-    .active{
-      cursor: not-allowed; 
-      opacity: .4;
-      pointer-events: none; 
+    .active {
+      cursor: not-allowed;
+      opacity: 0.4;
+      pointer-events: none;
     }
   }
   .CommissionInfoApplicationBodyItalics {
