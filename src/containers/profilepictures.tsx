@@ -185,8 +185,6 @@ const profilePicsMasterData = [
     style: "discord",
     date: "02/04/2021",
   },
-
-  
 ];
 
 function ProfilePictures() {
@@ -201,7 +199,7 @@ function ProfilePictures() {
       imageName={items.imageName}
       changeImage={setCurrentImage}
       currentImage={currentImage}
-      index = {i}
+      index={i}
       setIndex={setIndex}
     ></ProfilePicSelector>
   ));
@@ -215,15 +213,16 @@ function ProfilePictures() {
   return (
     <div className="ProfilePictures">
       <div className="ProfilePicturesLeftSide">
-        <div className="ProfilePicturesLeftSideHeader">
-          Hi I'm Taming, but you knew that already
+        <div className="ProfilePicturesLeftSideText">
+          <div className="ProfilePicturesLeftSideHeader">
+            Hi I'm Taming, but you knew that already
+          </div>
+          <div className="ProfilePicturesLeftSideSubHeader">
+            I make Profile Pictures to help friends show others how they want to
+            be seen. Each was made carefully to the friend's taste and
+            personality.
+          </div>
         </div>
-        <div className="ProfilePicturesLeftSideSubHeader">
-          I make Profile Pictures to help friends show others how they want to
-          be seen. Each was made carefully to the friend's taste and
-          personality.
-        </div>
-
         <div
           onClick={navigateCommissions}
           className="ProfilePicturesLeftSideCTA"
@@ -251,13 +250,13 @@ function ProfilePictures() {
           <ArtBox
             imageName={currentImage}
             artTitle={profilePicsMasterData[index].artTitle}
-            artDescription={
-             profilePicsMasterData[index].artDescription
-            }
+            artDescription={profilePicsMasterData[index].artDescription}
             style={profilePicsMasterData[index].style}
             date={profilePicsMasterData[index].date}
           ></ArtBox>
-          <p className="ProfilePicturesRightSideText">Click on the Image Above to View Full Screen!</p>
+          <p className="ProfilePicturesRightSideText">
+            Click on the Image Above to View Full Screen!
+          </p>
           <div className="ProfilePicSelectors">{imageList}</div>
         </div>
       </div>

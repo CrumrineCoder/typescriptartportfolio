@@ -36,7 +36,6 @@ body:before {
   height: 100%;
   color: $text-color;
   font-family: "PT Sans", sans-serif;
-  padding: 20px;
   /* background-image: linear-gradient(45deg, #800020 27%, #410413 93%); */
 }
 
@@ -47,7 +46,7 @@ body:before {
 }
 
 .NavBar {
-  padding: 20px;
+  padding: 20px 0px;
   display: flex;
   justify-content: space-between;
   color: $text-color;
@@ -111,15 +110,16 @@ body:before {
     @media (max-width: $breakpoint-small) {
       width: 100%;
     }
-
+   .ProfilePicturesLeftSideText{
+    background: #6b6bb3;
+    padding: 25px; 
+    border-radius: 15px;
     .ProfilePicturesLeftSideHeader {
       color: $text-color;
       font-size: 72px;
       letter-spacing: 0.1em;
       font-weight: bold;
       font-family: "PT Sans", sans-serif;
-      background: #6b6bb3; 
-      border-radius: 15px 15px 0 0 ;
     }
     .ProfilePicturesLeftSideSubHeader {
       color: $text-color;
@@ -128,9 +128,10 @@ body:before {
       font-family: "PT Sans", sans-serif;
       padding-top: 40px;
       padding-bottom: 15px;
-      background: #6b6bb3; 
-      border-radius: 0 0 15px 15px;
     }
+    
+   }
+    
 
     .ProfilePicturesLeftSideCommissionInfo {
       color: $text-color;
@@ -454,7 +455,7 @@ body:before {
           transition: border-color 0.3s ease; /* Smooth transition */
         }
         &:hover{
-          filter: brightness(50%) sepia(100%) hue-rotate(290deg); 
+          filter: brightness(70%) sepia(100%) hue-rotate(260deg); 
         }
       }
       .GalleryImageOverlay {
@@ -509,7 +510,7 @@ body:before {
 .CommissionInfo {
   width: 66vw;
   margin: 50px auto;
-  margin-top: 0px; 
+  margin-top: 20px; 
   padding: 20px; 
   padding-top: 50px;
   border-radius: 25px;
