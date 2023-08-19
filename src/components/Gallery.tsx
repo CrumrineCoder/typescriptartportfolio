@@ -1,5 +1,8 @@
 import Zoom from "react-medium-image-zoom";
 
+import Zemeradi from "../assets/zemeradi twilight.png";
+import BaldursGate from "../assets/baldur's gate.png";
+
 import TammyPixelArt from "../assets/tammypixelart.png";
 import Malacruz from "../assets/TayroRegion.png";
 
@@ -79,6 +82,8 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    { text: "Twilight Zemeradi", imageSrc: Zemeradi },
+    { text: "Baldur's Gate Paladin", imageSrc: BaldursGate },
     { text: "Carcasoan Vitiligo", imageSrc: Elroscian },
     { text: "Sam Jones", imageSrc: SamJones },
     { text: "Sayuu's PNGtuber", imageSrc: beeGirl },

@@ -31,8 +31,17 @@ const moth = require("../assets/profilepics/moth.png");
 const Castro = require("../assets/profilepics/Castro.png");
 const Irvan = require("../assets/profilepics/Irvan.png");
 const TamiOmori = require("../assets/profilepics/TamiOmori.png");
+const Dion = require("../assets/IrvanDionTokenNoBG.png");
 
 const profilePicsMasterData = [
+  {
+    imageName: Dion,
+    artTitle: "Starfinder Token",
+    artDescription:
+      "I made this token for my roll20 Starfinder game! Irvan's a biohacker moth who alwyas has extra energy to stir up chaos. His eyes often peer into the ethereal space in between objects, and will rant about it absolutely anyone. The background squiggles represent this psychic affinity, and the border represents his botany one! His crazy and disheveled look was meant to go along with him holding a blowtorch or something, but I felt that would be too much noise. I deliberately chose a sketchy art style with flat shades so it would look great when scaled down, which it does.",
+    style: "discord",
+    date: "7/24/2023",
+  },
   {
     imageName: moth,
     artTitle: "Christmas Moth",
@@ -190,7 +199,7 @@ const profilePicsMasterData = [
 function ProfilePictures() {
   // <CarcasoPortfolioBox imageName="test.jpg"></CarcasoPortfolioBox>
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
-  const [currentImage, setCurrentImage] = useState(moth);
+  const [currentImage, setCurrentImage] = useState(Dion);
 
   const [index, setIndex] = useState(0);
 
