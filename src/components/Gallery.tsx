@@ -1,5 +1,7 @@
 import Zoom from "react-medium-image-zoom";
 
+import Maidcore from "../assets/Maidcore.png";
+
 import Zemeradi from "../assets/zemeradi twilight.png";
 import BaldursGate from "../assets/baldur's gate.png";
 
@@ -82,6 +84,7 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    { text: "Cyberpunk Red Maid", imageSrc: Maidcore },
     { text: "Twilight Zemeradi", imageSrc: Zemeradi },
     { text: "Baldur's Gate Paladin", imageSrc: BaldursGate },
     { text: "Carcasoan Vitiligo", imageSrc: Elroscian },

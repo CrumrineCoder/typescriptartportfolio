@@ -32,8 +32,17 @@ const Castro = require("../assets/profilepics/Castro.png");
 const Irvan = require("../assets/profilepics/Irvan.png");
 const TamiOmori = require("../assets/profilepics/TamiOmori.png");
 const Dion = require("../assets/IrvanDionTokenNoBG.png");
+const Tolpa = require ("../assets/Maid Token.png")
 
 const profilePicsMasterData = [
+  {
+    imageName: Tolpa,
+    artTitle: "Cyberpunk Red Token",
+    artDescription:
+      "Here's the token for my Cyberpunk Red character! Tolpa is an absolute cutie and I want to get across her adorable tiredness - I initially had her squatting and giving middle fingers because of her rebellious streak, but I wanted more of a resting pose since it'd work better for a token in a tabletop game. The sketchiness of the border felt very fitting - I was thinking of putting more detail into it with mroe clour, but I feel like flats work great for this style and makes it readable when scaled down. Also thought about adding more of a cat theme to the border, but it wasn't working for me. Here's to more Tolpa art in the future~",
+    style: "discord",
+    date: "8/28/2023",
+  },
   {
     imageName: Dion,
     artTitle: "Starfinder Token",
@@ -199,7 +208,7 @@ const profilePicsMasterData = [
 function ProfilePictures() {
   // <CarcasoPortfolioBox imageName="test.jpg"></CarcasoPortfolioBox>
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
-  const [currentImage, setCurrentImage] = useState(Dion);
+  const [currentImage, setCurrentImage] = useState(profilePicsMasterData[0].imageName);
 
   const [index, setIndex] = useState(0);
 
