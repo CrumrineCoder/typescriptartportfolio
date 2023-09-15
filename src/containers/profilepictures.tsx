@@ -32,14 +32,14 @@ const Castro = require("../assets/profilepics/Castro.png");
 const Irvan = require("../assets/profilepics/Irvan.png");
 const TamiOmori = require("../assets/profilepics/TamiOmori.png");
 const Dion = require("../assets/IrvanDionTokenNoBG.png");
-const Tolpa = require ("../assets/Maid Token.png")
+const Tolpa = require("../assets/Maid Token.png");
 
 const profilePicsMasterData = [
   {
     imageName: Tolpa,
     artTitle: "Cyberpunk Red Token",
     artDescription:
-      "Here's the token for my Cyberpunk Red character! Tolpa is an absolute cutie and I want to get across her adorable tiredness - I initially had her squatting and giving middle fingers because of her rebellious streak, but I wanted more of a resting pose since it'd work better for a token in a tabletop game. The sketchiness of the border felt very fitting - I was thinking of putting more detail into it with mroe clour, but I feel like flats work great for this style and makes it readable when scaled down. Also thought about adding more of a cat theme to the border, but it wasn't working for me. Here's to more Tolpa art in the future~",
+      "Here's the token for my Cyberpunk Red character! Tolpa is an absolute cutie and I want to get across her adorable tiredness - I initially had her squatting and giving middle fingers because of her rebellious streak, but I wanted more of a resting pose since it'd work better for a token in a tabletop game. The sketchiness of the border felt very fitting - I was thinking of putting more detail into it with more colour, but I feel like flats work great for this style and makes it readable when scaled down. Also thought about adding more of a cat theme to the border, but it wasn't working for me. Here's to more Tolpa art in the future~",
     style: "discord",
     date: "8/28/2023",
   },
@@ -208,7 +208,9 @@ const profilePicsMasterData = [
 function ProfilePictures() {
   // <CarcasoPortfolioBox imageName="test.jpg"></CarcasoPortfolioBox>
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
-  const [currentImage, setCurrentImage] = useState(profilePicsMasterData[0].imageName);
+  const [currentImage, setCurrentImage] = useState(
+    profilePicsMasterData[0].imageName
+  );
 
   const [index, setIndex] = useState(0);
 
@@ -229,54 +231,59 @@ function ProfilePictures() {
   };
 
   return (
-    <div className="ProfilePictures">
-      <div className="ProfilePicturesLeftSide">
-        <div className="ProfilePicturesLeftSideText">
-          <div className="ProfilePicturesLeftSideHeader">
-            Hi I'm Taming, but you knew that already
+    <div className="HomePage">
+      <div className="ProfilePictures">
+        <div className="ProfilePicturesLeftSide">
+          <div className="ProfilePicturesLeftSideText">
+            <div className="ProfilePicturesLeftSideHeader">
+              Hi I'm Taming, but you knew that already
+            </div>
+            <div className="ProfilePicturesLeftSideSubHeader">
+              I make Profile Pictures to help friends show others how they want
+              to be seen. Each was made carefully to the friend's taste and
+              personality.
+            </div>
           </div>
-          <div className="ProfilePicturesLeftSideSubHeader">
-            I make Profile Pictures to help friends show others how they want to
-            be seen. Each was made carefully to the friend's taste and
-            personality.
+          <div
+            onClick={navigateCommissions}
+            className="ProfilePicturesLeftSideCTA"
+          >
+            Commissions Open
           </div>
-        </div>
-        <div
-          onClick={navigateCommissions}
-          className="ProfilePicturesLeftSideCTA"
-        >
-          Commissions Open
-        </div>
 
-        <div className="ProfilePicturesLeftSideFooter">
-          <Twitter
-            onClick={() =>
-              window.open("https://twitter.com/TamingOfCarcaso", "_blank")
-            }
-            className="ProfilePicturesLeftSideFooterTwitter"
-          />
-          <Gmail
-            onClick={() =>
-              window.open("mailto:tamingthecarcasoan@gmail.com", "_blank")
-            }
-            className="ProfilePicturesLeftSideFooterGmail"
-          />
+          <div className="ProfilePicturesLeftSideFooter">
+            <Twitter
+              onClick={() =>
+                window.open("https://twitter.com/TamingOfCarcaso", "_blank")
+              }
+              className="ProfilePicturesLeftSideFooterTwitter"
+            />
+            <Gmail
+              onClick={() =>
+                window.open("mailto:tamingthecarcasoan@gmail.com", "_blank")
+              }
+              className="ProfilePicturesLeftSideFooterGmail"
+            />
+          </div>
+        </div>
+        <div className="ProfilePicturesRightSide">
+          <div className="ProfilePicturesRightWhiteBackground">
+            <ArtBox
+              imageName={currentImage}
+              artTitle={profilePicsMasterData[index].artTitle}
+              artDescription={profilePicsMasterData[index].artDescription}
+              style={profilePicsMasterData[index].style}
+              date={profilePicsMasterData[index].date}
+            ></ArtBox>
+            <p className="ProfilePicturesRightSideText">
+              Click on the Image Above to View Full Screen!
+            </p>
+            <div className="ProfilePicSelectors">{imageList}</div>
+          </div>
         </div>
       </div>
-      <div className="ProfilePicturesRightSide">
-        <div className="ProfilePicturesRightWhiteBackground">
-          <ArtBox
-            imageName={currentImage}
-            artTitle={profilePicsMasterData[index].artTitle}
-            artDescription={profilePicsMasterData[index].artDescription}
-            style={profilePicsMasterData[index].style}
-            date={profilePicsMasterData[index].date}
-          ></ArtBox>
-          <p className="ProfilePicturesRightSideText">
-            Click on the Image Above to View Full Screen!
-          </p>
-          <div className="ProfilePicSelectors">{imageList}</div>
-        </div>
+      <div className="AboutMe">
+        <div className="AboutMeHeader">Literally who?</div>
       </div>
     </div>
   );

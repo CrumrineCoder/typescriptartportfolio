@@ -90,7 +90,7 @@ body:before {
   margin: 100px auto;
   display: block;
 }
-
+.HomePage{
 .ProfilePictures {
   display: flex;
   padding: 20px; 
@@ -393,7 +393,12 @@ body:before {
     }
   }
 }
-
+.AboutMe{
+  .AboutMeHeader{
+    font-size: 30px; 
+  }
+}
+}
 .Gallery {
   width: 100%;
   display: flex;

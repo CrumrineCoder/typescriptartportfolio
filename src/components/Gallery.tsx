@@ -1,5 +1,9 @@
 import Zoom from "react-medium-image-zoom";
 
+
+import Qale from "../assets/Qale_Final.png";
+import Fishermen from "../assets/fishermen.png"
+
 import Maidcore from "../assets/Maidcore.png";
 
 import Zemeradi from "../assets/zemeradi twilight.png";
@@ -84,6 +88,8 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    { text: "Pixel art Qale", imageSrc: Qale },
+    { text: "Memento Reelers", imageSrc: Fishermen },
     { text: "Cyberpunk Red Maid", imageSrc: Maidcore },
     { text: "Twilight Zemeradi", imageSrc: Zemeradi },
     { text: "Baldur's Gate Paladin", imageSrc: BaldursGate },
