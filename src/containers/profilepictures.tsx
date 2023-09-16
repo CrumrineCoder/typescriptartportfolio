@@ -283,7 +283,7 @@ function ProfilePictures() {
         </div>
       </div>
       <div className="AboutMe">
-        <div className="AboutMeHeader">Literally who?</div>
+        <div className="AboutMeHeader"><>Literally who?</></div>
         <div className="AboutMeBody">I enjoy Yu-Gi-Oh. </div>
       </div>
     </div>
