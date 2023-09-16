@@ -283,8 +283,29 @@ function ProfilePictures() {
         </div>
       </div>
       <div className="AboutMe">
-        <div className="AboutMeHeader"><>Literally who?</></div>
-        <div className="AboutMeBody">I enjoy Yu-Gi-Oh. </div>
+        <div className="AboutMeHeader">
+          <>Literally who?</>
+        </div>
+        <div className="AboutMeBody">
+          <p>
+              I'm Taming, and I'm a Web Dev Engineer and part time artist. I love
+            drawing for my friends - I've made plenty of profile pictures for
+            them, and for their birthdays I've designed a NPC based on them in
+            my fantasy worlds. You can find those in my Gallery - I've been
+            expanding on those worlds through my art. Currently I run two
+            campaign settings - Twilight of the Idols & Carcaso, both of which
+            I've been working on for 5+ years. I love running duet campaigns - a
+            tabletop game between myself and my one player. In everything I do,
+            I try to learn the most about my friends so I can make them happy.
+          </p>
+          <p>
+              I really enjoy meeting as many people as I can and learning what
+            they like. I've been enjoying Final Fantasy XIV to do so - I play
+            White & Black mage. I'm also a fan of Yu-Gi-Oh, Space Station 13,
+            Europa Universalis IV, League, and I hope to draw more art to
+            express my love for it.
+          </p>
+        </div>
       </div>
     </div>
   );

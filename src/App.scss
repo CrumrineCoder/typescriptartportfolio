@@ -392,6 +392,8 @@ body:before {
   }
   .AboutMe {
      margin-top: 200px; 
+     background: #6b6bb3;
+     padding: 25px;
   }
   
   .AboutMeHeader {
@@ -401,8 +403,10 @@ body:before {
   }
   
   .AboutMeBody {
-    text-align: left;
-    margin: 0 auto; 
+    text-align: center;
+    font-size: 32px; 
+    max-width: 60%;
+    margin: 0 auto;
   }
 }
 .Gallery {

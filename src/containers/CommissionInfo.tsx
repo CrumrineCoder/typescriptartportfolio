@@ -302,7 +302,10 @@ function CommissionInfo() {
                 Porn/Fetishes/Explicit NSFW
               </li>
               <li className="CommissionInfoApplicationBody">
-                Realism & complex Mecha / High Tech
+                Realism (like Renaissance paintings)
+              </li>
+              <li className="CommissionInfoApplicationBody">
+                Complex Mecha (Armored Core/Gundam)
               </li>
               <li className="CommissionInfoApplicationBody">Extreme Gore</li>
               <li className="CommissionInfoApplicationBody">
