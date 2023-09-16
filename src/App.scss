@@ -5,12 +5,11 @@ $text-color: #fff6cc;
 body {
   background-color: #6b6bb3;
   color: #dda0dd;
-  background-image: url('./assets/moth\ decal.png'), none;
-  background-repeat: repeat; 
+  background-image: url("./assets/moth\ decal.png"), none;
+  background-repeat: repeat;
   background-size: 15vh;
   backdrop-filter: blur(1px);
   padding: 0;
- 
 }
 body:before {
   /*
@@ -50,10 +49,10 @@ body:before {
   display: flex;
   justify-content: space-between;
   color: $text-color;
-  background: #6b6bb3; 
-  width: 100%;  
-  margin: 0px;   
-  padding-right: 0px; 
+  background: #6b6bb3;
+  width: 100%;
+  margin: 0px;
+  padding-right: 0px;
   @media (max-width: $breakpoint-small) {
     padding: 0px;
   }
@@ -90,314 +89,325 @@ body:before {
   margin: 100px auto;
   display: block;
 }
-.HomePage{
-.ProfilePictures {
-  display: flex;
-  padding: 20px; 
-  @media (max-width: $breakpoint-small) {
-    display: block;
-  }
-  .ProfilePicturesLeftSide {
+.HomePage {
+  .ProfilePictures {
     display: flex;
-
-    flex-direction: column;
-    flex: 1;
-    width: 50vw;
-    padding: 10px;
-    padding-right: 20px;
-    padding-top: 70px; 
-
+    padding: 20px;
     @media (max-width: $breakpoint-small) {
-      width: 100%;
-    }
-   .ProfilePicturesLeftSideText{
-    background: #6b6bb3;
-    padding: 25px; 
-    border-radius: 15px;
-    .ProfilePicturesLeftSideHeader {
-      color: $text-color;
-      font-size: 72px;
-      letter-spacing: 0.1em;
-      font-weight: bold;
-      font-family: "PT Sans", sans-serif;
-    }
-    .ProfilePicturesLeftSideSubHeader {
-      color: $text-color;
-      font-size: 36px;
-      font-weight: bold;
-      font-family: "PT Sans", sans-serif;
-      padding-top: 40px;
-      padding-bottom: 15px;
-    }
-    
-   }
-    
-
-    .ProfilePicturesLeftSideCommissionInfo {
-      color: $text-color;
-      font-size: 24px;
-      font-weight: bold;
-      font-family: "PT Sans", sans-serif;
-      padding-top: 60px;
-      max-width: 400px;
-    }
-
-    .ProfilePicturesLeftSideCommissionStatusHeader {
-      color: $text-color;
-      font-size: 40px;
-      font-weight: bold;
-      font-family: "PT Sans", sans-serif;
-      padding-top: 60px;
-      text-align: center;
-    }
-
-    .ProfilePicturesLeftSideCommissionStatusIndicator {
-      color: $text-color;
-      font-size: 48px;
-      font-weight: bold;
-      font-family: "PT Sans", sans-serif;
-
-      text-align: center;
-    }
-
-    .ProfilePicturesLeftSideCTA {
-      padding: 13px 20px;
-      border-radius: 15px;
-
-      text-align: center;
-      max-width: 300px;
-      font-size: 52px;
-      font-weight: bold;
-      font-family: "PT Sans", sans-serif;
-      margin: 50px auto 0px;
-      line-height: 1.2em;
-    }
-
-    .ProfilePicturesLeftSideCTA {
-      border: none;
-      outline: none;
-      color: rgb(0, 0, 0);
-      background: rgb(255, 255, 255);
-      cursor: pointer;
-      position: relative;
-      z-index: 0;
-      border-radius: 10px;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-
-      margin: auto auto;
-
-      &:before {
-        content: "";
-        background: linear-gradient(
-          45deg,
-          #ff0000,
-          #ff7300,
-          #fffb00,
-          #48ff00,
-          #00ffd5,
-          #002bff,
-          #7a00ff,
-          #ff00c8,
-          #ff0000
-        );
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        background-size: 400%;
-        z-index: -1;
-        filter: blur(5px);
-        -webkit-filter: blur(5px);
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        animation: glowing-button-85 20s linear infinite;
-        transition: opacity 0.3s ease-in-out;
-        border-radius: 10px;
-      }
-
-      &:after {
-        z-index: -1;
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgb(255, 255, 255);
-        left: 0;
-        top: 0;
-        border-radius: 10px;
-      }
-
-      &:hover {
-        color: #e5e7ef;
-        &::after {
-          background-color: #1f1f3f;
-        }
-      }
-    }
-
-    @keyframes glowing-button-85 {
-      0% {
-        background-position: 0 0;
-      }
-      50% {
-        background-position: 400% 0;
-      }
-      100% {
-        background-position: 0 0;
-      }
-    }
-
-    .ProfilePicturesLeftSideFooter {
-      display: flex;
-      justify-content: center;
-      padding: 5px;
-      /*   margin-top: auto; */
-      svg {
-        fill: white;
-        width: 50px;
-        cursor: pointer;
-        margin: 20px;
-        background: #1f1f3f;
-        padding: 40px;
-        border-radius: 30px;
-      }
-
-      svg:hover {
-        fill: #ffb3f3;
-      }
-    }
-  }
-  .ProfilePicturesRightSide {
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    width: 50vw;
-    position: relative;
-
-    @media (max-width: $breakpoint-small) {
-      width: 100%;
       display: block;
     }
+    .ProfilePicturesLeftSide {
+      display: flex;
 
-    .ProfilePicturesRightSideText {
-      color: black;
-      text-align: center;
-      margin: 0px;
-      margin-top: -10px;
-      padding: 0px;
-      padding-bottom: 10px;
+      flex-direction: column;
+      flex: 1;
+      width: 50vw;
+      padding: 10px;
+      padding-right: 20px;
+      padding-top: 70px;
+
       @media (max-width: $breakpoint-small) {
-        margin-top: 10px;
+        width: 100%;
+      }
+      .ProfilePicturesLeftSideText {
+        background: #6b6bb3;
+        padding: 25px;
+        border-radius: 15px;
+        .ProfilePicturesLeftSideHeader {
+          color: $text-color;
+          font-size: 72px;
+          letter-spacing: 0.1em;
+          font-weight: bold;
+          font-family: "PT Sans", sans-serif;
+        }
+        .ProfilePicturesLeftSideSubHeader {
+          color: $text-color;
+          font-size: 36px;
+          font-weight: bold;
+          font-family: "PT Sans", sans-serif;
+          padding-top: 40px;
+          padding-bottom: 15px;
+        }
+      }
+
+      .ProfilePicturesLeftSideCommissionInfo {
+        color: $text-color;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "PT Sans", sans-serif;
+        padding-top: 60px;
+        max-width: 400px;
+      }
+
+      .ProfilePicturesLeftSideCommissionStatusHeader {
+        color: $text-color;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: "PT Sans", sans-serif;
+        padding-top: 60px;
+        text-align: center;
+      }
+
+      .ProfilePicturesLeftSideCommissionStatusIndicator {
+        color: $text-color;
+        font-size: 48px;
+        font-weight: bold;
+        font-family: "PT Sans", sans-serif;
+
+        text-align: center;
+      }
+
+      .ProfilePicturesLeftSideCTA {
+        padding: 13px 20px;
+        border-radius: 15px;
+
+        text-align: center;
+        max-width: 300px;
+        font-size: 52px;
+        font-weight: bold;
+        font-family: "PT Sans", sans-serif;
+        margin: 50px auto 0px;
+        line-height: 1.2em;
+      }
+
+      .ProfilePicturesLeftSideCTA {
+        border: none;
+        outline: none;
+        color: rgb(0, 0, 0);
+        background: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+
+        margin: auto auto;
+
+        &:before {
+          content: "";
+          background: linear-gradient(
+            45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000
+          );
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          background-size: 400%;
+          z-index: -1;
+          filter: blur(5px);
+          -webkit-filter: blur(5px);
+          width: calc(100% + 4px);
+          height: calc(100% + 4px);
+          animation: glowing-button-85 20s linear infinite;
+          transition: opacity 0.3s ease-in-out;
+          border-radius: 10px;
+        }
+
+        &:after {
+          z-index: -1;
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgb(255, 255, 255);
+          left: 0;
+          top: 0;
+          border-radius: 10px;
+        }
+
+        &:hover {
+          color: #e5e7ef;
+          &::after {
+            background-color: #1f1f3f;
+          }
+        }
+      }
+
+      @keyframes glowing-button-85 {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 400% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+      .ProfilePicturesLeftSideFooter {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        /*   margin-top: auto; */
+        svg {
+          fill: white;
+          width: 50px;
+          cursor: pointer;
+          margin: 20px;
+          background: #1f1f3f;
+          padding: 40px;
+          border-radius: 30px;
+        }
+
+        svg:hover {
+          fill: #ffb3f3;
+        }
       }
     }
-    .ProfilePicturesRightWhiteBackground {
-      background-color: white;
-      padding: 20px;
-      margin-top: 50px;
-      width: 45vw;
-      border-radius: 10px;
+    .ProfilePicturesRightSide {
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      width: 50vw;
+      position: relative;
+
       @media (max-width: $breakpoint-small) {
-        width: 90%;
-        margin: 0 auto;
-      }
-      .artBox {
-        padding: 20px 0px;
-        width: 45vw;
-        align-items: center;
-        @media (max-width: $breakpoint-small) {
-          width: 100%;
-        }
+        width: 100%;
+        display: block;
       }
 
-      .discord {
-        font-family: "PT Sans", sans-serif;
-        display: flex;
-        flex-direction: row;
-        background: rgb(54, 57, 63);
-        color: white;
-        border-radius: 20px;
-        margin-bottom: 20px;
+      .ProfilePicturesRightSideText {
+        color: black;
+        text-align: center;
+        margin: 0px;
+        margin-top: -10px;
+        padding: 0px;
+        padding-bottom: 10px;
         @media (max-width: $breakpoint-small) {
-          display: block;
-          margin: 0 auto;
-          text-align: center;
+          margin-top: 10px;
         }
-        .portfolioProfilePictureImage {
-          width: 200px;
-          object-fit: contain;
-          align-self: flex-start;
-          border-radius: 50%;
-          margin: 20px 10px 10px 10px;
+      }
+      .ProfilePicturesRightWhiteBackground {
+        background-color: white;
+        padding: 20px;
+        margin-top: 50px;
+        width: 45vw;
+        border-radius: 10px;
+        @media (max-width: $breakpoint-small) {
+          width: 90%;
+          margin: 0 auto;
+        }
+        .artBox {
+          padding: 20px 0px;
+          width: 45vw;
+          align-items: center;
+          @media (max-width: $breakpoint-small) {
+            width: 100%;
+          }
+        }
+
+        .discord {
+          font-family: "PT Sans", sans-serif;
+          display: flex;
+          flex-direction: row;
+          background: rgb(54, 57, 63);
+          color: white;
+          border-radius: 20px;
+          margin-bottom: 20px;
           @media (max-width: $breakpoint-small) {
             display: block;
             margin: 0 auto;
+            text-align: center;
+          }
+          .portfolioProfilePictureImage {
+            width: 200px;
+            object-fit: contain;
+            align-self: flex-start;
+            border-radius: 50%;
+            margin: 20px 10px 10px 10px;
+            @media (max-width: $breakpoint-small) {
+              display: block;
+              margin: 0 auto;
+            }
+          }
+
+          .portfolioProfilePictureTextboxHeader {
+            span {
+              vertical-align: middle;
+            }
+            .portfolioProfilePictureTitle {
+              font-weight: bold;
+              font-size: 20px;
+            }
+            .portfolioProfilePictureDate {
+              color: rgb(163, 166, 172);
+              padding-left: 5px;
+            }
+          }
+          .portfolioProfilePictureDescription {
+            color: rgb(223, 223, 223);
+            padding: 0px 20px 0px 0px;
+            @media (max-width: $breakpoint-small) {
+              padding: 10px;
+            }
           }
         }
 
-        .portfolioProfilePictureTextboxHeader {
-          span {
-            vertical-align: middle;
-          }
-          .portfolioProfilePictureTitle {
-            font-weight: bold;
-            font-size: 20px;
-          }
-          .portfolioProfilePictureDate {
-            color: rgb(163, 166, 172);
-            padding-left: 5px;
-          }
-        }
-        .portfolioProfilePictureDescription {
-          color: rgb(223, 223, 223);
-          padding: 0px 20px 0px 0px;
+        .ProfilePicSelectors {
+          display: flex;
+          flex-wrap: wrap;
+          width: 45vw;
           @media (max-width: $breakpoint-small) {
-            padding: 10px;
+            width: 100%;
           }
-        }
-      }
-
-      .ProfilePicSelectors {
-        display: flex;
-        flex-wrap: wrap;
-        width: 45vw;
-        @media (max-width: $breakpoint-small) {
-          width: 100%;
-        }
-        .profilePicSelector {
-          flex: 0 0 calc(25% - 10px);
-          /* margin: 5px; */
-          margin: 2px;
-          cursor: pointer;
-          /*   height: 20vh;  */
-          justify-content: center;
-          @media (max-width: $breakpoint-small) {
-            flex: 0 0 calc(50% - 10px);
-          }
-          .profilePicSelectorImage {
-            /* width: 50px; 
+          .profilePicSelector {
+            flex: 0 0 calc(25% - 10px);
+            /* margin: 5px; */
+            margin: 2px;
+            cursor: pointer;
+            /*   height: 20vh;  */
+            justify-content: center;
+            @media (max-width: $breakpoint-small) {
+              flex: 0 0 calc(50% - 10px);
+            }
+            .profilePicSelectorImage {
+              /* width: 50px; 
   height: 50px; */
 
-            width: 100%;
-            height: 100%;
-            border-radius: 2px;
-            &:not(.activeSelector) {
-              -webkit-filter: grayscale(80%);
-            }
-            &:hover {
-              -webkit-filter: grayscale(0);
+              width: 100%;
+              height: 100%;
+              border-radius: 2px;
+              &:not(.activeSelector) {
+                -webkit-filter: grayscale(80%);
+              }
+              &:hover {
+                -webkit-filter: grayscale(0);
+              }
             }
           }
         }
       }
     }
   }
-}
-.AboutMe{
-  .AboutMeHeader{
-    font-size: 30px; 
+  .AboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10vh;
   }
-}
+
+  .AboutMeHeader {
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .AboutMeBody {
+    text-align: left;
+  }
 }
 .Gallery {
   width: 100%;
@@ -448,7 +458,7 @@ body:before {
         object-fit: contain;
         height: auto;
         display: block;
-        width: 100%; 
+        width: 100%;
         &:before {
           content: "";
           position: absolute;
@@ -459,8 +469,8 @@ body:before {
           border: 2px solid transparent; /* Transparent border to start */
           transition: border-color 0.3s ease; /* Smooth transition */
         }
-        &:hover{
-          filter: brightness(70%) sepia(100%) hue-rotate(260deg); 
+        &:hover {
+          filter: brightness(70%) sepia(100%) hue-rotate(260deg);
         }
       }
       .GalleryImageOverlay {
@@ -485,7 +495,6 @@ body:before {
             opacity: 0.23;
           }
         }
-        
       }
 
       &:hover {
@@ -507,7 +516,6 @@ body:before {
        
         }*/
       }
-     
     }
   }
 }
@@ -515,8 +523,8 @@ body:before {
 .CommissionInfo {
   width: 66vw;
   margin: 50px auto;
-  margin-top: 20px; 
-  padding: 20px; 
+  margin-top: 20px;
+  padding: 20px;
   padding-top: 50px;
   border-radius: 25px;
   background: #6b6bb3;
