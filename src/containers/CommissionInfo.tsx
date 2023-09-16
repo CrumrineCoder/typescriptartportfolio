@@ -329,21 +329,22 @@ function CommissionInfo() {
         <div className="CommissionInfoPricingRightContainer">
           <p className="CommissionInfoPricingHeader">PROFILE PICTURES</p>
           <p className="CommissionInfoPricingBodyPriceNumbers">
-            Colored Headshot: $60 USD
+            Coloured Headshot: $60 USD
           </p>
           <p className="CommissionInfoPricingBodyPriceNumbers">
             Bust Up: +$10 USD
           </p>
+          <p className="CommissionInfoPricingBodyPriceNumbers">
+            Tabletop Token Border: +$10 USD
+          </p>
           <p className="CommissionInfoPricingBody">
             Custom Made Profile Picture for you or OC. These will have simple or
-            no background.
+            no background unless discussed.
           </p>
         </div>
       </div>
       <p className="CommissionInfoApplicationBody">
-        Pricing options to be expanded in the near future to include complex
-        backgrounds, paintings, Pixel art, sci-fi technology, and different
-        fandoms.
+        Prices to be discussed for complex backgrounds & details, additional characters & props, pixel art, painted and other styles.
       </p>
       <p className="CommissionInfoApplicationBody">
         Thank you for your interest and taking the time to read my TOS, it's
