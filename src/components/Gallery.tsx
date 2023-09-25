@@ -1,5 +1,6 @@
 import Zoom from "react-medium-image-zoom";
 
+import Gloreya from "../assets/Gloreya.png"
 
 import Qale from "../assets/Qale_Final.png";
 import Fishermen from "../assets/fishermen.png"
@@ -88,6 +89,7 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {text: "Pixel art Gloreya", imageSrc: Gloreya},
     { text: "Pixel art Qale", imageSrc: Qale },
     { text: "Memento Reelers", imageSrc: Fishermen },
     { text: "Cyberpunk Red Maid", imageSrc: Maidcore },
