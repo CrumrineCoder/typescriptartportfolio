@@ -12,6 +12,8 @@ import { ReactComponent as Twitter } from "../assets/twitter.svg";
 import { ReactComponent as Gmail } from "../assets/envelope-solid.svg";
 import CommissionInfo from "./CommissionInfo";
 
+const Allomerus = require('../assets/profilepics/Traptrix Halloween.png');
+const Robyn = require("../assets/profilepics/Cropped_Robyn.png");
 const TammyConfused = require("../assets/profilepics/tammy.png");
 const AsheSaris = require("../assets/profilepics/ashesaris.png");
 const AyaFae = require("../assets/profilepics/AyaPfp.png");
@@ -35,6 +37,22 @@ const Dion = require("../assets/IrvanDionTokenNoBG.png");
 const Tolpa = require("../assets/Maid Token.png");
 
 const profilePicsMasterData = [
+  {
+    imageName: Allomerus,
+    artTitle: "Traptrix Allomerus",
+    artDescription:
+      "I needed a new spooky profile for Halloween, and Traptrix don't get enough scary fanart given they're venomous venus fly trap monsters, and my favourite Yu-Gi-Oh archetype so it was a natural fit. I've been thinking about and excited to do this for a few months now - I think it came out really nicely. I don't have a lot to say for the decisions on this one, I just kinda drew for a bit and then I had it. Call it divine inspiration :p",
+    style: "discord",
+    date: "10/03/2023",
+  },
+  {
+    imageName: Robyn,
+    artTitle: "Robyn",
+    artDescription:
+      "A friend of mine passed, and I wanted to draw something for them. Robyn was a big fan of Persona, so I drew with its limited colour palette found in its splash screens, but replaced red with their favourite colour. Other details about the design are a bit personal to write here, but they were taken into account. I also wrote them as a NPC in my fantasy world so a part of them will be around forever. Rest well, friend.",
+    style: "discord",
+    date: "9/29/2023",
+  },
   {
     imageName: Tolpa,
     artTitle: "Cyberpunk Red Token",

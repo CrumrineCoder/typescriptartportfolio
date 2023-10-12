@@ -1,5 +1,8 @@
 import Zoom from "react-medium-image-zoom";
 
+import Paul from "../assets/Paul Finished.png"
+
+import Robyn from "../assets/Robyn.png"
 import Gloreya from "../assets/Gloreya.png"
 
 import Qale from "../assets/Qale_Final.png";
@@ -89,6 +92,8 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {text: "Paul Servius Maximus V the greatest Mailman", imageSrc: Paul},
+    {text: "Uncropped Robyn", imageSrc: Robyn},
     {text: "Pixel art Gloreya", imageSrc: Gloreya},
     { text: "Pixel art Qale", imageSrc: Qale },
     { text: "Memento Reelers", imageSrc: Fishermen },
