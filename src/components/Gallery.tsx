@@ -1,5 +1,10 @@
 import Zoom from "react-medium-image-zoom";
 
+import Isaakios from "../assets/Iskayois.png"
+
+import Tolpacore from "../assets/Landscape Tolpa.gif";
+
+import Boann from "../assets/Boann.gif"
 import Paul from "../assets/Paul Finished.png"
 
 import Robyn from "../assets/Robyn.png"
@@ -92,6 +97,9 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {text: "EU4 Fanart", imageSrc: Isaakios},
+    {text: "Tolpacore", imageSrc: Tolpacore},
+    {text: "Pixel art Boann", imageSrc: Boann},
     {text: "Paul Servius Maximus V the greatest Mailman", imageSrc: Paul},
     {text: "Uncropped Robyn", imageSrc: Robyn},
     {text: "Pixel art Gloreya", imageSrc: Gloreya},
