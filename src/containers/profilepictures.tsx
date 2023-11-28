@@ -12,6 +12,8 @@ import { ReactComponent as Twitter } from "../assets/twitter.svg";
 import { ReactComponent as Gmail } from "../assets/envelope-solid.svg";
 import CommissionInfo from "./CommissionInfo";
 
+
+const Silfa = require("../assets/profilepics/silfa.png");
 const Allomerus = require('../assets/profilepics/Traptrix Halloween.png');
 const Robyn = require("../assets/profilepics/Cropped_Robyn.png");
 const TammyConfused = require("../assets/profilepics/tammy.png");
@@ -37,6 +39,14 @@ const Dion = require("../assets/IrvanDionTokenNoBG.png");
 const Tolpa = require("../assets/Maid Token.png");
 
 const profilePicsMasterData = [
+  {
+    imageName: Silfa,
+    artTitle: "Silfa",
+    artDescription:
+      "This is a commission for my friend Silfa who plays FF14! They initially said their character had a 'bratty spunky tomboyish vibe', but after discussing the piece they told said to make her nervous and have vibes similar to Bocchi from Bocchi the Rock and Kobanei from Chainsaw Man. They also told me their favourite emote was /deride, so I included it - you can see it in the gallery titled, 'Silfa FF14 Full Commission'. We chose my hatching style as it fit their taste the closest, which meant I got to focus on line weight and expression. I always love hatching when I get to, so this piece was extremely fun. Their references were Gposes (screenshots taken in FF14) which all had the Moogle mask in it, so I included it in this commission, and they said they loved the Newfound adventurer set, which is the outfit on the right. I did adjustments to the hair so it'd be more defined in this art style, and I added the collar to mess with them but they ended up loving it.",
+    style: "discord",
+    date: "11/28/2023",
+  },
   {
     imageName: Allomerus,
     artTitle: "Traptrix Allomerus",

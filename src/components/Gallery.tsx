@@ -1,5 +1,9 @@
 import Zoom from "react-medium-image-zoom";
 
+import SilfaFull from "../assets/Silfa FF OC.png";
+
+import PaulTokenStamp from "../assets/Paul Token.png";
+
 import Isaakios from "../assets/Iskayois.png"
 
 import Tolpacore from "../assets/Landscape Tolpa.gif";
@@ -97,6 +101,8 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {text: "Silfa FF14 Commission", imageSrc: SilfaFull},
+    {text: "Paul Token", imageSrc: PaulTokenStamp}, 
     {text: "EU4 Fanart", imageSrc: Isaakios},
     {text: "Tolpacore", imageSrc: Tolpacore},
     {text: "Pixel art Boann", imageSrc: Boann},
