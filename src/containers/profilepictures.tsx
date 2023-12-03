@@ -12,7 +12,7 @@ import { ReactComponent as Twitter } from "../assets/twitter.svg";
 import { ReactComponent as Gmail } from "../assets/envelope-solid.svg";
 import CommissionInfo from "./CommissionInfo";
 
-
+const MothMash2023 = require("../assets/profilepics/dec 2023 pfp.png");
 const Silfa = require("../assets/profilepics/silfa.png");
 const Allomerus = require('../assets/profilepics/Traptrix Halloween.png');
 const Robyn = require("../assets/profilepics/Cropped_Robyn.png");
@@ -39,6 +39,14 @@ const Dion = require("../assets/IrvanDionTokenNoBG.png");
 const Tolpa = require("../assets/Maid Token.png");
 
 const profilePicsMasterData = [
+  {
+    imageName: MothMash2023,
+    artTitle: "Mothmas 2023",
+    artDescription:
+      "Another year, another Moth drawing! I wanted this years to feel Roman/Greek to celebrate Io Saturnalia, so I made the main colour scheme yellow & harsh black outlines to represent the ancient Greek pottery we have. I added a pastel background though to keep it feeling soft and safe so that it wouldn't lean too hard into a Tarot or occult aesthetic. I wanted the pose to represent how in Winter I bunker down and do tons of work to get through the seasonal depression - hence why I'm holding a stylus. I debated making it a side profile like those 24/7 Lofi music channels, but I thought that'd be too memey when I wanted this to be a cozy simple doodle, which I adored creating.",
+    style: "discord",
+    date: "12/02/2023",
+  },
   {
     imageName: Silfa,
     artTitle: "Silfa",

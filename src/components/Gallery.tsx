@@ -101,7 +101,7 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
-    {text: "Silfa FF14 Commission", imageSrc: SilfaFull},
+    {text: "Silfa FF14 Full Commission", imageSrc: SilfaFull},
     {text: "Paul Token", imageSrc: PaulTokenStamp}, 
     {text: "EU4 Fanart", imageSrc: Isaakios},
     {text: "Tolpacore", imageSrc: Tolpacore},
