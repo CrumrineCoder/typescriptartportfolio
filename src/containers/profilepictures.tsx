@@ -324,7 +324,7 @@ function ProfilePictures() {
         </div>
         <div className="AboutMeBody">
           <p>
-              I'm Taming, and I'm a Web Dev Engineer and part time artist. I love
+              I'm Taming, and I'm a hobbyist artist. I love
             drawing for my friends - I've made plenty of profile pictures for
             them, and for their birthdays I've designed a NPC based on them in
             my fantasy worlds. You can find those in my Gallery - I've been

@@ -1,5 +1,8 @@
 import Zoom from "react-medium-image-zoom";
 
+
+
+import Blievois from "../assets/Blievois.gif";
 import SilfaFull from "../assets/Silfa FF OC.png";
 
 import PaulTokenStamp from "../assets/Paul Token.png";
@@ -101,6 +104,7 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {text: "Pixel art Blievois", imageSrc: Blievois},
     {text: "Silfa FF14 Full Commission", imageSrc: SilfaFull},
     {text: "Paul Token", imageSrc: PaulTokenStamp}, 
     {text: "EU4 Fanart", imageSrc: Isaakios},
