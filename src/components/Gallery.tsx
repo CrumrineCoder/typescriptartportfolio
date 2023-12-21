@@ -1,7 +1,7 @@
 import Zoom from "react-medium-image-zoom";
 
 
-
+import Karro from "../assets/Karro.gif";
 import Blievois from "../assets/Blievois.gif";
 import SilfaFull from "../assets/Silfa FF OC.png";
 
@@ -55,7 +55,7 @@ import Dandelion from "../assets/Carcaso/NilesCarcasoFinal.png";
 import Jinxie from "../assets/Carcaso/Jinxxie2.png";
 import Kris from "../assets/Carcaso/ChrisJamesCarcaso.png";
 import Peter from "../assets/Carcaso/PeterInCarcaso.png";
-import Rat from "../assets/Carcaso/rat w jacket redone.png";
+import Rat from "../assets/Carcaso/ratjacket.jpeg";
 import Asa from "../assets/Carcaso/asacarcaso.png";
 import Vampire from "../assets/Carcaso/vampire w turtleneck.png";
 
@@ -104,6 +104,7 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {text: "Pixel art Karro", imageSrc: Karro},
     {text: "Pixel art Blievois", imageSrc: Blievois},
     {text: "Silfa FF14 Full Commission", imageSrc: SilfaFull},
     {text: "Paul Token", imageSrc: PaulTokenStamp}, 
