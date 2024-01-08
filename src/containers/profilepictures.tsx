@@ -2,6 +2,8 @@ import "../App.scss";
 import ArtBox from "../components/artBox";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
+import {Link} from "react-router-dom";
+
 import YoutubeEmbed from "../components/YoutubeEmbed";
 
 import React, { useState } from "react";
@@ -13,11 +15,14 @@ import { profile } from "console";
 import { ReactComponent as Twitter } from "../assets/twitter.svg";
 import { ReactComponent as Gmail } from "../assets/envelope-solid.svg";
 import { ReactComponent as Twitch } from "../assets/Twitch.svg";
+
 import CommissionInfo from "./CommissionInfo";
+
+const Moff =require ("../assets/moff.png");
 
 const MothMash2023 = require("../assets/profilepics/dec 2023 pfp.png");
 const Silfa = require("../assets/profilepics/silfa.png");
-const Allomerus = require('../assets/profilepics/Traptrix Halloween.png');
+const Allomerus = require("../assets/profilepics/Traptrix Halloween.png");
 const Robyn = require("../assets/profilepics/Cropped_Robyn.png");
 const TammyConfused = require("../assets/profilepics/tammy.png");
 const AsheSaris = require("../assets/profilepics/ashesaris.png");
@@ -323,35 +328,46 @@ function ProfilePictures() {
       </div>
       <div className="TwitchLink">
         <div className="TwitchHeader">I also Stream!</div>
-        <div className="TwitchVideo"><YoutubeEmbed embedId="T5NSXRj7wWU" /></div>
-        <div className="TwitchDescription">Every Saturday I draw a fantasy God from my world</div>
-        <div className="TwitchButton">Watch Live <Twitch
-              onClick={() =>
-                window.open("https://twitch.com/tamingofspyro", "_blank")
-              }
-              className="TwitchLinkSVG"
-            /></div>
-        <div className="TwitchButton">View Gallery</div>
+        <div className="TwitchVideo">
+          <YoutubeEmbed embedId="T5NSXRj7wWU" />
+        </div>
+        <div className="TwitchDescription">
+          Every Saturday I draw a God from my fantasy world. <br />Come distract me in chat. 
+        </div>
+        <div className="TwitchButtonContainer">
+          <div
+            className="TwitchButton"
+            onClick={() =>
+              window.open("https://twitch.com/tamingofspyro", "_blank")
+            }
+          >
+            <Twitch className="TwitchLinkSVG" /> Watch Live 
+          </div>
+          <Link to="/gallery"><div className="TwitchButton"><img src={Moff}></img>View Gallery</div></Link> 
+        </div>
+        <div className="TwitchDescription">
+          Pixel art, fantasy art with backgrounds, comics, animations, etc. go in my Gallery! <br /> I worked hard on them please validate me :)
+        </div>
       </div>
-      
+
       <div className="AboutMe">
         <div className="AboutMeHeader">
           <>Literally who?</>
         </div>
         <div className="AboutMeBody">
           <p>
-              I'm Taming, and I'm a hobbyist artist. I love
-            drawing for my friends - I've made plenty of profile pictures for
-            them, and for their birthdays I've designed a NPC based on them in
-            my fantasy worlds. You can find those in my Gallery - I've been
-            expanding on those worlds through my art. Currently I run two
-            campaign settings - Twilight of the Idols & Carcaso, both of which
-            I've been working on for 5+ years. I love running duet campaigns - a
-            tabletop game between myself and my one player. In everything I do,
-            I try to learn the most about my friends so I can make them happy.
+            I'm Taming, and I'm a hobbyist artist. I love drawing for my friends
+            - I've made plenty of profile pictures for them, and for their
+            birthdays I've designed a NPC based on them in my fantasy worlds.
+            You can find those in my Gallery - I've been expanding on those
+            worlds through my art. Currently I run two campaign settings -
+            Twilight of the Idols & Carcaso, both of which I've been working on
+            for 5+ years. I love running duet campaigns - a tabletop game
+            between myself and my one player. In everything I do, I try to learn
+            the most about my friends so I can make them happy.
           </p>
           <p>
-              I really enjoy meeting as many people as I can and learning what
+            I really enjoy meeting as many people as I can and learning what
             they like. I've been enjoying Final Fantasy XIV to do so - I play
             White & Black mage. I'm also a fan of Yu-Gi-Oh, Space Station 13,
             Europa Universalis IV, League, and I hope to draw more art to
