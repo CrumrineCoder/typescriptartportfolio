@@ -2,6 +2,8 @@ import "../App.scss";
 import ArtBox from "../components/artBox";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
+import YoutubeEmbed from "../components/YoutubeEmbed";
+
 import React, { useState } from "react";
 
 import ProfilePicSelector from "../components/profilepicselector";
@@ -10,6 +12,7 @@ import { profile } from "console";
 
 import { ReactComponent as Twitter } from "../assets/twitter.svg";
 import { ReactComponent as Gmail } from "../assets/envelope-solid.svg";
+import { ReactComponent as Twitch } from "../assets/Twitch.svg";
 import CommissionInfo from "./CommissionInfo";
 
 const MothMash2023 = require("../assets/profilepics/dec 2023 pfp.png");
@@ -319,8 +322,18 @@ function ProfilePictures() {
         </div>
       </div>
       <div className="TwitchLink">
-        
+        <div className="TwitchHeader">I also Stream!</div>
+        <div className="TwitchVideo"><YoutubeEmbed embedId="T5NSXRj7wWU" /></div>
+        <div className="TwitchDescription">Every Saturday I draw a fantasy God from my world</div>
+        <div className="TwitchButton">Watch Live <Twitch
+              onClick={() =>
+                window.open("https://twitch.com/tamingofspyro", "_blank")
+              }
+              className="TwitchLinkSVG"
+            /></div>
+        <div className="TwitchButton">View Gallery</div>
       </div>
+      
       <div className="AboutMe">
         <div className="AboutMeHeader">
           <>Literally who?</>

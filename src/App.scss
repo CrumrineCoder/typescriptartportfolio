@@ -390,21 +390,75 @@ body:before {
       }
     }
   }
-  .AboutMe {
-     margin-top: 200px; 
-     background: #6b6bb3;
-     padding: 25px;
+
+  .TwitchLink {
+    background: #6b6bb3;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 100px 50px;
+
+    .TwitchHeader {
+      color: #fff6cc;
+      font-size: 72px;
+      letter-spacing: 0.1em;
+      font-weight: bold;
+      font-family: "PT Sans", sans-serif;
+    }
+
+    .video-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+
+    .video-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+
+    .TwitchDescription {
+      color: #fff6cc;
+      font-size: 36px;
+      font-weight: bold;
+      font-family: "PT Sans", sans-serif;
+      padding-top: 40px;
+      padding-bottom: 15px;
+    }
+
+    .TwitchButton {
+      border: 2px solid #fff6cc;
+      border-radius: 25px; 
+
+      .TwitchLinkSVG {
+        max-height: 52px;
+        padding-left: 10px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
   }
-  
+
+  .AboutMe {
+    margin-top: 200px;
+    background: #6b6bb3;
+    padding: 25px;
+  }
+
   .AboutMeHeader {
     font-size: 72px;
     font-weight: bold;
-    text-align: center; 
+    text-align: center;
   }
-  
+
   .AboutMeBody {
     text-align: center;
-    font-size: 32px; 
+    font-size: 32px;
     max-width: 60%;
     margin: 0 auto;
   }
