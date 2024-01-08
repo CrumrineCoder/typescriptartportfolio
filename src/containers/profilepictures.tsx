@@ -318,6 +318,9 @@ function ProfilePictures() {
           </div>
         </div>
       </div>
+      <div className="TwitchLink">
+        
+      </div>
       <div className="AboutMe">
         <div className="AboutMeHeader">
           <>Literally who?</>

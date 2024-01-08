@@ -1,6 +1,9 @@
 import Zoom from "react-medium-image-zoom";
 
 
+import DayndalChosen from "../assets/Dayndal Wanderer.png";
+import Ivy from "../assets/Ivy.png";
+import Von from "../assets/Von_God.png";
 import Karro from "../assets/Karro.gif";
 import Blievois from "../assets/Blievois.gif";
 import SilfaFull from "../assets/Silfa FF OC.png";
@@ -104,6 +107,9 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {text: "Dayndal's Chosen", imageSrc: DayndalChosen},
+    {text: "Ivy & Veda Commission", imageSrc: Ivy},
+    {text: "Pixel art Dayndal", imageSrc: Von},
     {text: "Pixel art Karro", imageSrc: Karro},
     {text: "Pixel art Blievois", imageSrc: Blievois},
     {text: "Silfa FF14 Full Commission", imageSrc: SilfaFull},
