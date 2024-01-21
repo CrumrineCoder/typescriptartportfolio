@@ -20,6 +20,7 @@ import CommissionInfo from "./CommissionInfo";
 
 const Moff =require ("../assets/moff.png");
 
+const GarlicJester = require("../assets/profilepics/Tami Garlic.png");
 const MothMash2023 = require("../assets/profilepics/dec 2023 pfp.png");
 const Silfa = require("../assets/profilepics/silfa.png");
 const Allomerus = require("../assets/profilepics/Traptrix Halloween.png");
@@ -48,6 +49,14 @@ const Tolpa = require("../assets/Maid Token.png");
 
 const profilePicsMasterData = [
   {
+    imageName: GarlicJester,
+    artTitle: "Garlic Jester",
+    artDescription:
+      "Garlic Jester will forever be associated with my first friend in FF14, and I've been wanting to draw my character holding it for a year or so now. I also put them in my favourite location - the Snail in Iddylshire, which is also associated with that first friend. I considered putting them on a ledge with a complete profile shot for the both of them, but decided to change it a bit for a more personal look. As for the colours and composition, I wanted to make it feel homely. I want to do more painting, I enjoy how the sunflowers came out in this piece, as well as Tami's hair.",
+    style: "discord",
+    date: "01/12/2024",
+  },
+  {
     imageName: MothMash2023,
     artTitle: "Mothmas 2023",
     artDescription:
@@ -59,7 +68,7 @@ const profilePicsMasterData = [
     imageName: Silfa,
     artTitle: "Silfa",
     artDescription:
-      "This is a commission for my friend Silfa who plays FF14! They initially said their character had a 'bratty spunky tomboyish vibe', but after discussing the piece they told said to make her nervous and have vibes similar to Bocchi from Bocchi the Rock and Kobanei from Chainsaw Man. They also told me their favourite emote was /deride, so I included it - you can see it in the gallery titled, 'Silfa FF14 Full Commission'. We chose my hatching style as it fit their taste the closest, which meant I got to focus on line weight and expression. I always love hatching when I get to, so this piece was extremely fun. Their references were Gposes (screenshots taken in FF14) which all had the Moogle mask in it, so I included it in this commission, and they said they loved the Newfound adventurer set, which is the outfit on the right. I did adjustments to the hair so it'd be more defined in this art style, and I added the collar to mess with them but they ended up loving it.",
+      "This is a commission for my friend Silfa who plays FF14! They initially said their character had a 'bratty spunky tomboyish vibe', but after discussing the piece they told me to make her nervous and have vibes similar to Bocchi from Bocchi the Rock and Kobanei from Chainsaw Man. They also told me their favourite emote was /deride, so I included it - you can see it in the gallery titled, 'Silfa FF14 Full Commission'. We chose my hatching style as it fit their taste the closest, which meant I got to focus on line weight and expression. I always love hatching when I get to, so this piece was extremely fun. Their references were Gposes (screenshots taken in FF14) which all had the Moogle mask in it, so I included it in this commission, and they said they loved the Newfound adventurer set, which is the outfit on the right. I did adjustments to the hair so it'd be more defined in this art style, and I added the collar to mess with them but they ended up loving it.",
     style: "discord",
     date: "11/28/2023",
   },
@@ -67,7 +76,7 @@ const profilePicsMasterData = [
     imageName: Allomerus,
     artTitle: "Traptrix Allomerus",
     artDescription:
-      "I needed a new spooky profile for Halloween, and Traptrix don't get enough scary fanart given they're venomous venus fly trap monsters, and my favourite Yu-Gi-Oh archetype so it was a natural fit. I've been thinking about and excited to do this for a few months now - I think it came out really nicely. I don't have a lot to say for the decisions on this one, I just kinda drew for a bit and then I had it. Call it divine inspiration :p",
+      "I needed a new spooky profile for Halloween, and Traptrix don't get enough scary fanart given they're venomous venus fly trap monsters. Which is a shame, they're my favourite Archetype (You can see it in the Yugioh Banner I did in the Gallery). Been looking forward to this for a few months now - I think it came out really nicely. I don't have a lot to say for the decisions on this one, I just kinda drew for a bit and then I had it. Call it divine inspiration :p I do want to use the effect that makes it look like a child drew the lines with a ball point pen.",
     style: "discord",
     date: "10/03/2023",
   },
