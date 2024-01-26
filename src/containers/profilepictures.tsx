@@ -76,7 +76,7 @@ const profilePicsMasterData = [
     imageName: Allomerus,
     artTitle: "Traptrix Allomerus",
     artDescription:
-      "I needed a new spooky profile for Halloween, and Traptrix don't get enough scary fanart given they're venomous venus fly trap monsters. Which is a shame, they're my favourite Archetype (You can see it in the Yugioh Banner I did in the Gallery). Been looking forward to this for a few months now - I think it came out really nicely. I don't have a lot to say for the decisions on this one, I just kinda drew for a bit and then I had it. Call it divine inspiration :p I do want to use the effect that makes it look like a child drew the lines with a ball point pen.",
+      "I needed a new spooky profile for Halloween, and Traptrix don't get enough scary fanart given they're venomous venus fly trap monsters. Which is a shame, they're my favourite Archetype (You can see it in the Yugioh Banner I did in the Gallery). Been looking forward to this for a few months now - I think it came out really nicely. I feel like I accidentally made the lines look like it was done with a ball point pen, which amuses me and I want to use in the future.  I don't have a lot to say for the decisions on this one, I just kinda drew for a bit and then I had it. Call it divine inspiration :p ",
     style: "discord",
     date: "10/03/2023",
   },

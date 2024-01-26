@@ -27,7 +27,7 @@ function CommissionInfo() {
       </div>
       <div className="CommissionInfoSubHeader">
         Please review the pricing and terms below before sending a request to
-        tamingthecarcasoan@gmail. Commission queue can be found{" "}
+        tamingthecarcasoan@gmail.{" "}
         <div
           className="inlineLink"
           onClick={() =>
@@ -37,8 +37,25 @@ function CommissionInfo() {
             )
           }
         >
-          here.
+          Commission Queue
         </div>
+      </div>
+      <div className="CommissionInfoTLDR">
+        <h1>TL;DR</h1>
+        <ul>
+          <li>
+            I wants lots of references and clear purpose for the commission. I
+            ask a lot of questions to make sure I get it right.
+          </li>
+          <li>Base price is 60 USD and goes up with complexity.</li>
+          <li>
+            Pricing is case by case if you want pixel art or something else you
+            find interesting in my gallery.
+          </li>
+          <li>
+            PM me if you have questions! I'm a cool person 😎
+          </li>
+        </ul>
       </div>
       <div className="CommissionInfoApplicationSubHeaderButtons">
         <button
@@ -73,15 +90,15 @@ function CommissionInfo() {
             <p className="CommissionInfoApplicationSubHeader">
               Commission Process:
             </p>
-            <ol className="CommissionInfoApplicationListContainer">
-              <li className="CommissionInfoApplicationBody">
+            <div className="CommissionInfoApplicationListContainer">
+              <p className="CommissionInfoApplicationBody">
                 After reading and agreeing to the Terms of Service, please send
                 me an Email titled "COMMISSION - (Your name and Social Media
                 Username if you want to be tagged) [E-mail:
                 tamingthecarcasoan@gmail.com] With the below details.
                 Alternatively, you can send this over Twitter DMs.
-              </li>
-
+              </p>
+              <p className="CommissionInfoApplicationSubHeader">Time</p>
               <p className="CommissionInfoApplicationBody">
                 Time estimates on when I can respond to commission requests
                 cannot be given at the moment. Commissions will take as long as
@@ -100,20 +117,16 @@ function CommissionInfo() {
                 know if you won't be available at any time so I know there will
                 be a delayed response.
               </p>
-
+              <p className="CommissionInfoApplicationSubHeader">References</p>
               <p className="CommissionInfoApplicationBodyItalics">
                 Please include the following written details in your commission:
               </p>
               <ul className="CommissionInfoApplicationListContainer">
                 <li className="CommissionInfoApplicationListItem">
-                  Commission Type
+                  Commission Type (Headshot? Pixel art? Landscape?)
                 </li>
                 <li className="CommissionInfoApplicationListItem">
-                  A concise summary of personality and desired expression. You
-                  don't have to write more than 1-2 sentences, but I work best
-                  by understanding what your end goal is and working backwards.
-                  It's perfectly okay if you think a neutral expression would be
-                  best!
+                  Let me know what kind of personality you want me to get across. It doesn't have to be long, and can be a neutral expression if you think it's best.
                 </li>
                 <li className="CommissionInfoApplicationListItem">
                   Pose (only for bigger pieces and illustrations). This can just
@@ -177,19 +190,21 @@ function CommissionInfo() {
                   without any delays)
                 </li>
               </ul>
-              <li className="CommissionInfoApplicationBody">
+              <p className="CommissionInfoApplicationSubHeader">Pricing</p>
+              <p className="CommissionInfoApplicationBody">
                 The concept of the artwork will be discussed, as well as the
                 price quote. Upon confirmation of price, I will send you an
                 invoice via Paypal. All payment is done 100% upfront. I will NOT
                 send an invoice unless you've agreed with the price. I will
                 cancel the Invoice if I don’t hear back within 48 hours unless
                 otherwise given notice.
-              </li>
-              <li className="CommissionInfoApplicationBody">
+              </p>
+              <p className="CommissionInfoApplicationSubHeader">Drawing & Feedback</p>
+              <p className="CommissionInfoApplicationBody">
                 A thumbnail sketch(es) based on the client's description will be
                 done to determine general composition of the artwork.
-              </li>
-              <li className="CommissionInfoApplicationBody">
+              </p>
+              <p className="CommissionInfoApplicationBody">
                 Once the thumbnail is approved, a detailed sketch will be
                 created in order to seek conceptual approval for the final
                 piece. Revisions cannot be made after final approval so please
@@ -197,16 +212,16 @@ function CommissionInfo() {
                 mistakes during the process. I will only accept up to 3
                 revisions once this sketch is made (unless it was an error on my
                 part!).
-              </li>
-              <li className="CommissionInfoApplicationBody">
+              </p>
+              <p className="CommissionInfoApplicationBody">
                 After the illustration is done, I will send you the thumbnail
                 for the final check.
-              </li>
-              <li className="CommissionInfoApplicationBody">
+              </p>
+              <p className="CommissionInfoApplicationBody">
                 If approved, I will send a high-res version of the art through
                 email when finished.
-              </li>
-            </ol>
+              </p>
+            </div>
           </>
         )}
 
@@ -280,6 +295,7 @@ function CommissionInfo() {
               <li className="CommissionInfoApplicationBody">
                 Light/simple Mecha/Armour
               </li>
+              <li className="CommissionInfoApplicationBody">Pixel art! :D</li>
               <li className="CommissionInfoApplicationBody">
                 Mild demonstration of violence (blood, scrapes)
               </li>
@@ -331,24 +347,34 @@ function CommissionInfo() {
           <p className="CommissionInfoPricingBodyPriceNumbers">
             Coloured Headshot: $60 USD
           </p>
-          <p className="CommissionInfoPricingBodyPriceNumbers">
-            Bust Up: +$10 USD
-          </p>
-          <p className="CommissionInfoPricingBodyPriceNumbers">
-            Tabletop Token Border: +$10 USD
+          <p className="CommissionInfoPricingBody">
+            Custom Made Profile Picture for you or OC. Additional complexity
+            like the following will increase this base price.
+            <ul>
+              <li>Bust Up/Waist Up/Full Body</li>
+              <li>Backgrounds</li>
+              <li>Borders</li>
+              <li>Additional Characters & Props</li>
+              <li>
+                Design Work (Asking me to design the character and/or their
+                outfit)
+              </li>
+              <li>
+                Custom Style (Requesting I do try to incorporate a certain
+                style)
+              </li>
+            </ul>
           </p>
           <p className="CommissionInfoPricingBody">
-            Custom Made Profile Picture for you or OC. These will have simple or
-            no background unless discussed.
+            I'm open to discussing full landscape pieces, pixel art, or other
+            pieces you find interesting in my gallery! These will be priced on a
+            case by case basis.
           </p>
         </div>
       </div>
-      <p className="CommissionInfoApplicationBody">
-        Prices to be discussed for complex backgrounds & details, additional characters & props, pixel art, painted and other styles.
-      </p>
-      <p className="CommissionInfoApplicationBody">
+      <p className="CommissionInfoApplicationBody CommissionThankYou">
         Thank you for your interest and taking the time to read my TOS, it's
-        greatly appreciated!
+        greatly appreciated! Love you all, mwah ᡣ𐭩
       </p>
     </div>
   );

@@ -1,5 +1,8 @@
 import Zoom from "react-medium-image-zoom";
 
+import irvan_doctor from "../assets/irvan doctor.gif";
+
+import Nyla from "../assets/Nyla.gif";
 import Ravv from "../assets/ravv.png";
 import IrvanRedesign from "../assets/Irvan Dion.png";
 import DayndalChosen from "../assets/Dayndal Wanderer.png";
@@ -108,6 +111,8 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {text: "Irvan Animation", imageSrc: irvan_doctor},
+    {text: "Pixel art Nyla", imageSrc: Nyla},
     {text: "Pixel art Ravv", imageSrc: Ravv},
     {text: "Irvan Redesign", imageSrc: IrvanRedesign},
     {text: "Dayndal's Chosen", imageSrc: DayndalChosen},
