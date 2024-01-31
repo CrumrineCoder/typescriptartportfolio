@@ -1,7 +1,8 @@
 import Zoom from "react-medium-image-zoom";
 
+import Tolpa_Subway from "../assets/tolpa subway.gif";
+import Yuyu from "../assets/Yuyu birthday drawing actually.png";
 import irvan_doctor from "../assets/irvan doctor.gif";
-
 import Nyla from "../assets/Nyla.gif";
 import Ravv from "../assets/ravv.png";
 import IrvanRedesign from "../assets/Irvan Dion.png";
@@ -111,6 +112,8 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {text: "Graffiti of a forgotten heartbreak that never happened", imageSrc: Tolpa_Subway},
+    {text: "Yuyu in Carcaso", imageSrc: Yuyu},
     {text: "Irvan Animation", imageSrc: irvan_doctor},
     {text: "Pixel art Nyla", imageSrc: Nyla},
     {text: "Pixel art Ravv", imageSrc: Ravv},

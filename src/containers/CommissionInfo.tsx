@@ -360,7 +360,7 @@ function CommissionInfo() {
                 outfit)
               </li>
               <li>
-                Custom Style (Requesting I do try to incorporate a certain
+                Custom Style (Requesting I incorporate a certain
                 style)
               </li>
             </ul>
