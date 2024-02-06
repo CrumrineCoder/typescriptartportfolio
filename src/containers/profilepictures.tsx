@@ -2,7 +2,7 @@ import "../App.scss";
 import ArtBox from "../components/artBox";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import YoutubeEmbed from "../components/YoutubeEmbed";
 
@@ -18,8 +18,9 @@ import { ReactComponent as Twitch } from "../assets/Twitch.svg";
 
 import CommissionInfo from "./CommissionInfo";
 
-const Moff =require ("../assets/moff.png");
+const Moff = require("../assets/moff.png");
 
+const TraptrixSera = require("../assets/profilepics/traptrix garden.png");
 const GarlicJester = require("../assets/profilepics/Tami Garlic.png");
 const MothMash2023 = require("../assets/profilepics/dec 2023 pfp.png");
 const Silfa = require("../assets/profilepics/silfa.png");
@@ -48,6 +49,14 @@ const Dion = require("../assets/IrvanDionTokenNoBG.png");
 const Tolpa = require("../assets/Maid Token.png");
 
 const profilePicsMasterData = [
+  {
+    imageName: TraptrixSera,
+    artTitle: "Garlic Jester",
+    artDescription:
+      "Garlic Jester will forever be associated with my first friend in FF14, and I've been wanting to draw my character holding it for a year or so now. I also put them in my favourite location - the Snail in Iddylshire, which is also associated with that first friend. I considered putting them on a ledge with a complete profile shot for the both of them, but decided to change it a bit for a more personal look. As for the colours and composition, I wanted to make it feel homely. I want to do more painting, I enjoy how the sunflowers came out in this piece, as well as Tami's hair.",
+    style: "discord",
+    date: "01/12/2024",
+  },
   {
     imageName: GarlicJester,
     artTitle: "Garlic Jester",
@@ -341,7 +350,8 @@ function ProfilePictures() {
           <YoutubeEmbed embedId="T5NSXRj7wWU" />
         </div>
         <div className="TwitchDescription">
-          Every Saturday I draw a God from my fantasy world. <br />Come distract me in chat. 
+          Every Saturday I draw a God from my fantasy world. <br />
+          Come distract me in chat.
         </div>
         <div className="TwitchButtonContainer">
           <div
@@ -350,12 +360,17 @@ function ProfilePictures() {
               window.open("https://twitch.com/tamingofspyro", "_blank")
             }
           >
-            <Twitch className="TwitchLinkSVG" /> Watch Live 
+            <Twitch className="TwitchLinkSVG" /> Watch Live
           </div>
-          <Link to="/gallery"><div className="TwitchButton"><img src={Moff}></img>View Gallery</div></Link> 
+          <Link to="/gallery">
+            <div className="TwitchButton">
+              <img src={Moff}></img>View Gallery
+            </div>
+          </Link>
         </div>
         <div className="TwitchDescription">
-          Pixel art, fantasy art with backgrounds, comics, animations, etc. go in my Gallery! <br /> I worked hard on them please validate me :)
+          Pixel art, fantasy art with backgrounds, comics, animations, etc. go
+          in my Gallery! <br /> I worked hard on them please validate me :)
         </div>
       </div>
 
