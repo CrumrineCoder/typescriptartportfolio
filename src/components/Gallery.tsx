@@ -86,8 +86,9 @@ import gonegirl from "../assets/Carcaso/gonegirl.png";
 
 interface GalleryItemProps {
   text: string;
-  imageSrc?: string;
+  imageSrc: string;
   youtubeLink?: string;
+  linkText?: string;
 }
 
 function GalleryItem(props: GalleryItemProps) {
@@ -106,7 +107,17 @@ function GalleryItem(props: GalleryItemProps) {
             src={props.imageSrc}
             alt={props.imageSrc}
           />
-          <p> {props.youtubeLink}</p>
+          {props.youtubeLink && (
+            <p>
+              <a
+                href={encodeURI(props.youtubeLink)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {props.linkText}
+              </a>
+            </p>
+          )}
         </div>
       </Zoom>
     </span>
@@ -115,7 +126,7 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
-    { text: "Pixel art Ko", imageSrc: Ko, youtubeLink: "https://www.w3schools.com/tags/att_a_href.asp" },
+    { text: "Pixel art Ko", imageSrc: Ko },
     { text: "Four Knights Game", imageSrc: Chess },
     {
       text: "Graffiti of a forgotten heartbreak that never happened",
@@ -139,6 +150,7 @@ function Gallery() {
       imageSrc: Tolpacore,
       youtubeLink:
         "https://www.youtube.com/watch?v=aNY-jQEBajk&ab_channel=Taming",
+      linkText: "Animated Music Video",
     },
     { text: "Pixel art Boann", imageSrc: Boann },
     { text: "Paul Servius Maximus V the greatest Mailman", imageSrc: Paul },
@@ -193,7 +205,13 @@ function Gallery() {
     <div className="Gallery">
       <div className="GalleryImagesContainer">
         {items.map((item, index) => (
-          <GalleryItem key={index} text={item.text} imageSrc={item.imageSrc} />
+          <GalleryItem
+            key={index}
+            text={item.text}
+            imageSrc={item.imageSrc}
+            youtubeLink={item.youtubeLink}
+            linkText={item.linkText}
+          />
         ))}
       </div>
     </div>
