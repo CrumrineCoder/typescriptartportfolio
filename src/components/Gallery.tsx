@@ -1,5 +1,6 @@
 import Zoom from "react-medium-image-zoom";
 import YoutubeEmbed from "./YoutubeEmbed";
+import YoutubeLogo from "../assets/Youtube_logo.png"
 
 import Ko from "../assets/Ko.gif";
 import Chess from "../assets/Ecumenical.png";
@@ -109,46 +110,52 @@ function GalleryItem(props: GalleryItemProps) {
               alt={props.imageSrc}
             />
           )}
-          {props.youtubeLink && <YoutubeEmbed className="GalleryVideo" embedId={props.youtubeLink} />}
+          {props.youtubeLink && (!props.linkText || !props.imageSrc) && (
+            <YoutubeEmbed
+              className="GalleryVideo"
+              embedId={props.youtubeLink}
+            />
+          )}
+          {props.youtubeLink && props.imageSrc && (
+            <a
+              href={encodeURI(props.youtubeLink)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="GalleryLink"
+            >
+              <img src={YoutubeLogo}></img>
+              {props.linkText}
+            </a>
+          )}
         </div>
       </Zoom>
     </span>
   );
 }
-/*
-   <a
-                href={encodeURI(props.youtubeLink)}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {props.linkText}
-              </a>
-              */
-
 function Gallery() {
   const items: GalleryItemProps[] = [
     { text: "Pixel art Ko", imageSrc: Ko },
     { text: "Four Knights Game", imageSrc: Chess },
     {
       text: "Graffiti of a forgotten heartbreak that never happened",
-      imageSrc: Tolpa_Subway,
+      youtubeLink: "CzWqI3g08TI",
     },
     { text: "Yuyu in Carcaso", imageSrc: Yuyu },
     { text: "Irvan Animation", imageSrc: irvan_doctor },
-    { text: "Pixel art Nyla", imageSrc: Nyla },
-    { text: "Pixel art Ravv", imageSrc: Ravv },
+    { text: "Pixel art Nyla", imageSrc: Nyla, youtubeLink: "https://www.youtube.com/watch?v=Rrm3AzPYgPQ&ab_channel=Taming", linkText: "Speedpaint" },
+    { text: "Pixel art Ravv", imageSrc: Ravv, youtubeLink: "https://www.youtube.com/watch?v=esEzYmNSybc", linkText: "Speedpaint"},
     { text: "Irvan Redesign", imageSrc: IrvanRedesign },
     { text: "Dayndal's Chosen", imageSrc: DayndalChosen },
     { text: "Ivy & Veda Commission", imageSrc: Ivy },
     { text: "Pixel art Dayndal", imageSrc: Von },
-    { text: "Pixel art Karro", imageSrc: Karro },
+    { text: "Pixel art Karro", imageSrc: Karro, youtubeLink:"https://www.youtube.com/watch?v=T5NSXRj7wWU", linkText: "Speedpaint" },
     { text: "Pixel art Blievois", imageSrc: Blievois },
     { text: "Silfa FF14 Full Commission", imageSrc: SilfaFull },
     { text: "Paul Token", imageSrc: PaulTokenStamp },
     { text: "EU4 Fanart", imageSrc: Isaakios },
     {
       text: "Tolpacore",
-     // imageSrc: Tolpacore,
+      // imageSrc: Tolpacore,
       youtubeLink: "aNY-jQEBajk",
       linkText: "Animated Music Video",
     },

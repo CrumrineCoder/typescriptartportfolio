@@ -559,6 +559,17 @@ body:before {
           width: 100%;
         }
       }
+      .GalleryLink{
+        img{
+          width: 30px; 
+          margin-right: 10px; 
+        }
+        font-size: 2em; 
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 25px;
+      }
       .GalleryImageOverlay {
         position: relative;
         display: inline-block;
