@@ -85,6 +85,7 @@ import Leo from "../assets/Carcaso/LeoCarcaso.png";
 import Fenmes from "../assets/Carcaso/Fenmes.png";
 import Vitriol from "../assets/Carcaso/Vitriol.png";
 import gonegirl from "../assets/Carcaso/gonegirl.png";
+import React from "react";
 
 interface GalleryItemProps {
   text: string;
@@ -262,10 +263,18 @@ function Gallery() {
     { text: "Wilson in Pokemon", imageSrc: wilsonPokemon },
     { text: "Bee", imageSrc: Bee },
   ];
+  const [currentTag, setCurrentTag] = React.useState("Pixel Art");
+  function filterByTag(galleryItem: GalleryItemProps) {
+    if (galleryItem.tags) {
+      return galleryItem.tags.includes(currentTag);
+    }
+  }
+  const filteredItems = items.filter(filterByTag);
+
   return (
     <div className="Gallery">
       <div className="GalleryImagesContainer">
-        {items.map((item, index) => (
+        {filteredItems.map((item, index) => (
           <GalleryItem
             key={index}
             text={item.text}
