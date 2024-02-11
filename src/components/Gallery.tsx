@@ -17,18 +17,18 @@ import SilfaFull from "../assets/Silfa FF OC.png";
 
 import PaulTokenStamp from "../assets/Paul Token.png";
 
-import Isaakios from "../assets/Iskayois.png"
+import Isaakios from "../assets/Iskayois.png";
 
 import Tolpacore from "../assets/Landscape Tolpa.gif";
 
-import Boann from "../assets/Boann.gif"
-import Paul from "../assets/Paul Finished.png"
+import Boann from "../assets/Boann.gif";
+import Paul from "../assets/Paul Finished.png";
 
-import Robyn from "../assets/Robyn.png"
-import Gloreya from "../assets/Gloreya.png"
+import Robyn from "../assets/Robyn.png";
+import Gloreya from "../assets/Gloreya.png";
 
 import Qale from "../assets/Qale_Final.png";
-import Fishermen from "../assets/fishermen.png"
+import Fishermen from "../assets/fishermen.png";
 
 import Maidcore from "../assets/Maidcore.png";
 
@@ -86,7 +86,8 @@ import gonegirl from "../assets/Carcaso/gonegirl.png";
 
 interface GalleryItemProps {
   text: string;
-  imageSrc: string;
+  imageSrc?: string;
+  youtubeLink?: string;
 }
 
 function GalleryItem(props: GalleryItemProps) {
@@ -99,13 +100,13 @@ function GalleryItem(props: GalleryItemProps) {
       <Zoom>
         <div className="GalleryItem">
           <span className="GalleryText">{props.text}</span>
-          
-            <img
-              className="GalleryImage"
-              src={props.imageSrc}
-              alt={props.imageSrc}
-            />
-      
+
+          <img
+            className="GalleryImage"
+            src={props.imageSrc}
+            alt={props.imageSrc}
+          />
+          <p> {props.youtubeLink}</p>
         </div>
       </Zoom>
     </span>
@@ -114,27 +115,35 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
-    {text: "Pixel art Ko", imageSrc: Ko},
-    {text: "Four Knights Game", imageSrc: Chess},
-    {text: "Graffiti of a forgotten heartbreak that never happened", imageSrc: Tolpa_Subway},
-    {text: "Yuyu in Carcaso", imageSrc: Yuyu},
-    {text: "Irvan Animation", imageSrc: irvan_doctor},
-    {text: "Pixel art Nyla", imageSrc: Nyla},
-    {text: "Pixel art Ravv", imageSrc: Ravv},
-    {text: "Irvan Redesign", imageSrc: IrvanRedesign},
-    {text: "Dayndal's Chosen", imageSrc: DayndalChosen},
-    {text: "Ivy & Veda Commission", imageSrc: Ivy},
-    {text: "Pixel art Dayndal", imageSrc: Von},
-    {text: "Pixel art Karro", imageSrc: Karro},
-    {text: "Pixel art Blievois", imageSrc: Blievois},
-    {text: "Silfa FF14 Full Commission", imageSrc: SilfaFull},
-    {text: "Paul Token", imageSrc: PaulTokenStamp}, 
-    {text: "EU4 Fanart", imageSrc: Isaakios},
-    {text: "Tolpacore", imageSrc: Tolpacore},
-    {text: "Pixel art Boann", imageSrc: Boann},
-    {text: "Paul Servius Maximus V the greatest Mailman", imageSrc: Paul},
-    {text: "Uncropped Robyn", imageSrc: Robyn},
-    {text: "Pixel art Gloreya", imageSrc: Gloreya},
+    { text: "Pixel art Ko", imageSrc: Ko, youtubeLink: "https://www.w3schools.com/tags/att_a_href.asp" },
+    { text: "Four Knights Game", imageSrc: Chess },
+    {
+      text: "Graffiti of a forgotten heartbreak that never happened",
+      imageSrc: Tolpa_Subway,
+    },
+    { text: "Yuyu in Carcaso", imageSrc: Yuyu },
+    { text: "Irvan Animation", imageSrc: irvan_doctor },
+    { text: "Pixel art Nyla", imageSrc: Nyla },
+    { text: "Pixel art Ravv", imageSrc: Ravv },
+    { text: "Irvan Redesign", imageSrc: IrvanRedesign },
+    { text: "Dayndal's Chosen", imageSrc: DayndalChosen },
+    { text: "Ivy & Veda Commission", imageSrc: Ivy },
+    { text: "Pixel art Dayndal", imageSrc: Von },
+    { text: "Pixel art Karro", imageSrc: Karro },
+    { text: "Pixel art Blievois", imageSrc: Blievois },
+    { text: "Silfa FF14 Full Commission", imageSrc: SilfaFull },
+    { text: "Paul Token", imageSrc: PaulTokenStamp },
+    { text: "EU4 Fanart", imageSrc: Isaakios },
+    {
+      text: "Tolpacore",
+      imageSrc: Tolpacore,
+      youtubeLink:
+        "https://www.youtube.com/watch?v=aNY-jQEBajk&ab_channel=Taming",
+    },
+    { text: "Pixel art Boann", imageSrc: Boann },
+    { text: "Paul Servius Maximus V the greatest Mailman", imageSrc: Paul },
+    { text: "Uncropped Robyn", imageSrc: Robyn },
+    { text: "Pixel art Gloreya", imageSrc: Gloreya },
     { text: "Pixel art Qale", imageSrc: Qale },
     { text: "Memento Reelers", imageSrc: Fishermen },
     { text: "Cyberpunk Red Maid", imageSrc: Maidcore },
