@@ -266,7 +266,7 @@ function Gallery() {
     { text: "Wilson in Pokemon", imageSrc: wilsonPokemon },
     { text: "Bee", imageSrc: Bee, tags: ["Yugioh"] },
   ];
-  const [currentTag, setCurrentTag] = React.useState("Pixel Art");
+  const [currentTag, setCurrentTag] = React.useState("");
   function filterByTag(galleryItem: GalleryItemProps) {
     if (currentTag === "") {
       return galleryItem;
