@@ -265,6 +265,9 @@ function Gallery() {
   ];
   const [currentTag, setCurrentTag] = React.useState("Pixel Art");
   function filterByTag(galleryItem: GalleryItemProps) {
+    if (currentTag === ""){
+      return galleryItem; 
+    }
     if (galleryItem.tags) {
       return galleryItem.tags.includes(currentTag);
     }
@@ -273,6 +276,26 @@ function Gallery() {
 
   return (
     <div className="Gallery">
+      <span className="GalleryButtonsContainer">
+        <button className="GalleryButtons" onClick={() => setCurrentTag("")}>
+          All
+        </button>
+        <button className="GalleryButtons" onClick={() => setCurrentTag("Carcaso")}>
+          Carcaso
+        </button>
+        <button className="GalleryButtons" onClick={() => setCurrentTag("Twilight")}>
+          Twilight of the Idols
+        </button>
+        <button className="GalleryButtons" onClick={() => setCurrentTag("FF14")}>
+          FF14
+        </button>
+        <button className="GalleryButtons" onClick={() => setCurrentTag("Animated")}>
+          Animated
+        </button>
+        <button className="GalleryButtons" onClick={() => setCurrentTag("Pixel Art")}>
+          Pixel Art
+        </button>
+      </span>
       <div className="GalleryImagesContainer">
         {filteredItems.map((item, index) => (
           <GalleryItem
