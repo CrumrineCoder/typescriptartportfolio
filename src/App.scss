@@ -494,6 +494,34 @@ body:before {
   flex-wrap: wrap;
   justify-content: space-between;
   color: white;
+  .GalleryButtonsContainer{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 25px; 
+    .GalleryButtons{
+      background-color: transparent;
+      margin: 5px;
+      color: white;
+      border: 2px solid white;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: color 0.3s, border-color 0.3s;
+      text-transform: uppercase;
+      font-weight: bold;
+      &:hover {
+        /* background-color: white; */
+        color: #ffb3f3;
+        border: 2px solid #ffb3f3;
+      }
+
+      &:disabled{
+        cursor: not-allowed;
+        opacity: 0.4;
+        pointer-events: none;
+      }
+    }
+  }
   .GalleryImagesContainer {
     margin: 50px;
     display: flex;

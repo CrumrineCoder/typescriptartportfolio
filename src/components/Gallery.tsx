@@ -184,7 +184,7 @@ function Gallery() {
       imageSrc: Blievois,
       tags: ["Twilight", "Pixel Art", "Animated"],
     },
-    { text: "Silfa FF14 Full Commission", imageSrc: SilfaFull },
+    { text: "Silfa FF14 Full Commission", imageSrc: SilfaFull, tags: ["FF14"]  },
     { text: "Paul Token", imageSrc: PaulTokenStamp },
     { text: "EU4 Fanart", imageSrc: Isaakios },
     {
@@ -217,7 +217,7 @@ function Gallery() {
     { text: "Hatching practice", imageSrc: combination },
     { text: "Irvan the Shirren Moth", imageSrc: Starfinder1 },
     { text: "Twilight Wizards", imageSrc: twilightWizard, tags: ["Twilight"] },
-    { text: "Nunn but Evangelion", imageSrc: Nunn },
+    { text: "Nunn but Evangelion", imageSrc: Nunn, tags: ["FF14"]  },
     {
       text: "Columbo Meets Blue's Clues",
       imageSrc: BluesClues,
@@ -253,20 +253,20 @@ function Gallery() {
     { text: "Saint Fenmes", imageSrc: Fenmes, tags: ["Carcaso"] },
     { text: "Gone Girl", imageSrc: gonegirl, tags: ["Carcaso"] },
     { text: "Cleansing", imageSrc: Vitriol, tags: ["Carcaso"] },
-    { text: "Lala Carbuncle Badge", imageSrc: carbuncle },
-    { text: "Lala Cherry Bomb Badge", imageSrc: cherryBomb },
-    { text: "Lala Chocobo Badge", imageSrc: chocobo },
-    { text: "Lala Moogle Badge", imageSrc: moogle },
-    { text: "Lala Pokeball", imageSrc: pokeball },
-    { text: "Lala Trophy", imageSrc: trophy },
-    { text: "Travers' WoL", imageSrc: Travers },
+    { text: "Lala Carbuncle Badge", imageSrc: carbuncle, tags: ["FF14"]  },
+    { text: "Lala Cherry Bomb Badge", imageSrc: cherryBomb, tags: ["FF14"]  },
+    { text: "Lala Chocobo Badge", imageSrc: chocobo, tags: ["FF14"]  },
+    { text: "Lala Moogle Badge", imageSrc: moogle, tags: ["FF14"] },
+    { text: "Lala Pokeball", imageSrc: pokeball, tags: ["FF14"]  },
+    { text: "Lala Trophy", imageSrc: trophy, tags: ["FF14"] },
+    { text: "Travers' WoL", imageSrc: Travers, tags: ["FF14"]  },
     { text: "Wilson in Pokemon", imageSrc: wilsonPokemon },
-    { text: "Bee", imageSrc: Bee },
+    { text: "Bee", imageSrc: Bee, tags: ["Yugioh"]  },
   ];
   const [currentTag, setCurrentTag] = React.useState("Pixel Art");
   function filterByTag(galleryItem: GalleryItemProps) {
-    if (currentTag === ""){
-      return galleryItem; 
+    if (currentTag === "") {
+      return galleryItem;
     }
     if (galleryItem.tags) {
       return galleryItem.tags.includes(currentTag);
@@ -277,22 +277,53 @@ function Gallery() {
   return (
     <div className="Gallery">
       <span className="GalleryButtonsContainer">
-        <button className="GalleryButtons" onClick={() => setCurrentTag("")}>
+        <button
+          className="GalleryButtons"
+          onClick={() => setCurrentTag("")}
+          disabled={currentTag === ""}
+        >
           All
         </button>
-        <button className="GalleryButtons" onClick={() => setCurrentTag("Carcaso")}>
+        <button
+          className="GalleryButtons"
+          onClick={() => setCurrentTag("Carcaso")}
+          disabled={currentTag === "Carcaso"}
+        >
           Carcaso
         </button>
-        <button className="GalleryButtons" onClick={() => setCurrentTag("Twilight")}>
+        <button
+          className="GalleryButtons"
+          onClick={() => setCurrentTag("Twilight")}
+          disabled={currentTag === "Twilight"}
+        >
           Twilight of the Idols
         </button>
-        <button className="GalleryButtons" onClick={() => setCurrentTag("FF14")}>
+        <button
+          className="GalleryButtons"
+          onClick={() => setCurrentTag("FF14")}
+          disabled={currentTag === "FF14"}
+        >
           FF14
         </button>
-        <button className="GalleryButtons" onClick={() => setCurrentTag("Animated")}>
+        <button
+          className="GalleryButtons"
+          onClick={() => setCurrentTag("Yugioh")}
+          disabled={currentTag === "Yugioh"}
+        >
+          Yu-Gi-Oh!
+        </button>
+        <button
+          className="GalleryButtons"
+          onClick={() => setCurrentTag("Animated")}
+          disabled={currentTag === "Animated"}
+        >
           Animated
         </button>
-        <button className="GalleryButtons" onClick={() => setCurrentTag("Pixel Art")}>
+        <button
+          className="GalleryButtons"
+          onClick={() => setCurrentTag("Pixel Art")}
+          disabled={currentTag === "Pixel Art"}
+        >
           Pixel Art
         </button>
       </span>
