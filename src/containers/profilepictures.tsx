@@ -51,11 +51,11 @@ const Tolpa = require("../assets/Maid Token.png");
 const profilePicsMasterData = [
   {
     imageName: TraptrixSera,
-    artTitle: "Garlic Jester",
+    artTitle: "Traptrix Sera",
     artDescription:
-      "Garlic Jester will forever be associated with my first friend in FF14, and I've been wanting to draw my character holding it for a year or so now. I also put them in my favourite location - the Snail in Iddylshire, which is also associated with that first friend. I considered putting them on a ledge with a complete profile shot for the both of them, but decided to change it a bit for a more personal look. As for the colours and composition, I wanted to make it feel homely. I want to do more painting, I enjoy how the sunflowers came out in this piece, as well as Tami's hair.",
+      "Traptrix monsters are my favourite archetype in Yu-Gi-Oh, and I love practicing on them. I experimented with a shading technique where you clip a layer above the colours and erase the mask in order to give highlights, rathe than painting on shadows to an already bright image. I also messed around with Gradients (and wanted to try gradient mapping but I don't think I set up my image right) and masks. I was also going to try foreshortening with the arm closest to us, and the flowers, but it didn't look right and didn't fit the character. I had a really fun time interpreting the card and trying to build a design out of it.",
     style: "discord",
-    date: "01/12/2024",
+    date: "02/06/2024",
   },
   {
     imageName: GarlicJester,

@@ -1,5 +1,6 @@
 import Zoom from "react-medium-image-zoom";
 
+import Ko from "../assets/Ko.gif";
 import Chess from "../assets/Ecumenical.png";
 import Tolpa_Subway from "../assets/tolpa subway.gif";
 import Yuyu from "../assets/Yuyu birthday drawing actually.png";
@@ -113,6 +114,7 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {text: "Pixel art Ko", imageSrc: Ko},
     {text: "Four Knights Game", imageSrc: Chess},
     {text: "Graffiti of a forgotten heartbreak that never happened", imageSrc: Tolpa_Subway},
     {text: "Yuyu in Carcaso", imageSrc: Yuyu},
