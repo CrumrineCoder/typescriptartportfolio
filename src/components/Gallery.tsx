@@ -1,6 +1,6 @@
 import Zoom from "react-medium-image-zoom";
 import YoutubeEmbed from "./YoutubeEmbed";
-import YoutubeLogo from "../assets/Youtube_logo.png"
+import YoutubeLogo from "../assets/Youtube_logo.png";
 
 import Ko from "../assets/Ko.gif";
 import Chess from "../assets/Ecumenical.png";
@@ -91,6 +91,7 @@ interface GalleryItemProps {
   imageSrc?: string;
   youtubeLink?: string;
   linkText?: string;
+  tags?: Array<String>;
 }
 
 function GalleryItem(props: GalleryItemProps) {
@@ -134,22 +135,54 @@ function GalleryItem(props: GalleryItemProps) {
 }
 function Gallery() {
   const items: GalleryItemProps[] = [
-    { text: "Pixel art Ko", imageSrc: Ko },
-    { text: "Four Knights Game", imageSrc: Chess },
+    {
+      text: "Pixel art Ko",
+      imageSrc: Ko,
+      tags: ["Twilight", "Pixel Art", "Animated"],
+    },
+    { text: "Four Knights Game", imageSrc: Chess, tags: ["Carcaso"] },
     {
       text: "Graffiti of a forgotten heartbreak that never happened",
       youtubeLink: "CzWqI3g08TI",
+      tags: ["Animated"],
     },
-    { text: "Yuyu in Carcaso", imageSrc: Yuyu },
-    { text: "Irvan Animation", imageSrc: irvan_doctor },
-    { text: "Pixel art Nyla", imageSrc: Nyla, youtubeLink: "https://www.youtube.com/watch?v=Rrm3AzPYgPQ&ab_channel=Taming", linkText: "Speedpaint" },
-    { text: "Pixel art Ravv", imageSrc: Ravv, youtubeLink: "https://www.youtube.com/watch?v=esEzYmNSybc", linkText: "Speedpaint"},
+    { text: "Yuyu in Carcaso", imageSrc: Yuyu, tags: ["Carcaso"] },
+    { text: "Irvan Animation", imageSrc: irvan_doctor, tags: ["Animated"] },
+    {
+      text: "Pixel art Nyla",
+      imageSrc: Nyla,
+      youtubeLink:
+        "https://www.youtube.com/watch?v=Rrm3AzPYgPQ&ab_channel=Taming",
+      linkText: "Speedpaint",
+      tags: ["Twilight", "Pixel Art", "Animated"],
+    },
+    {
+      text: "Pixel art Ravv",
+      imageSrc: Ravv,
+      youtubeLink: "https://www.youtube.com/watch?v=esEzYmNSybc",
+      linkText: "Speedpaint",
+      tags: ["Twilight", "Pixel Art"],
+    },
     { text: "Irvan Redesign", imageSrc: IrvanRedesign },
-    { text: "Dayndal's Chosen", imageSrc: DayndalChosen },
+    { text: "Dayndal's Chosen", imageSrc: DayndalChosen, tags: ["Twilight"] },
     { text: "Ivy & Veda Commission", imageSrc: Ivy },
-    { text: "Pixel art Dayndal", imageSrc: Von },
-    { text: "Pixel art Karro", imageSrc: Karro, youtubeLink:"https://www.youtube.com/watch?v=T5NSXRj7wWU", linkText: "Speedpaint" },
-    { text: "Pixel art Blievois", imageSrc: Blievois },
+    {
+      text: "Pixel art Dayndal",
+      imageSrc: Von,
+      tags: ["Twilight", "Pixel Art"],
+    },
+    {
+      text: "Pixel art Karro",
+      imageSrc: Karro,
+      youtubeLink: "https://www.youtube.com/watch?v=T5NSXRj7wWU",
+      linkText: "Speedpaint",
+      tags: ["Twilight", "Pixel Art", "Animated"],
+    },
+    {
+      text: "Pixel art Blievois",
+      imageSrc: Blievois,
+      tags: ["Twilight", "Pixel Art", "Animated"],
+    },
     { text: "Silfa FF14 Full Commission", imageSrc: SilfaFull },
     { text: "Paul Token", imageSrc: PaulTokenStamp },
     { text: "EU4 Fanart", imageSrc: Isaakios },
@@ -158,46 +191,67 @@ function Gallery() {
       // imageSrc: Tolpacore,
       youtubeLink: "aNY-jQEBajk",
       linkText: "Animated Music Video",
+      tags: ["Animated"],
     },
-    { text: "Pixel art Boann", imageSrc: Boann },
+    {
+      text: "Pixel art Boann",
+      imageSrc: Boann,
+      tags: ["Twilight", "Pixel Art", "Animated"],
+    },
     { text: "Paul Servius Maximus V the greatest Mailman", imageSrc: Paul },
     { text: "Uncropped Robyn", imageSrc: Robyn },
-    { text: "Pixel art Gloreya", imageSrc: Gloreya },
-    { text: "Pixel art Qale", imageSrc: Qale },
-    { text: "Memento Reelers", imageSrc: Fishermen },
+    {
+      text: "Pixel art Gloreya",
+      imageSrc: Gloreya,
+      tags: ["Twilight", "Pixel Art"],
+    },
+    { text: "Pixel art Qale", imageSrc: Qale, tags: ["Twilight", "Pixel Art"] },
+    { text: "Memento Reelers", imageSrc: Fishermen, tags: ["Twilight"] },
     { text: "Cyberpunk Red Maid", imageSrc: Maidcore },
-    { text: "Twilight Zemeradi", imageSrc: Zemeradi },
+    { text: "Twilight Zemeradi", imageSrc: Zemeradi, tags: ["Twilight"] },
     { text: "Baldur's Gate Paladin", imageSrc: BaldursGate },
-    { text: "Carcasoan Vitiligo", imageSrc: Elroscian },
+    { text: "Carcasoan Vitiligo", imageSrc: Elroscian, tags: ["Carcaso"] },
     { text: "Sam Jones", imageSrc: SamJones },
-    { text: "Sayuu's PNGtuber", imageSrc: beeGirl },
+    { text: "Sayuu's PNGtuber", imageSrc: beeGirl, tags: ["Animated"] },
     { text: "Hatching practice", imageSrc: combination },
     { text: "Irvan the Shirren Moth", imageSrc: Starfinder1 },
-    { text: "Twilight Wizards", imageSrc: twilightWizard },
+    { text: "Twilight Wizards", imageSrc: twilightWizard, tags: ["Twilight"] },
     { text: "Nunn but Evangelion", imageSrc: Nunn },
-    { text: "Columbo Meets Blue's Clues", imageSrc: BluesClues },
-    { text: "Tami in style of Fire Emblem", imageSrc: TammyPixelArt },
+    {
+      text: "Columbo Meets Blue's Clues",
+      imageSrc: BluesClues,
+      tags: ["Animated"],
+    },
+    {
+      text: "Tami in style of Fire Emblem",
+      imageSrc: TammyPixelArt,
+      tags: ["FF14", "Pixel Art"],
+    },
     { text: "City life in friend's pokemon world", imageSrc: Malacruz },
-    { text: "Tami with my favourite Yu-Gi-Oh archetypes", imageSrc: Banner },
+    {
+      text: "Tami with my favourite Yu-Gi-Oh archetypes",
+      imageSrc: Banner,
+      tags: ["Yugioh", "FF14"],
+    },
 
-    { text: "Kua in Carcaso", imageSrc: Chriskua },
-    { text: "Steel Dandelion", imageSrc: Dandelion },
-    { text: "Jinxxie in Carcaso", imageSrc: Jinxie },
-    { text: "Chris in Carcaso", imageSrc: Kris },
-    { text: "Peter in Carcaso", imageSrc: Peter },
-    { text: "We Must Dissent", imageSrc: Rat },
-    { text: "Asa in Carcaso", imageSrc: Asa },
-    { text: "Vampire Turtleneck", imageSrc: Vampire },
-    { text: "Ajax", imageSrc: RatLamp },
-    { text: "Balthasar", imageSrc: Balthasar },
-    { text: "Bard", imageSrc: Bard },
-    { text: "Deus", imageSrc: Deus },
-    { text: "Ellysa", imageSrc: Ellysa },
-    { text: "Divine Order", imageSrc: Fighter },
-    { text: "Leo", imageSrc: Leo },
-    { text: "Saint Fenmes", imageSrc: Fenmes },
-    { text: "Gone Girl", imageSrc: gonegirl },
-    { text: "Cleansing", imageSrc: Vitriol },
+    { text: "Kua in Carcaso", imageSrc: Chriskua, tags: ["Carcaso"] },
+    { text: "Steel Dandelion", imageSrc: Dandelion, tags: ["Carcaso"] },
+    { text: "Jinxxie in Carcaso", imageSrc: Jinxie, tags: ["Carcaso"] },
+    { text: "Chris in Carcaso", imageSrc: Kris, tags: ["Carcaso"] },
+    { text: "Peter in Carcaso", imageSrc: Peter, tags: ["Carcaso"] },
+    { text: "We Must Dissent", imageSrc: Rat, tags: ["Carcaso"] },
+    { text: "Asa in Carcaso", imageSrc: Asa, tags: ["Carcaso"] },
+    { text: "Vampire Turtleneck", imageSrc: Vampire, tags: ["Carcaso"] },
+    { text: "Ajax", imageSrc: RatLamp, tags: ["Carcaso"] },
+    { text: "Balthasar", imageSrc: Balthasar, tags: ["Carcaso"] },
+    { text: "Bard", imageSrc: Bard, tags: ["Carcaso"] },
+    { text: "Deus", imageSrc: Deus, tags: ["Carcaso"] },
+    { text: "Ellysa", imageSrc: Ellysa, tags: ["Carcaso"] },
+    { text: "Divine Order", imageSrc: Fighter, tags: ["Carcaso"] },
+    { text: "Leo", imageSrc: Leo, tags: ["Carcaso"] },
+    { text: "Saint Fenmes", imageSrc: Fenmes, tags: ["Carcaso"] },
+    { text: "Gone Girl", imageSrc: gonegirl, tags: ["Carcaso"] },
+    { text: "Cleansing", imageSrc: Vitriol, tags: ["Carcaso"] },
     { text: "Lala Carbuncle Badge", imageSrc: carbuncle },
     { text: "Lala Cherry Bomb Badge", imageSrc: cherryBomb },
     { text: "Lala Chocobo Badge", imageSrc: chocobo },
