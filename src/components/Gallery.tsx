@@ -1,4 +1,5 @@
 import Zoom from "react-medium-image-zoom";
+import YoutubeEmbed from "./YoutubeEmbed";
 
 import Ko from "../assets/Ko.gif";
 import Chess from "../assets/Ecumenical.png";
@@ -86,7 +87,7 @@ import gonegirl from "../assets/Carcaso/gonegirl.png";
 
 interface GalleryItemProps {
   text: string;
-  imageSrc: string;
+  imageSrc?: string;
   youtubeLink?: string;
   linkText?: string;
 }
@@ -101,28 +102,28 @@ function GalleryItem(props: GalleryItemProps) {
       <Zoom>
         <div className="GalleryItem">
           <span className="GalleryText">{props.text}</span>
-
-          <img
-            className="GalleryImage"
-            src={props.imageSrc}
-            alt={props.imageSrc}
-          />
-          {props.youtubeLink && (
-            <p>
-              <a
+          {props.imageSrc && (
+            <img
+              className="GalleryImage"
+              src={props.imageSrc}
+              alt={props.imageSrc}
+            />
+          )}
+          {props.youtubeLink && <YoutubeEmbed className="GalleryVideo" embedId={props.youtubeLink} />}
+        </div>
+      </Zoom>
+    </span>
+  );
+}
+/*
+   <a
                 href={encodeURI(props.youtubeLink)}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {props.linkText}
               </a>
-            </p>
-          )}
-        </div>
-      </Zoom>
-    </span>
-  );
-}
+              */
 
 function Gallery() {
   const items: GalleryItemProps[] = [
@@ -147,9 +148,8 @@ function Gallery() {
     { text: "EU4 Fanart", imageSrc: Isaakios },
     {
       text: "Tolpacore",
-      imageSrc: Tolpacore,
-      youtubeLink:
-        "https://www.youtube.com/watch?v=aNY-jQEBajk&ab_channel=Taming",
+     // imageSrc: Tolpacore,
+      youtubeLink: "aNY-jQEBajk",
       linkText: "Animated Music Video",
     },
     { text: "Pixel art Boann", imageSrc: Boann },

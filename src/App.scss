@@ -326,9 +326,9 @@ body:before {
             align-self: flex-start;
             border-radius: 50%;
             margin: 20px 10px 10px 10px;
-            height: 200px; 
+            height: 200px;
             object-fit: cover;
-            
+
             @media (max-width: $breakpoint-small) {
               display: block;
               margin: 0 auto;
@@ -435,7 +435,7 @@ body:before {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      a{
+      a {
         text-decoration: none;
       }
       .TwitchButton {
@@ -449,21 +449,21 @@ body:before {
         padding: 10px 40px;
         border-radius: 15px;
         cursor: pointer;
-        &:hover{
+        &:hover {
           fill: #ffb3f3;
           color: #ffb3f3;
         }
         .TwitchLinkSVG {
           max-height: 52px;
           padding-left: 10px;
-          display: block; 
-          margin: 0 auto; 
+          display: block;
+          margin: 0 auto;
         }
-        img{
-          max-height: 52px; 
-          display: block; 
-          margin: 0 auto; 
-          color: white; 
+        img {
+          max-height: 52px;
+          display: block;
+          margin: 0 auto;
+          color: white;
         }
       }
     }
@@ -550,6 +550,13 @@ body:before {
         }
         &:hover {
           filter: brightness(70%) sepia(100%) hue-rotate(260deg);
+        }
+      }
+      position: relative;
+      .GalleryVideo {
+        display: block; 
+        iframe{
+          width: 100%;
         }
       }
       .GalleryImageOverlay {
@@ -712,7 +719,7 @@ body:before {
   .CommissionInfoApplicationBody {
     font-size: 1.4em;
   }
-  .CommissionThankYou{
+  .CommissionThankYou {
     text-align: center;
   }
   .CommissionInfoHeader {
@@ -726,13 +733,13 @@ body:before {
     text-transform: uppercase;
   }
 
-  .CommissionInfoTLDR{
+  .CommissionInfoTLDR {
     background-color: #6b6bb3;
     padding: 5px;
-    border-radius: 5px; 
-    ul{
-      li{
-        font-size: 1.5em; 
+    border-radius: 5px;
+    ul {
+      li {
+        font-size: 1.5em;
       }
     }
   }
@@ -743,13 +750,13 @@ body:before {
     max-width: 40vw;
     margin: 0 auto;
     font-size: 1.5em;
-    .inlineLink{
-      color: white; 
+    .inlineLink {
+      color: white;
       font-weight: bold;
       font-size: 1.6em;
-      padding-left: 10px; 
+      padding-left: 10px;
       margin: 0 auto;
-      display: block; 
+      display: block;
     }
   }
 
@@ -876,8 +883,8 @@ body:before {
   }
   .CommissionInfoPricingRightContainer {
     padding: 2rem;
-    p{
-      font-size: 1.5em; 
+    p {
+      font-size: 1.5em;
     }
     .CommissionInfoPricingHeader {
       font-size: 1.8em;
