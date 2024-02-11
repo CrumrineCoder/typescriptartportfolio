@@ -139,6 +139,9 @@ function Gallery() {
     {
       text: "Pixel art Ko",
       imageSrc: Ko,
+      youtubeLink:
+        "https://www.youtube.com/watch?v=-QMUnTS6tlk&ab_channel=Taming",
+      linkText: "Speedpaint",
       tags: ["Twilight", "Pixel Art", "Animated"],
     },
     { text: "Four Knights Game", imageSrc: Chess, tags: ["Carcaso"] },
@@ -184,7 +187,7 @@ function Gallery() {
       imageSrc: Blievois,
       tags: ["Twilight", "Pixel Art", "Animated"],
     },
-    { text: "Silfa FF14 Full Commission", imageSrc: SilfaFull, tags: ["FF14"]  },
+    { text: "Silfa FF14 Full Commission", imageSrc: SilfaFull, tags: ["FF14"] },
     { text: "Paul Token", imageSrc: PaulTokenStamp },
     { text: "EU4 Fanart", imageSrc: Isaakios },
     {
@@ -217,7 +220,7 @@ function Gallery() {
     { text: "Hatching practice", imageSrc: combination },
     { text: "Irvan the Shirren Moth", imageSrc: Starfinder1 },
     { text: "Twilight Wizards", imageSrc: twilightWizard, tags: ["Twilight"] },
-    { text: "Nunn but Evangelion", imageSrc: Nunn, tags: ["FF14"]  },
+    { text: "Nunn but Evangelion", imageSrc: Nunn, tags: ["FF14"] },
     {
       text: "Columbo Meets Blue's Clues",
       imageSrc: BluesClues,
@@ -253,15 +256,15 @@ function Gallery() {
     { text: "Saint Fenmes", imageSrc: Fenmes, tags: ["Carcaso"] },
     { text: "Gone Girl", imageSrc: gonegirl, tags: ["Carcaso"] },
     { text: "Cleansing", imageSrc: Vitriol, tags: ["Carcaso"] },
-    { text: "Lala Carbuncle Badge", imageSrc: carbuncle, tags: ["FF14"]  },
-    { text: "Lala Cherry Bomb Badge", imageSrc: cherryBomb, tags: ["FF14"]  },
-    { text: "Lala Chocobo Badge", imageSrc: chocobo, tags: ["FF14"]  },
+    { text: "Lala Carbuncle Badge", imageSrc: carbuncle, tags: ["FF14"] },
+    { text: "Lala Cherry Bomb Badge", imageSrc: cherryBomb, tags: ["FF14"] },
+    { text: "Lala Chocobo Badge", imageSrc: chocobo, tags: ["FF14"] },
     { text: "Lala Moogle Badge", imageSrc: moogle, tags: ["FF14"] },
-    { text: "Lala Pokeball", imageSrc: pokeball, tags: ["FF14"]  },
+    { text: "Lala Pokeball", imageSrc: pokeball, tags: ["FF14"] },
     { text: "Lala Trophy", imageSrc: trophy, tags: ["FF14"] },
-    { text: "Travers' WoL", imageSrc: Travers, tags: ["FF14"]  },
+    { text: "Travers' WoL", imageSrc: Travers, tags: ["FF14"] },
     { text: "Wilson in Pokemon", imageSrc: wilsonPokemon },
-    { text: "Bee", imageSrc: Bee, tags: ["Yugioh"]  },
+    { text: "Bee", imageSrc: Bee, tags: ["Yugioh"] },
   ];
   const [currentTag, setCurrentTag] = React.useState("Pixel Art");
   function filterByTag(galleryItem: GalleryItemProps) {
