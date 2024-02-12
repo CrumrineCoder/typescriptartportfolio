@@ -1,4 +1,5 @@
 import Zoom from "react-medium-image-zoom";
+import { lazy } from "react";
 import YoutubeEmbed from "./YoutubeEmbed";
 import YoutubeLogo from "../assets/Youtube_logo.png";
 
@@ -331,6 +332,7 @@ function Gallery() {
         </button>
       </span>
       <div className="GalleryImagesContainer">
+        lazy(
         {filteredItems.map((item, index) => (
           <GalleryItem
             key={index}
@@ -340,6 +342,7 @@ function Gallery() {
             linkText={item.linkText}
           />
         ))}
+        )
       </div>
     </div>
   );
