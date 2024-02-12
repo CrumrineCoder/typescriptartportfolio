@@ -34,7 +34,7 @@ import Qale from "../assets/Qale_Final.png";
 import Fishermen from "../assets/fishermen.png";
 
 import Maidcore from "../assets/Maidcore.png";
-
+ 
 import Zemeradi from "../assets/zemeradi twilight.png";
 import BaldursGate from "../assets/baldur's gate.png";
 
@@ -332,7 +332,6 @@ function Gallery() {
         </button>
       </span>
       <div className="GalleryImagesContainer">
-        lazy(
         {filteredItems.map((item, index) => (
           <GalleryItem
             key={index}
@@ -342,7 +341,6 @@ function Gallery() {
             linkText={item.linkText}
           />
         ))}
-        )
       </div>
     </div>
   );
