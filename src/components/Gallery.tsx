@@ -204,7 +204,7 @@ function Gallery() {
       tags: ["Twilight", "Pixel Art", "Animated"],
     },
     { text: "Paul Servius Maximus V the greatest Mailman", imageSrc: Paul },
-    { text: "Uncropped Robyn", imageSrc: Robyn },
+   /* { text: "Uncropped Robyn", imageSrc: Robyn }, */
     {
       text: "Pixel art Gloreya",
       imageSrc: Gloreya,
