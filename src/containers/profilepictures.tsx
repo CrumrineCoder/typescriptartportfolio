@@ -20,6 +20,7 @@ import CommissionInfo from "./CommissionInfo";
 
 const Moff = require("../assets/moff.png");
 
+const PixelTami = require ("../assets/Tami.png");
 const TraptrixSera = require("../assets/profilepics/traptrix garden.png");
 const GarlicJester = require("../assets/profilepics/Tami Garlic.png");
 const MothMash2023 = require("../assets/profilepics/dec 2023 pfp.png");
@@ -49,6 +50,14 @@ const Dion = require("../assets/IrvanDionTokenNoBG.png");
 const Tolpa = require("../assets/Maid Token.png");
 
 const profilePicsMasterData = [
+  {
+    imageName: PixelTami,
+    artTitle: "Tami Pixel Art",
+    artDescription:
+      "I do pixel art streams on my Twitch but I don't have a pixel art picture for it, so here we are. I find that changing my profile pic after a major event helps me to compress what happened and suggest that it happened to a different version of me. So, making this helped me move on, and I put some personal feelings about it into this work. I wouldn't be able to explain the specifics to you, I just hope you feel what I do.",
+    style: "discord",
+    date: "03/23/2024",
+  },
   {
     imageName: TraptrixSera,
     artTitle: "Traptrix Sera",
