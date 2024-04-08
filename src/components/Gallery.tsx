@@ -166,21 +166,21 @@ function Gallery() {
     {
       text: "Kingdom Hearts Watch Commission",
       imageSrc: yuyuWatch,
+      youtubeLink: "https://www.youtube.com/watch?v=v8AK3gAEMQo&",
+      linkText: "Speedpaint",
       tags: [tag_ff14],
     },
     {
       text: "Tolpa Returns",
       imageSrc: Album,
-      youtubeLink:
-        "https://www.youtube.com/watch?v=KGWw76t6qY8&",
+      youtubeLink: "https://www.youtube.com/watch?v=KGWw76t6qY8&",
       linkText: "Speedpaint",
       tags: [tag_pixelart],
     },
     {
       text: "Spotify Stream Overlay",
       imageSrc: Overlay,
-      youtubeLink:
-        "https://www.youtube.com/watch?v=KGWw76t6qY8&",
+      youtubeLink: "https://www.youtube.com/watch?v=KGWw76t6qY8&",
       linkText: "Speedpaint",
       tags: [tag_pixelart],
     },
@@ -409,6 +409,20 @@ function Gallery() {
         </button>
         <button
           className="GalleryButtons"
+          onClick={() => setCurrentTag(tag_pixelart)}
+          disabled={currentTag === tag_pixelart}
+        >
+          Pixel Art
+        </button>
+        <button
+          className="GalleryButtons"
+          onClick={() => setCurrentTag(tag_animated)}
+          disabled={currentTag === tag_animated}
+        >
+          Animated
+        </button>
+        <button
+          className="GalleryButtons"
           onClick={() => setCurrentTag(tag_carcaso)}
           disabled={currentTag === tag_carcaso}
         >
@@ -434,20 +448,6 @@ function Gallery() {
           disabled={currentTag === tag_yugioh}
         >
           Yu-Gi-Oh!
-        </button>
-        <button
-          className="GalleryButtons"
-          onClick={() => setCurrentTag(tag_animated)}
-          disabled={currentTag === tag_animated}
-        >
-          Animated
-        </button>
-        <button
-          className="GalleryButtons"
-          onClick={() => setCurrentTag(tag_pixelart)}
-          disabled={currentTag === tag_pixelart}
-        >
-          Pixel Art
         </button>
       </span>
       <div className="GalleryImagesContainer">
