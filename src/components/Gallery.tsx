@@ -168,7 +168,7 @@ function Gallery() {
       imageSrc: yuyuWatch,
       youtubeLink: "https://www.youtube.com/watch?v=v8AK3gAEMQo&",
       linkText: "Speedpaint",
-      tags: [tag_ff14],
+      tags: [tag_ff14, tag_pixelart],
     },
     {
       text: "Tolpa Returns",
