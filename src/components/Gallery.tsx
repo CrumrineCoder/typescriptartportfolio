@@ -3,6 +3,8 @@ import { lazy } from "react";
 import YoutubeEmbed from "./YoutubeEmbed";
 import YoutubeLogo from "../assets/Youtube_logo.png";
 
+import yuyuWatch from "../assets/Yuyu_Watch_Final.png";
+
 import Lucy from "../assets/lucille s.png";
 import arcis from "../assets/arcisx.png";
 import softGoth from "../assets/soft goth beach.png";
@@ -162,13 +164,24 @@ function GalleryItem(props: GalleryItemProps) {
 function Gallery() {
   const items: GalleryItemProps[] = [
     {
+      text: "Kingdom Hearts Watch Commission",
+      imageSrc: yuyuWatch,
+      tags: [tag_ff14],
+    },
+    {
       text: "Tolpa Returns",
       imageSrc: Album,
+      youtubeLink:
+        "https://www.youtube.com/watch?v=KGWw76t6qY8&",
+      linkText: "Speedpaint",
       tags: [tag_pixelart],
     },
     {
       text: "Spotify Stream Overlay",
       imageSrc: Overlay,
+      youtubeLink:
+        "https://www.youtube.com/watch?v=KGWw76t6qY8&",
+      linkText: "Speedpaint",
       tags: [tag_pixelart],
     },
     {
