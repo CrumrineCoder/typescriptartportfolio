@@ -4,6 +4,8 @@ import YoutubeEmbed from "./YoutubeEmbed";
 import YoutubeLogo from "../assets/Youtube_logo.png";
 
 import yuyuWatch from "../assets/Yuyu_Watch_Final.png";
+import starfinder from "../assets/Starfinder_Sprites.png";
+
 
 import Lucy from "../assets/lucille s.png";
 import arcis from "../assets/arcisx.png";
@@ -163,6 +165,11 @@ function GalleryItem(props: GalleryItemProps) {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {
+      text: "Starfinder Crew",
+      imageSrc: starfinder,
+      tags: [tag_pixelart],
+    },
     {
       text: "Kingdom Hearts Watch Commission",
       imageSrc: yuyuWatch,
