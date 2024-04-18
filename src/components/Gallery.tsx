@@ -1,7 +1,7 @@
-import Zoom from "react-medium-image-zoom";
-import { lazy } from "react";
-import YoutubeEmbed from "./YoutubeEmbed";
-import YoutubeLogo from "../assets/Youtube_logo.png";
+
+
+
+import { lazy } from 'react';
 
 import yuyuWatch from "../assets/Yuyu_Watch_Final.png";
 import starfinder from "../assets/Starfinder_Sprites.png";
@@ -106,7 +106,10 @@ import Leo from "../assets/Carcaso/LeoCarcaso.png";
 import Fenmes from "../assets/Carcaso/Fenmes.png";
 import Vitriol from "../assets/Carcaso/Vitriol.png";
 import gonegirl from "../assets/Carcaso/gonegirl.png";
+
 import React from "react";
+
+const GalleryItem = lazy(() => import('./GalleryItem'));
 
 let tag_pixelart = "Pixel Art";
 let tag_carcaso = "Carcaso";
@@ -115,52 +118,13 @@ let tag_ff14 = "FF14";
 let tag_yugioh = "Yugioh";
 let tag_animated = "Animated";
 
+
 interface GalleryItemProps {
   text: string;
   imageSrc?: string;
   youtubeLink?: string;
   linkText?: string;
   tags?: Array<String>;
-}
-
-function GalleryItem(props: GalleryItemProps) {
-  //${props.text}
-  return (
-    <span
-      className={`GalleryItemContainer`}
-      id={props.text.replace(/\s+/g, "")}
-    >
-      <Zoom>
-        <div className="GalleryItem">
-          <span className="GalleryText">{props.text}</span>
-          {props.imageSrc && (
-            <img
-              className="GalleryImage"
-              src={props.imageSrc}
-              alt={props.imageSrc}
-            />
-          )}
-          {props.youtubeLink && (!props.linkText || !props.imageSrc) && (
-            <YoutubeEmbed
-              className="GalleryVideo"
-              embedId={props.youtubeLink}
-            />
-          )}
-          {props.youtubeLink && props.imageSrc && (
-            <a
-              href={encodeURI(props.youtubeLink)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="GalleryLink"
-            >
-              <img src={YoutubeLogo}></img>
-              {props.linkText}
-            </a>
-          )}
-        </div>
-      </Zoom>
-    </span>
-  );
 }
 
 function Gallery() {
@@ -393,6 +357,8 @@ function Gallery() {
     { text: "Wilson in Pokemon", imageSrc: wilsonPokemon },
     { text: "Bee", imageSrc: Bee, tags: [tag_yugioh] },
   ];
+ 
+
   const [currentTag, setCurrentTag] = React.useState("");
   function filterByTag(galleryItem: GalleryItemProps) {
     if (currentTag === "") {
