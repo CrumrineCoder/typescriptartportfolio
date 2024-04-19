@@ -6,17 +6,14 @@ import { Link } from "react-router-dom";
 
 import YoutubeEmbed from "../components/YoutubeEmbed";
 
-import React, { useState } from "react";
-
-import ProfilePicSelector from "../components/profilepicselector";
-
-import { profile } from "console";
+import { useState } from "react";
+import { lazy } from 'react';
 
 import { ReactComponent as Twitter } from "../assets/twitter.svg";
 import { ReactComponent as Gmail } from "../assets/envelope-solid.svg";
 import { ReactComponent as Twitch } from "../assets/Twitch.svg";
 
-import CommissionInfo from "./CommissionInfo";
+const ProfilePicSelector = lazy(() => import('../components/profilepicselector'));
 
 const Moff = require("../assets/moff.png");
 
