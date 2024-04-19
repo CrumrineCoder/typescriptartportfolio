@@ -127,6 +127,8 @@ function Gallery() {
     {
       text: "Starfinder Crew",
       imageSrc: starfinder,
+      youtubeLink: "https://www.youtube.com/watch?v=wEm6CY1QgLI",
+      linkText: "Speedpaint",
       tags: [tag_pixelart],
     },
     {
