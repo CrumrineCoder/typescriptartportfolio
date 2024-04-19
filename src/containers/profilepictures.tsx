@@ -6,18 +6,20 @@ import { Link } from "react-router-dom";
 
 import YoutubeEmbed from "../components/YoutubeEmbed";
 
-import { useState } from "react";
-import { lazy } from 'react';
+import { Suspense, useState } from "react";
+import { lazy } from "react";
 
 import { ReactComponent as Twitter } from "../assets/twitter.svg";
 import { ReactComponent as Gmail } from "../assets/envelope-solid.svg";
 import { ReactComponent as Twitch } from "../assets/Twitch.svg";
 
-const ProfilePicSelector = lazy(() => import('../components/profilepicselector'));
+const ProfilePicSelector = lazy(
+  () => import("../components/profilepicselector")
+);
 
 const Moff = require("../assets/moff.png");
 
-const PixelTami = require ("../assets/Tami.png");
+const PixelTami = require("../assets/Tami.png");
 const TraptrixSera = require("../assets/profilepics/traptrix garden.png");
 const GarlicJester = require("../assets/profilepics/Tami Garlic.png");
 const MothMash2023 = require("../assets/profilepics/dec 2023 pfp.png");
@@ -355,7 +357,9 @@ function ProfilePictures() {
             <p className="ProfilePicturesRightSideText">
               Click on the Image Above to View Full Screen!
             </p>
-            <div className="ProfilePicSelectors">{imageList}</div>
+            <Suspense fallback={<div>Loading!</div>}>
+              <div className="ProfilePicSelectors">{imageList}</div>
+            </Suspense>
           </div>
         </div>
       </div>
