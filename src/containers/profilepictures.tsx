@@ -48,8 +48,17 @@ const Irvan = require("../assets/profilepics/Irvan.png");
 const TamiOmori = require("../assets/profilepics/TamiOmori.png");
 const Dion = require("../assets/IrvanDionTokenNoBG.png");
 const Tolpa = require("../assets/Maid Token.png");
+const Zuzu = require("../assets/Zuzu.png");
 
 const profilePicsMasterData = [
+  {
+    imageName: Zuzu,
+    artTitle: "Zuzu Pixel Art Study",
+    artDescription:
+      "I drew my friend! His Twitch bio is a bit lacking in character, so wanted to give him a small surprise for being a great person. I'm trying to learn how I wanted to texture and shade in pixel art - so there's a bit of experimentation with hue shifting, anti aliasing, and dithering. I'm finding dithering hard to manage - he has a five o' clock shadow, but it wasn't coming out without removing his baby face so I reframed from adding any indication of it. I'll definitely keep at it!!",
+    style: "discord",
+    date: "04/18/2024",
+  },
   {
     imageName: PixelTami,
     artTitle: "Tami Pixel Art",

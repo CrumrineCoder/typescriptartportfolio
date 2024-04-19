@@ -107,6 +107,8 @@ import Fenmes from "../assets/Carcaso/Fenmes.png";
 import Vitriol from "../assets/Carcaso/Vitriol.png";
 import gonegirl from "../assets/Carcaso/gonegirl.png";
 
+
+
 import React from "react";
 
 const GalleryItem = lazy(() => import('./GalleryItem'));
