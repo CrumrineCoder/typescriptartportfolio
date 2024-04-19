@@ -1,11 +1,7 @@
-
-
-
-import { lazy } from 'react';
+import { Suspense, lazy } from "react";
 
 import yuyuWatch from "../assets/Yuyu_Watch_Final.png";
 import starfinder from "../assets/Starfinder_Sprites.png";
-
 
 import Lucy from "../assets/lucille s.png";
 import arcis from "../assets/arcisx.png";
@@ -107,11 +103,9 @@ import Fenmes from "../assets/Carcaso/Fenmes.png";
 import Vitriol from "../assets/Carcaso/Vitriol.png";
 import gonegirl from "../assets/Carcaso/gonegirl.png";
 
-
-
 import React from "react";
 
-const GalleryItem = lazy(() => import('./GalleryItem'));
+const GalleryItem = lazy(() => import("./GalleryItem"));
 
 let tag_pixelart = "Pixel Art";
 let tag_carcaso = "Carcaso";
@@ -119,7 +113,6 @@ let tag_twilight = "Twilight";
 let tag_ff14 = "FF14";
 let tag_yugioh = "Yugioh";
 let tag_animated = "Animated";
-
 
 interface GalleryItemProps {
   text: string;
@@ -359,7 +352,6 @@ function Gallery() {
     { text: "Wilson in Pokemon", imageSrc: wilsonPokemon },
     { text: "Bee", imageSrc: Bee, tags: [tag_yugioh] },
   ];
- 
 
   const [currentTag, setCurrentTag] = React.useState("");
   function filterByTag(galleryItem: GalleryItemProps) {
@@ -427,13 +419,15 @@ function Gallery() {
       </span>
       <div className="GalleryImagesContainer">
         {filteredItems.map((item, index) => (
-          <GalleryItem
-            key={index}
-            text={item.text}
-            imageSrc={item.imageSrc}
-            youtubeLink={item.youtubeLink}
-            linkText={item.linkText}
-          />
+          <Suspense fallback={<div>Loading!</div>}>
+            <GalleryItem
+              key={index}
+              text={item.text}
+              imageSrc={item.imageSrc}
+              youtubeLink={item.youtubeLink}
+              linkText={item.linkText}
+            />
+          </Suspense>
         ))}
       </div>
     </div>

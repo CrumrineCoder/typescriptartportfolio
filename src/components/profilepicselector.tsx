@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import "react-medium-image-zoom/dist/styles.css";
 
 interface imageProps {
@@ -18,6 +19,7 @@ function ProfilePicSelector({
   // <CarcasoPortfolioBox imageName="test.jpg"></CarcasoPortfolioBox>
   // <CarcasoPortfolioBox imageName = {"./assets/tammy.png"} />
   return (
+    <Suspense fallback={<div>Loading!</div>}>
     <div className={"profilePicSelector"}>
       <img
         onClick={() => {changeImage(imageName); setIndex(index)}}
@@ -30,6 +32,7 @@ function ProfilePicSelector({
         alt="Test"
       />
     </div>
+    </Suspense>
   );
 }
 
