@@ -1,8 +1,10 @@
 import { Suspense, lazy } from "react";
 
+import beloved from "../assets/Beloved.png";
 import yuyuWatch from "../assets/Yuyu_Watch_Final.png";
 import starfinder from "../assets/Starfinder_Sprites.png";
 
+import Goo from "../assets/Slimegorl.png";
 import Lucy from "../assets/lucille s.png";
 import arcis from "../assets/arcisx.png";
 import softGoth from "../assets/soft goth beach.png";
@@ -124,6 +126,16 @@ interface GalleryItemProps {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {
+      text: "Rhila & Ravv",
+      imageSrc: Goo,
+      tags: [tag_pixelart, tag_twilight],
+    },
+    {
+      text: "Some of my favourite things",
+      imageSrc: beloved,
+      tags: [tag_pixelart],
+    },
     {
       text: "Starfinder Crew",
       imageSrc: starfinder,
