@@ -1,5 +1,9 @@
 import { Suspense, lazy } from "react";
+ 
 
+import tolpaPngtuber from "../assets/tolpa pngtuber.gif";
+import cel from "../assets/cel.png";
+import yuyuuu from "../assets/yuyyyu.png";
 import beloved from "../assets/Beloved.png";
 import yuyuWatch from "../assets/Yuyu_Watch_Final.png";
 import starfinder from "../assets/Starfinder_Sprites.png";
@@ -126,6 +130,21 @@ interface GalleryItemProps {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {
+      text: "Tolpa PNGtuber",
+      imageSrc: tolpaPngtuber,
+      tags: [tag_animated, tag_pixelart],
+    },
+    {
+      text: "Che'Veun the Master of Arms",
+      imageSrc: cel,
+      tags: [tag_twilight, tag_pixelart],
+    },
+    {
+      text: "Yuyu in Carcaso but also more Disco Elysium practice",
+      imageSrc: yuyuuu,
+      tags: [tag_carcaso],
+    },
     {
       text: "Rhila & Ravv",
       imageSrc: Goo,

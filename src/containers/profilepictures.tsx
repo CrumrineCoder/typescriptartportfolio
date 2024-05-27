@@ -48,8 +48,17 @@ const TamiOmori = require("../assets/profilepics/TamiOmori.png");
 const Dion = require("../assets/IrvanDionTokenNoBG.png");
 const Tolpa = require("../assets/Maid Token.png");
 const Zuzu = require("../assets/Zuzu.png");
+const Tomi = require("../assets/tomi.png");
 
 const profilePicsMasterData = [
+  {
+    imageName: Tomi,
+    artTitle: "Disco Elysium Study",
+    artDescription:
+      "Disco Elysium and Balatro have been in control of my brainspace for the past month now - literally when I talk to people I hear Volition telling me to not rant about Balatro to them. So, as a reintroduction to painting & my tablet after 3 months, I wanted to redo my pixel art profile pic in the Disco Elysium style. I didn't match it exactly since I wanted to do my own stuff in areas, eg. the saturated line that I stole from Sable (Which took it from Moebius WHO TOOK IT FROM SOMEONE PROBABLY). Anyways, love my tablet, love you, gonna go back to being a drunk in Martinaise.",
+    style: "discord",
+    date: "05/11/2024",
+  },
   {
     imageName: Zuzu,
     artTitle: "Zuzu Pixel Art Study",
