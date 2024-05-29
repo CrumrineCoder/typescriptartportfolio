@@ -494,11 +494,11 @@ body:before {
   flex-wrap: wrap;
   justify-content: space-between;
   color: white;
-  .GalleryButtonsContainer{
+  .GalleryButtonsContainer {
     display: flex;
     margin: 0 auto;
-    padding-top: 25px; 
-    .GalleryButtons{
+    padding-top: 25px;
+    .GalleryButtons {
       background-color: transparent;
       margin: 5px;
       color: white;
@@ -515,7 +515,7 @@ body:before {
         border: 2px solid #ffb3f3;
       }
 
-      &:disabled{
+      &:disabled {
         cursor: not-allowed;
         opacity: 0.4;
         pointer-events: none;
@@ -532,7 +532,8 @@ body:before {
       margin: 30px 0px;
     }
 
-    #TamiwithmyfavouriteYu-Gi-Oharchetypes, #StarfinderCrew {
+    #TamiwithmyfavouriteYu-Gi-Oharchetypes,
+    #StarfinderCrew {
       flex: 1 0 100%;
     }
     @media (min-width: $breakpoint-small) {
@@ -540,7 +541,7 @@ body:before {
         flex: 30%;
       }
     }
-   
+
     .GalleryItem {
       max-height: 50%;
       margin-bottom: 20px;
@@ -584,17 +585,17 @@ body:before {
       }
       position: relative;
       .GalleryVideo {
-        display: block; 
-        iframe{
+        display: block;
+        iframe {
           width: 100%;
         }
       }
-      .GalleryLink{
-        img{
-          width: 30px; 
-          margin-right: 10px; 
+      .GalleryLink {
+        img {
+          width: 30px;
+          margin-right: 10px;
         }
-        font-size: 2em; 
+        font-size: 2em;
         display: block;
         text-align: center;
         font-weight: bold;
@@ -791,13 +792,17 @@ body:before {
     max-width: 40vw;
     margin: 0 auto;
     font-size: 1.5em;
-    .inlineLink {
-      color: white;
-      font-weight: bold;
-      font-size: 1.6em;
-      padding-left: 10px;
-      margin: 0 auto;
-      display: block;
+    .links {
+      display: flex;
+      justify-content: center;
+      .inlineLink {
+        color: white;
+        font-weight: bold;
+        font-size: 1.6em;
+        padding-left: 10px;
+        margin: 0 auto;
+        display: block;
+      }
     }
   }
 
@@ -923,9 +928,9 @@ body:before {
     }
   }
   .CommissionInfoPricingRightContainer {
-    padding: 2rem;
+    padding: 1.3rem;
     p {
-      font-size: 1.5em;
+      font-size: 1em;
     }
     .CommissionInfoPricingHeader {
       font-size: 1.8em;
@@ -934,7 +939,38 @@ body:before {
     }
 
     .CommissionInfoPricingBody {
-      margin-top: 50px;
+      margin-top: 20px;
+    }
+  }
+  .CommissionInfoStatusShowmanship {
+    background: black;
+    margin-left: 35px;
+    justify-self: center;
+    flex: 1;
+    border-width: 2px;
+    text-align: center;
+    padding: 5px 0px;
+    letter-spacing: 0.2em;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    @media (max-width: $breakpoint-small) {
+      margin-top: 10px;
+    }
+    font-size: 2em;
+
+    &:hover {
+      color: #e5e7ef;
+      &::after {
+        background-color: #1f1f3f;
+      }
     }
   }
 }

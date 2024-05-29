@@ -17,7 +17,7 @@ function CommissionInfo() {
           className="CommissionInfoStatusShowmanship blinking"
           onClick={() =>
             window.open(
-              "https://docs.google.com/spreadsheets/d/1HSfBZtmOESgWcwhaE5_Bk29YV1lpTPfRlGNTNIi7UHo/edit?usp=sharing",
+              "https://docs.google.com/forms/d/e/1FAIpQLScEG__sYgBNbp5ppHipsfE7R30SgtziM1Dn3F5FX6b3OQERdQ/viewform",
               "_blank"
             )
           }
@@ -26,8 +26,8 @@ function CommissionInfo() {
         </div>
       </div>
       <div className="CommissionInfoSubHeader">
-        Please review the pricing and terms below before sending a request to
-        tamingthecarcasoan@gmail.{" "}
+        Please review the pricing and terms below before filling out my form
+        <div className="links">
         <div
           className="inlineLink"
           onClick={() =>
@@ -37,7 +37,19 @@ function CommissionInfo() {
             )
           }
         >
-          Commission Queue
+           Queue
+        </div> 
+        <div
+          className="inlineLink"
+          onClick={() =>
+            window.open(
+              "https://docs.google.com/forms/d/e/1FAIpQLScEG__sYgBNbp5ppHipsfE7R30SgtziM1Dn3F5FX6b3OQERdQ/viewform",
+              "_blank"
+            )
+          }
+        >
+           Form
+        </div>
         </div>
       </div>
       <div className="CommissionInfoTLDR">
@@ -349,7 +361,7 @@ function CommissionInfo() {
           </p>
           <p className="CommissionInfoPricingBody">
             Custom Made Profile Picture for you or OC. Additional complexity
-            like the following will increase this base price.
+            like the following will increase this base price:
             <ul>
               <li>Bust Up/Waist Up/Full Body</li>
               <li>Backgrounds</li>
@@ -372,6 +384,17 @@ function CommissionInfo() {
           </p>
         </div>
       </div>
+      <div
+          className="CommissionInfoStatusShowmanship"
+          onClick={() =>
+            window.open(
+              "https://docs.google.com/forms/d/e/1FAIpQLScEG__sYgBNbp5ppHipsfE7R30SgtziM1Dn3F5FX6b3OQERdQ/viewform",
+              "_blank"
+            )
+          }
+        >
+          I'm ready to commission!
+        </div>
       <p className="CommissionInfoApplicationBody CommissionThankYou">
         Thank you for your interest and taking the time to read my TOS, it's
         greatly appreciated! Love you all, mwah ᡣ𐭩
