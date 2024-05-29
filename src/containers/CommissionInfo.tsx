@@ -104,11 +104,7 @@ function CommissionInfo() {
             </p>
             <div className="CommissionInfoApplicationListContainer">
               <p className="CommissionInfoApplicationBody">
-                After reading and agreeing to the Terms of Service, please send
-                me an Email titled "COMMISSION - (Your name and Social Media
-                Username if you want to be tagged) [E-mail:
-                tamingthecarcasoan@gmail.com] With the below details.
-                Alternatively, you can send this over Twitter DMs.
+                After reading and agreeing to the Terms of Service, please fill out my Google Form at the top.
               </p>
               <p className="CommissionInfoApplicationSubHeader">Time</p>
               <p className="CommissionInfoApplicationBody">
