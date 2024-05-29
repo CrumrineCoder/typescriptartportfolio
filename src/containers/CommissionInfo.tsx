@@ -56,7 +56,7 @@ function CommissionInfo() {
         <h1>TL;DR</h1>
         <ul>
           <li>
-            I wants lots of references and clear purpose for the commission. I
+            I want lots of references and clear purpose for the commission. I
             ask a lot of questions to make sure I get it right.
           </li>
           <li>Base price is 60 USD and goes up with complexity.</li>
