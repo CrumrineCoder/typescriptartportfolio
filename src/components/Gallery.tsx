@@ -1,6 +1,9 @@
 import { Suspense, lazy } from "react";
  
-
+import refugerock from "../assets/refugerock.png";
+import nirvan from "../assets/nirvan.png";
+import TolpaJam from "../assets/Tolpa_Jam.gif";
+import cheveunMementoCaller from "../assets/memento caller che'veun.png";
 import tolpaPngtuber from "../assets/tolpa pngtuber.gif";
 import cel from "../assets/cel.png";
 import yuyuuu from "../assets/yuyyyu.png";
@@ -130,6 +133,26 @@ interface GalleryItemProps {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {
+      text: "Refuge Rock",
+      imageSrc: refugerock,
+      tags: [tag_pixelart, tag_twilight],
+    },
+    {
+      text: "nIRVANa",
+      imageSrc: nirvan,
+      tags: [],
+    },
+    {
+      text: "Tolpa Jam",
+      imageSrc: TolpaJam,
+      tags: [tag_animated, tag_pixelart],
+    },
+    {
+      text: "Che'Veun and their Memento Caller",
+      imageSrc: cheveunMementoCaller,
+      tags: [tag_twilight],
+    },
     {
       text: "Tolpa PNGtuber",
       imageSrc: tolpaPngtuber,
