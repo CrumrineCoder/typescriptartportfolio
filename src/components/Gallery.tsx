@@ -1,5 +1,7 @@
 import { Suspense, lazy } from "react";
  
+import TolpaYeah from "../assets/Yeah.png";
+import Leslie from "../assets/Leslie.png";
 import refugerock from "../assets/refugerock.png";
 import nirvan from "../assets/nirvan.png";
 import TolpaJam from "../assets/Tolpa_Jam.gif";
@@ -133,6 +135,16 @@ interface GalleryItemProps {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {
+      text: "Tolpa Yeah!!",
+      imageSrc: TolpaYeah,
+      tags: [tag_pixelart],
+    },
+    { 
+      text: "Leslie: God-King of Master Chef Season 5, the Silver Fox of Malibu",
+      imageSrc: Leslie,
+      tags: [],
+    },
     {
       text: "Refuge Rock",
       imageSrc: refugerock,
