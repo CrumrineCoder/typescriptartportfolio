@@ -1,5 +1,7 @@
 import { Suspense, lazy } from "react";
  
+import yoyo from "../assets/yoyo.png"
+import infinite from "../assets/jinfinfinfif 2.gif";
 import TolpaYeah from "../assets/Yeah.png";
 import Leslie from "../assets/Leslie.png";
 import refugerock from "../assets/refugerock.png";
@@ -135,6 +137,18 @@ interface GalleryItemProps {
 
 function Gallery() {
   const items: GalleryItemProps[] = [
+    {
+      text: "YingYu",
+      imageSrc: yoyo,
+      tags: [],
+    },
+    {
+      text: "infinfinfinfginginfgifnifnifnfinfinininininifnignignisdgnasfnisognifnn",
+      imageSrc: infinite,
+      youtubeLink: "https://www.youtube.com/watch?v=tz80fAf3aJg",
+      linkText: "Music",
+      tags: [tag_animated],
+    },
     {
       text: "Tolpa Yeah!!",
       imageSrc: TolpaYeah,

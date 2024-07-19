@@ -49,8 +49,17 @@ const Dion = require("../assets/IrvanDionTokenNoBG.png");
 const Tolpa = require("../assets/Maid Token.png");
 const Zuzu = require("../assets/Zuzu.png");
 const Tomi = require("../assets/tomi.png");
+const Rabs = require("../assets/rab bunnoi.png");
 
 const profilePicsMasterData = [
+  {
+    imageName: Rabs,
+    artTitle: "Rabs",
+    artDescription:
+      "I'm so happy to get to do another profile picture comm!! I usually do at most bust up, but they have such long hair I experimented with a halfbody. If this wasn't meant to be a profile picture, I would've done a different pose to accentuate that long mane of theirs. But, this  pose came quickly after talking with Rabs for their vibe and what their goal was. I'm proud of how I textured the skin and hair - I recently reorganized ALL of my brushes in Clip Studio Paint, and it felt well worth the effort I put in. Only thing I wasn't sure on was where to add the saturated lines I've been experimenting with - they didn't feel right on the skin, although I did add some to the hair. This made me really happy, gah.",
+    style: "discord",
+    date: "06/27/2024",
+  },
   {
     imageName: Tomi,
     artTitle: "Disco Elysium Study",
@@ -332,13 +341,8 @@ function ProfilePictures() {
               personality.
             </div>
           </div>
-          <div
-            onClick={navigateCommissions}
-            className="ProfilePicturesLeftSideCTA"
-          >
-            Commissions Open
-          </div>
-
+          
+    
           <div className="ProfilePicturesLeftSideFooter">
             <Twitter
               onClick={() =>
@@ -370,61 +374,6 @@ function ProfilePictures() {
               <div className="ProfilePicSelectors">{imageList}</div>
             </Suspense>
           </div>
-        </div>
-      </div>
-      <div className="TwitchLink">
-        <div className="TwitchHeader">I also Stream!</div>
-        <div className="TwitchVideo">
-          <YoutubeEmbed embedId="T5NSXRj7wWU" />
-        </div>
-        <div className="TwitchDescription">
-          Every Saturday I draw a God from my fantasy world. <br />
-          Come distract me in chat.
-        </div>
-        <div className="TwitchButtonContainer">
-          <div
-            className="TwitchButton"
-            onClick={() =>
-              window.open("https://twitch.com/tamingofspyro", "_blank")
-            }
-          >
-            <Twitch className="TwitchLinkSVG" /> Watch Live
-          </div>
-          <Link to="/gallery">
-            <div className="TwitchButton">
-              <img src={Moff}></img>View Gallery
-            </div>
-          </Link>
-        </div>
-        <div className="TwitchDescription">
-          Pixel art, fantasy art with backgrounds, comics, animations, etc. go
-          in my Gallery! <br /> I worked hard on them please validate me :)
-        </div>
-      </div>
-
-      <div className="AboutMe">
-        <div className="AboutMeHeader">
-          <>Literally who?</>
-        </div>
-        <div className="AboutMeBody">
-          <p>
-            I'm Taming, and I'm a hobbyist artist. I love drawing for my friends
-            - I've made plenty of profile pictures for them, and for their
-            birthdays I've designed a NPC based on them in my fantasy worlds.
-            You can find those in my Gallery - I've been expanding on those
-            worlds through my art. Currently I run two campaign settings -
-            Twilight of the Idols & Carcaso, both of which I've been working on
-            for 5+ years. I love running duet campaigns - a tabletop game
-            between myself and my one player. In everything I do, I try to learn
-            the most about my friends so I can make them happy.
-          </p>
-          <p>
-            I really enjoy meeting as many people as I can and learning what
-            they like. I've been enjoying Final Fantasy XIV to do so - I play
-            White & Black mage. I'm also a fan of Yu-Gi-Oh, Space Station 13,
-            Europa Universalis IV, League, and I hope to draw more art to
-            express my love for it.
-          </p>
         </div>
       </div>
     </div>

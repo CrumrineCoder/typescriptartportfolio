@@ -321,9 +321,8 @@ function CommissionInfo() {
               <p className="CommissionInfoApplicationListSubHeader">
                 I will not draw:
               </p>
-              <li className="CommissionInfoApplicationBody">Furry/Anthro</li>
               <li className="CommissionInfoApplicationBody">
-                Porn/Fetishes/Explicit NSFW
+                Porn/Fetishes/Explicit NSFW (Pin up okay!)
               </li>
               <li className="CommissionInfoApplicationBody">
                 Realism (like Renaissance paintings)
